@@ -1,10 +1,69 @@
-/* use BEM in class names
-example:
-
-.section-name-sec {
-
+#partneri-header {
+    /* width:40%; */
+    
+    margin-left: 4vw;
+    /* font-size: 275%;     */
 }
 
-.section-name-s__element {
+.partneri-s__hr {
+    margin-left: 4vw;
+    width: min(25rem, 80vw);
+}
+.flickity-slider{
+    bottom:31%;
+}
+#part-div{
+    background-color: var(--blue-clr);
+    height:100%;
+}
+.flickity-viewport{
+    height:120px;
+}
+#partneri-div{
+    position: relative;
+    top:40%;
+    left:4%;
+    width:600px;
+    height: 200px;
+    margin-right: 10px;
+}
+#partneri-div:after {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+.partner-img{
+    position: relative;
+    width:90%;
+    height: 80%;
+    background-color: var(--blue-clr-dark);
+    border-radius: 20px;
+}
 
-} */
+@media only screen and (max-width: 768px) {
+    .partner-img{
+        width:85%;
+        height: 70%;
+    }
+    .flickity-slider{
+        bottom:28%;
+    }
+    #part-div{
+        height:90%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .partner-img{
+        width:72%;
+        left:14%;
+        height: 65%;
+    }
+    #part-div{
+        height:80%;
+    }
+    .flickity-slider{
+        bottom:24%;
+    }
+  }

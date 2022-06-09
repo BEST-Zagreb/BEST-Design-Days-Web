@@ -1,10 +1,66 @@
-/* use BEM in class names
-example:
-
-.section-name-sec {
-
+#predavaci-header {
+    margin-left: 4vw;   
+}
+.predavaci-s__hr {
+    margin-left: 4vw;
+    width: min(12rem, 80vw);
+}
+.flickity-slider{
+    bottom:30%;
+}
+#predavaci-div{
+    position: relative;
+    top:8%;
+    left:4%;
+    width:450px;
+    margin-right: 10px;
+}
+#predavaci-div:before {
+    display: block;
+    text-align: center;
+    content: counter(predavaci-div);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
 }
 
-.section-name-s__element {
-
-} */
+.predavaci-img{
+    width:280px;
+    background-color: var(--blue-clr);
+    border-radius: 50%;
+}
+#predavaci-name{
+    font-size: 200%;
+}
+#predavaci-tema, #predavaci-termin{
+    font-size: 150%;
+}
+@media only screen and (max-width: 768px) {
+    #predavaci-div{
+        width:300px;
+    }
+    .predavaci-img{
+        width:200px;
+    }
+    #predavaci-name{
+        font-size: 175%;
+    }
+    #predavaci-tema, #predavaci-termin{
+        font-size: 130%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #predavaci-div{
+        width:220px;
+    }
+    .predavaci-img{
+        width:150px;
+    }
+    #predavaci-name{
+        font-size: 130%;
+    }
+    #predavaci-tema, #predavaci-termin{
+        font-size: 100%;
+    }
+  }
+ 

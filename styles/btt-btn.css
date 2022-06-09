@@ -11,6 +11,8 @@
   border-radius: 50%;
   cursor: pointer;
 
+  z-index: 9999;
+
   transition: transform 0.3s ease-in-out;
 }
 

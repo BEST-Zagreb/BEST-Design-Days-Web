@@ -37,6 +37,11 @@
     <link href="styles/index/kontakt-sec.css" rel="stylesheet" />
     <link href="styles/index/best-zg-sec.css" rel="stylesheet" />
 
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
+    <script src="js/predavaci.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+    
+
     <script src="js/nav.js" defer></script>
     <script src="js/index.js" defer></script>
   </head>
@@ -124,7 +129,56 @@
       />
     </svg>
 
-    <section class="predavaci-sec" id="predavaci"></section>
+    <section class="predavaci-sec" id="predavaci">
+      <h3 id="predavaci-header">Predavači</h3>
+      <hr class="predavaci-s__hr">
+      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "draggable":false, "pageDots": true}'>
+        <div id="predavaci-div">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <p id="predavaci-name">Marko Perić</p>
+          <p id="predavaci-tema">Tema: 1</p>
+          <p id="predavaci-termin">Termin:</p>
+        </div>
+        <div id="predavaci-div">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <p id="predavaci-name">Marko Perić</p>
+          <p id="predavaci-tema">Tema: 2</p>
+          <p id="predavaci-termin">Termin:</p>
+        </div>
+        <div id="predavaci-div">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <p id="predavaci-name">Marko Perić</p>
+          <p id="predavaci-tema">Tema: 3</p>
+          <p id="predavaci-termin">Termin:</p>
+        </div>
+        <div id="predavaci-div">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <p id="predavaci-name">Marko Perić</p>
+          <p id="predavaci-tema">Tema: 4</p>
+          <p id="predavaci-termin">Termin:</p>
+        </div>
+        <div id="predavaci-div">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <p id="predavaci-name">Marko Perić</p>
+          <p id="predavaci-tema">Tema: 5</p>
+          <p id="predavaci-termin">Termin:</p>
+        </div>
+        <div id="predavaci-div">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <p id="predavaci-name">Marko Perić</p>
+          <p id="predavaci-tema">Tema: 6</p>
+          <p id="predavaci-termin">Termin:</p>
+        </div> 
+        <!-- <template id="predavaci-template">
+          <div id="predavaci-div">
+            <img class="predavaci-img" src=""></img> 
+            <div id="predavaci-name"></div>
+            <div id="predavaci-tema"></div>
+            <div id="predavaci-termin"></div>
+        </div>
+        </template>  -->
+      </div>
+    </section>
 
     <section class="faq-sec" id="faq"></section>
 
@@ -182,7 +236,39 @@
       />
     </svg>
 
-    <section class="partneri-sec" id="partneri"></section>
+    <section class="partneri-sec" id="partneri">
+      <h3 id="partneri-header">Partneri projekta</h3>
+      <hr class="partneri-s__hr">
+      <div id="part-div" class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true, "draggable":false, "pageDots": false, "autoPlay": 3000 }'>
+  <div id="partneri-div">
+    <a href="https://best.hr">
+    <img class="partner-img" src="https://picsum.photos/400/200?random=1">
+  </a>
+  </div>
+  <div id="partneri-div">
+    <a href="https://best.hr">
+      <img class="partner-img" src="https://picsum.photos/400/200?random=2">
+    </a>
+  </div>
+  <div id="partneri-div">
+    <a href="https://best.hr">
+      <img class="partner-img" src="img/logos/bdd_logo.png">
+    </a>
+  </div>
+  <div id="partneri-div">
+    <a href="https://best.hr">
+      <img class="partner-img" src="https://picsum.photos/400/200?random=4">
+    </a>
+  </div>
+  <div id="partneri-div">
+    <a href="https://best.hr">
+      <img class="partner-img" src="https://picsum.photos/400/200?random=5">
+    </a>  
+  </div>
+</div>
+
+    </section>
 
     <svg
       class="section-divider"

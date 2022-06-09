@@ -1,0 +1,40 @@
+{
+    "predavaci": [
+        {
+            "imageUrl": "img/logos/BEST_shuriken_white.png",
+            "name": "Marko ",
+            "tema": "Neka tema......",
+            "termin": "12.10.2022 13:00"
+        },
+        {
+            "imageUrl": "img/logos/BEST_shuriken_white.png",
+            "name": "Pero",
+            "tema": "Neka tema......",
+            "termin": "12.10.2022 13:00"
+        },
+        {
+            "imageUrl": "img/logos/BEST_shuriken_white.png",
+            "name": "Ivan",
+            "tema": "Neka tema......",
+            "termin": "12.10.2022 13:00"
+        },
+        {
+            "imageUrl": "img/logos/BEST_shuriken_white.png",
+            "name": "Đuro",
+            "tema": "Neka tema......",
+            "termin": "12.10.2022 13:00"
+        },
+        {
+            "imageUrl": "img/logos/BEST_shuriken_white.png",
+            "name": "Filip",
+            "tema": "Neka tema......",
+            "termin": "12.10.2022 13:00"
+        },
+        {
+            "imageUrl": "img/logos/BEST_shuriken_white.png",
+            "name": "Franjo",
+            "tema": "Neka tema......",
+            "termin": "12.10.2022 13:00"
+        }
+    ]
+}
