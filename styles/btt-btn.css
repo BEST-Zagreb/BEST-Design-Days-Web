@@ -1,0 +1,35 @@
+.backToTopBtn {
+  position: fixed;
+  right: min(3rem, 5vw);
+  bottom: min(3rem, 5vw);
+
+  width: min(5rem, calc(10vw + 0.5rem));
+  aspect-ratio: 1;
+
+  backdrop-filter: blur(1px);
+  border: 2px solid var(--blue-clr-light);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 1024px) {
+  .backToTopBtn:hover,
+  .backToTopBtn:focus {
+    transform: scale(1.2);
+  }
+}
+
+.backToTopBtn > svg {
+  width: 70%;
+
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backToTopBtn > svg > path {
+  fill: var(--blue-clr-light);
+}

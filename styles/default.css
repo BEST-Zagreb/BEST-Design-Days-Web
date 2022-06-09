@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* colors depend on project */
+  --blue-clr: #3c6f9b;
+  --blue-clr-light: #72b1e8;
+  --blue-clr-dark: #17354f;
+  --brown-clr: #b5806b;
+  --pink-clr: #ba67ab;
+  --pink-clr-light: #ffa6ef;
+  --pink-clr-dark: #6e3163;
+
+  --text-clr: #666666;
+  --text-clr-dark: #333333;
+
+  --bg-clr-dark: #252525;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  height: 100%;
+}
+
+body {
+  /* so the footer sticks to the bottom of page with margin-top: auto; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  font-family: Roboto, sans-serif;
+
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: inherit;
+}
+
+li {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* title */
+h1 {
+  margin: 1rem;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: min(4rem, 8vw);
+
+  color: var(--blue-clr);
+}
+
+/* subtitle */
+h2 {
+  margin: 0.75rem;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: min(3rem, 6vw);
+
+  color: var(--blue-clr);
+}
+
+/* names of sections */
+h3 {
+  padding-top: 0.5rem;
+
+  text-transform: uppercase;
+
+  font-size: min(2rem, 4.5vw);
+
+  color: var(--blue-clr-dark);
+}
+
+/* names of subsections */
+h4 {
+  font-size: min(1.375rem, 4.375vw);
+
+  padding-top: 1.25rem;
+
+  color: var(--blue-clr-dark);
+}
+
+p {
+  font-size: min(1.25rem, 4vw);
+
+  color: var(--text-clr);
+
+  padding-block: 0.25rem;
+}
+
+a {
+  color: var(--pink-clr);
+}
+
+a:hover,
+a:focus {
+  color: var(--pink-clr-light);
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  /* names of pages */
+  h1 {
+    margin: 1rem;
+  }
+
+  /* names of sections */
+  h2 {
+    margin: 0.75rem;
+    padding-top: 1.5rem;
+  }
+
+  /* names of subsections */
+  h3 {
+    margin: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  /* other titles (posts etc) */
+  h4 {
+    font-size: 1.375rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
