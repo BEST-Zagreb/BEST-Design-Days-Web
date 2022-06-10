@@ -41,13 +41,9 @@ h2,
 h3,
 h4,
 p,
-a {
-  font-family: inherit;
-}
-
+a,
 li {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: inherit;
 }
 
 /* title */
