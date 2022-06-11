@@ -17,10 +17,13 @@
   --text-clr-dark: #333333;
 
   --bg-clr-dark: #252525;
+
+  --nav-height: calc(1.5rem * 2 + 5rem);
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height, 10rem);
 
   height: 100%;
 }
@@ -65,9 +68,9 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 
-  font-size: min(3rem, 6vw);
+  font-size: min(8rem, 12vw);
 
-  color: var(--blue-clr);
+  color: var(--pink-clr);
 }
 
 /* names of sections */
@@ -76,14 +79,14 @@ h3 {
 
   text-transform: uppercase;
 
-  font-size: min(2rem, 4.5vw);
+  font-size: min(3rem, 5vw);
 
   color: var(--blue-clr-dark);
 }
 
 /* names of subsections */
 h4 {
-  font-size: min(1.375rem, 4.375vw);
+  font-size: min(1.5rem, 4.375vw);
 
   padding-top: 1.25rem;
 
@@ -92,7 +95,9 @@ h4 {
 
 p,
 li {
-  font-size: min(1.25rem, 4vw);
+  font-size: min(1.375rem, 3.75vw);
+
+  line-height: 1.6;
 
   color: var(--text-clr);
 
@@ -112,16 +117,16 @@ a:focus {
   display: none;
 }
 
-@media only screen and (max-width: 450px) {
-  /* names of sections */
-  h2 {
-    margin: 0.75rem;
-    padding-top: 1.5rem;
-  }
+/* section {
+  padding: 0.5rem;
+}
 
-  /* names of subsections */
-  h3 {
-    margin: 0.5rem;
-    padding-top: 1rem;
+@media only screen and (min-width: 1550px) {
+  section {
+    padding-inline: 15%;
   }
+} */
+
+hr {
+  margin-block: 1.5rem;
 }

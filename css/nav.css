@@ -28,6 +28,15 @@ nav {
   /* justify-content: right; */
 }
 
+.primary-nav li {
+  transition: transform 200ms ease-in-out;
+}
+
+.primary-nav li:hover,
+.primary-nav li:focus {
+  transform: scale(1.1);
+}
+
 .primary-nav a {
   font-weight: 700;
   font-size: min(1.5rem, 2vw);
@@ -35,6 +44,8 @@ nav {
   color: var(--blue-clr);
   text-decoration: none;
   /* text-transform: uppercase; */
+
+  transition: color 200ms ease-in-out;
 
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;

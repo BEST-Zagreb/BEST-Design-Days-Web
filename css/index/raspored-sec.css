@@ -1,0 +1,49 @@
+/* use BEM in class names
+example:
+
+.section-name-sec {
+
+}
+
+.section-name-s__element {
+
+} */
+
+.schedule {
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+  border: 0px;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+.schedule-column {
+  background-color: #72b1e8;
+  font-size: min(1.5rem, 4vw);
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  height: min(5rem, 15vw);
+  padding: 0.9rem;
+}
+
+.small-col {
+  width: 20%;
+}
+
+.big-col {
+  width: 60%;
+}
+.column {
+  height: min(7rem, 20vw);
+  font-size: min(1.5rem, 3.5vw);
+}
+table td,
+table th {
+  border: 1px solid black;
+}
+
+table td {
+  padding: 0.2rem;
+  /* word-break: break-all; */
+}
