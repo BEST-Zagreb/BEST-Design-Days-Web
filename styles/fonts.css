@@ -93,3 +93,11 @@
   font-weight: 100;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Zen Tokyo Zoo";
+  src: url("../fonts/zentokyozoo-regular-webfont.woff2") format("woff2"),
+    url("../fonts/zentokyozoo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

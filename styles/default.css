@@ -90,7 +90,8 @@ h4 {
   color: var(--blue-clr-dark);
 }
 
-p {
+p,
+li {
   font-size: min(1.25rem, 4vw);
 
   color: var(--text-clr);
@@ -112,11 +113,6 @@ a:focus {
 }
 
 @media only screen and (max-width: 450px) {
-  /* names of pages */
-  h1 {
-    margin: 1rem;
-  }
-
   /* names of sections */
   h2 {
     margin: 0.75rem;
@@ -127,14 +123,5 @@ a:focus {
   h3 {
     margin: 0.5rem;
     padding-top: 1rem;
-  }
-
-  /* other titles (posts etc) */
-  h4 {
-    font-size: 1.375rem;
-  }
-
-  p {
-    font-size: 1.1rem;
   }
 }
