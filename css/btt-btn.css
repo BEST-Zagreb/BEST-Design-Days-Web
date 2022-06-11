@@ -7,7 +7,7 @@
   aspect-ratio: 1;
 
   backdrop-filter: blur(1px);
-  border: 2px solid var(--blue-clr-light);
+  border: 2px solid var(--pink-clr-light);
   border-radius: 50%;
   cursor: pointer;
 
@@ -33,5 +33,5 @@
 }
 
 .backToTopBtn > svg > path {
-  fill: var(--blue-clr-light);
+  fill: var(--pink-clr-light);
 }
