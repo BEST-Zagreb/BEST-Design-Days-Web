@@ -8,3 +8,46 @@ example:
 .section-name-s__element {
 
 } */
+
+.hero-sec {
+  /* background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.6)); */
+  background-image: url("../../img/hero-background-temp.jpeg");
+  background-color: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  background-position: right center;
+
+  padding-top: clamp(5rem, 16vw, 8rem);
+}
+
+.hero-s__content-wrapper {
+  display: flex;
+  justify-content: right;
+}
+
+.hero-s__content {
+  margin-right: 6vw;
+}
+
+.hero-s__bdd-heading {
+  font-family: "Zen Tokyo Zoo";
+  font-size: min(4rem, 16vw);
+  text-align: left;
+}
+
+.hero-s__bdd-pink {
+  color: var(--pink-clr);
+}
+
+.hero-s__prijava-btn {
+  padding: 0.75rem 2.25rem;
+
+  font-size: min(1.5rem, 4vw);
+  width: fit-content;
+
+  background-color: var(--pink-clr);
+  /* opacity: 0.8; */
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+
+  text-transform: uppercase;
+}
