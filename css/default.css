@@ -94,6 +94,8 @@ p,
 li {
   font-size: min(1.25rem, 4vw);
 
+  line-height: 1.6;
+
   color: var(--text-clr);
 
   padding-block: 0.25rem;
@@ -110,18 +112,4 @@ a:focus {
 
 .hidden {
   display: none;
-}
-
-@media only screen and (max-width: 450px) {
-  /* names of sections */
-  h2 {
-    margin: 0.75rem;
-    padding-top: 1.5rem;
-  }
-
-  /* names of subsections */
-  h3 {
-    margin: 0.5rem;
-    padding-top: 1rem;
-  }
 }

@@ -30,12 +30,3 @@ footer > p,
 .footer__logo {
   width: 2rem;
 }
-
-/* @media (max-width: 400px) {
-  footer {
-    padding-inline: 0.5rem;
-
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-} */

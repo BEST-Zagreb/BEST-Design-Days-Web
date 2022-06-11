@@ -1,8 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="revisit-after" content="10 days" />
+
+    <meta name="author" content="BEST Zagreb IT WG" />
+    <meta name="copyright" content="BEST Zagreb" />
+
+    <meta
+      name="description"
+      content="BEST Design Days je projekt studentske udruge BEST Zagreb koji već niz godina privlači i povezuje studente, ali i profesionalce iz svih grana dizajn."
+    />
+    <meta
+      name="keywords"
+      content="BDD, BEST, BEST Zagreb, BEST Design Days, studenti, projekt, dizajn, 3D dizajn, grafički dizajn, web dizajn"
+    />
+
+    <meta property="og:image" content="img/BEST_Design_Days_logo" />
+    <meta
+      property="og:description"
+      content="BEST Design Days je projekt studentske udruge BEST Zagreb koji već niz godina privlači i povezuje studente, ali i profesionalce iz svih grana dizajn."
+    />
+    <meta property="og:title" content="BEST Design Days" />
+
     <!-- Google page indexing -->
     <!-- <meta
 			name="google-site-verification"
@@ -13,37 +35,45 @@
 
     <title>BEST Design Days</title>
 
-    <link href="styles/default.css" rel="stylesheet" />
-    <link href="styles/normalize.css" rel="stylesheet" />
-    <link href="styles/fonts.css" rel="stylesheet" />
-    <link href="styles/nav.css" rel="stylesheet" />
-    <link href="styles/footer.css" rel="stylesheet" />
-    <link href="styles/scroll-bar.css" rel="stylesheet" />
-    <link href="styles/progress-bar.css" rel="stylesheet" />
-    <link href="styles/btt-btn.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/nav.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/scroll-bar.css" rel="stylesheet" />
+    <link href="css/progress-bar.css" rel="stylesheet" />
+    <link href="css/btt-btn.css" rel="stylesheet" />
 
-    <link href="styles/index.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
 
-    <link href="styles/index/hero-sec.css" rel="stylesheet" />
-    <link href="styles/index/bdd-sec.css" rel="stylesheet" />
-    <link href="styles/index/info-icons-sec.css" rel="stylesheet" />
-    <link href="styles/index/zasto-bdd-sec.css" rel="stylesheet" />
-    <link href="styles/index/raspored-sec.css" rel="stylesheet" />
-    <link href="styles/index/predavaci-sec.css" rel="stylesheet" />
-    <link href="styles/index/faq-sec.css" rel="stylesheet" />
-    <link href="styles/index/galerija-sec.css" rel="stylesheet" />
-    <link href="styles/index/organizatori-sec.css" rel="stylesheet" />
-    <link href="styles/index/partneri-sec.css" rel="stylesheet" />
-    <link href="styles/index/kontakt-sec.css" rel="stylesheet" />
-    <link href="styles/index/best-zg-sec.css" rel="stylesheet" />
+    <link href="css/index/hero-sec.css" rel="stylesheet" />
+    <link href="css/index/bdd-sec.css" rel="stylesheet" />
+    <link href="css/index/info-icons-sec.css" rel="stylesheet" />
+    <link href="css/index/zasto-bdd-sec.css" rel="stylesheet" />
+    <link href="css/index/raspored-sec.css" rel="stylesheet" />
+    <link href="css/index/predavaci-sec.css" rel="stylesheet" />
+    <link href="css/index/faq-sec.css" rel="stylesheet" />
+    <link href="css/index/galerija-sec.css" rel="stylesheet" />
+    <link href="css/index/organizatori-sec.css" rel="stylesheet" />
+    <link href="css/index/partneri-sec.css" rel="stylesheet" />
+    <link href="css/index/kontakt-sec.css" rel="stylesheet" />
+    <link href="css/index/best-zg-sec.css" rel="stylesheet" />
 
-    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
-    <script src="js/predavaci.js" defer></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
-    
+    <link
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="js/predavaci.js" defer></script>
+    <script
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+      defer
+    ></script>
 
-    <script src="js/nav.js" defer></script>
-    <script src="js/index.js" defer></script>
+    <script type="text/javascript" src="js/nav.js" defer></script>
+    <script type="text/javascript" src="js/index.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css" />
+    <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
   </head>
   <body>
     <div class="progress-bar"></div>
@@ -95,6 +125,7 @@
     </div>
 
     <section class="hero-sec" id="home">
+      <img class="hero-sec__background" src="img/hero-background-temp.jpeg" />
       <div class="hero-s__content-wrapper">
         <div class="hero-s__content">
           <div class="hero-heading-wrapper">
@@ -106,14 +137,40 @@
             </h1>
           </div>
 
-          <button class="hero-s__prijava-btn" disabled>Prijavi se</button>
+          <button class="hero-s__prijava-btn">Prijave uskoro</button>
         </div>
       </div>
 
-      <div>DD:HH:MM:SS</div>
+      <div id="flipdown" class="flipdown"></div>
     </section>
 
-    <section class="bdd-sec" id="BDD"></section>
+    <section class="bdd-sec" id="BDD">
+      <div class="text-container">
+        <h2 class="bdd-sec__heading">Što je</h2>
+        <img
+          class="bdd-sec__heading-logo"
+          src="img/logos/bdd_logo.png"
+          alt="BEST_Design_Days_logo"
+        />
+        <hr class="line" />
+        <p class="bdd-text">
+          BDD (<b>BEST Design Days</b>) jedan je od rastućih projekata
+          studentske udruge BEST Zagreb. Cilj je projekta, kroz radionice i
+          predavanja, približiti značenje, ulogu i proces dizajniranja
+          zainteresiranim studentima. Tijekom radionica i predavanja u trajanju
+          od 60 do 90 minuta, sudionici imaju priliku susresti se s vodećim i
+          iskusnim tvrtkama i profesorima s područja dizajna te iz prve ruke
+          čuti brojna iskustva dizajnera i grafičara. <br /><br />Samo neke od
+          tema koje će biti obuhvaćene su marketing u dizajnu, dizajn logotipa,
+          termokromne boje, tipografija, dizajn ikonografija i mnoge druge.
+          <br /><br />BDD je idealan za studente svih područja koji žele
+          proširiti svoje znanje ili naučiti nešto sasvim novo o dizajnu. Za ove
+          radionice nije potrebno predznanje jer će sve naučiti sudjelovanjem.
+          <br /><br />Na kraju projekta sudionici stječu
+          <b>certifikat o sudjelovanju</b>.
+        </p>
+      </div>
+    </section>
 
     <section class="info-icons-sec" id="info">
       <img
@@ -257,27 +314,40 @@
       <div class="testni-div"></div>
       <h3 class="zasto-bdd-h3">Zašto trebaš doći na BDD?</h3>
       <ul class="zasto-bdd-list">
-        <li class="zasto-bdd-list-element">Zanima te grafički, 3D, web ili mobilni dizajn?</li>
-        <li class="zasto-bdd-list-element">Izgubljen/a si u moru izbora i trebaš nekoga tko će ti dati savjet i navesti na pravi put?</li>
-        <li class="zasto-bdd-list-element">Tražiš posao i želiš se povezati s poslodavcima?</li>
-        <li class="zasto-bdd-list-element">Želiš se natjecati u Case study-u i pokazati svoje vještine?</li>
+        <li class="zasto-bdd-list-element">
+          Zanima te grafički, 3D, web ili mobilni dizajn?
+        </li>
+        <li class="zasto-bdd-list-element">
+          Izgubljen/a si u moru izbora i trebaš nekoga tko će ti dati savjet i
+          navesti na pravi put?
+        </li>
+        <li class="zasto-bdd-list-element">
+          Tražiš posao i želiš se povezati s poslodavcima?
+        </li>
+        <li class="zasto-bdd-list-element">
+          Želiš se natjecati u Case study-u i pokazati svoje vještine?
+        </li>
       </ul>
-      <p class="zasto-bdd-list-paraf-sec">Ako je tvoj odgovor da na ijedno od ovih pitanja, onda se definitivno trebaš prijaviti i doći na <i><b>BEST Design Days</b></i>!</p>
+      <p class="zasto-bdd-list-paraf-sec">
+        Ako je tvoj odgovor da na ijedno od ovih pitanja, onda se definitivno
+        trebaš prijaviti i doći na <i><b>BEST Design Days</b></i
+        >!
+      </p>
       <div class="zasto-bdd-list-picture-container-sec">
         <div class="zasto-bdd-list-picture-as-div">
-          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png"/>
+          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
           <div class="zasto-bdd-text-wrapper">
             <p class="zasto-bdd-picture-text">Nauči</p>
           </div>
         </div>
         <div class="zasto-bdd-list-picture-as-div">
-          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png"/>
+          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
           <div class="zasto-bdd-text-wrapper">
             <p class="zasto-bdd-picture-text">Poveži se</p>
           </div>
         </div>
         <div class="zasto-bdd-list-picture-as-div">
-          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png"/>
+          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
           <div class="zasto-bdd-text-wrapper">
             <p class="zasto-bdd-picture-text">Stvaraj</p>
           </div>
@@ -285,7 +355,98 @@
       </div>
     </section>
 
-    <section class="raspored-sec" id="raspored"></section>
+    <section class="raspored-sec" id="raspored">
+      <div class="text-container">
+        <h3>Raspored</h3>
+        <hr class="line-header" />
+        <table class="schedule">
+          <tr class="schedule-column">
+            <th class="small-col">DATUM</th>
+            <th class="small-col">VRIJEME</th>
+            <th class="big-col">EVENT</th>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022. ponedjeljak</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>
+              Koncert Mladen GrdovićKoncert Mladen GrdovićKoncert Mladen
+              GrdovićKoncert Mladen GrdovićKoncert Mladen GrdovićKoncert Mladen
+              Grdović
+            </td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+          <tr class="column">
+            <td>29. 6. 2022.</td>
+            <td>12 : 30</td>
+            <td>Koncert Mladen Grdović</td>
+          </tr>
+        </table>
+      </div>
+    </section>
 
     <svg
       class="section-divider"
@@ -314,44 +475,47 @@
 
     <section class="predavaci-sec" id="predavaci">
       <h3 id="predavaci-header">Predavači</h3>
-      <hr class="predavaci-s__hr">
-      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "draggable":false, "pageDots": true}'>
+      <hr class="predavaci-s__hr" />
+      <div
+        class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true, "draggable":false, "pageDots": true}'
+      >
         <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
           <p id="predavaci-name">Marko Perić</p>
           <p id="predavaci-tema">Tema: 1</p>
           <p id="predavaci-termin">Termin:</p>
         </div>
         <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
           <p id="predavaci-name">Marko Perić</p>
           <p id="predavaci-tema">Tema: 2</p>
           <p id="predavaci-termin">Termin:</p>
         </div>
         <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
           <p id="predavaci-name">Marko Perić</p>
           <p id="predavaci-tema">Tema: 3</p>
           <p id="predavaci-termin">Termin:</p>
         </div>
         <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
           <p id="predavaci-name">Marko Perić</p>
           <p id="predavaci-tema">Tema: 4</p>
           <p id="predavaci-termin">Termin:</p>
         </div>
         <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
           <p id="predavaci-name">Marko Perić</p>
           <p id="predavaci-tema">Tema: 5</p>
           <p id="predavaci-termin">Termin:</p>
         </div>
         <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png">
+          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
           <p id="predavaci-name">Marko Perić</p>
           <p id="predavaci-tema">Tema: 6</p>
           <p id="predavaci-termin">Termin:</p>
-        </div> 
+        </div>
         <!-- <template id="predavaci-template">
           <div id="predavaci-div">
             <img class="predavaci-img" src=""></img> 
@@ -421,36 +585,50 @@
 
     <section class="partneri-sec" id="partneri">
       <h3 id="partneri-header">Partneri projekta</h3>
-      <hr class="partneri-s__hr">
-      <div id="part-div" class="gallery js-flickity"
-  data-flickity-options='{ "wrapAround": true, "draggable":false, "pageDots": false, "autoPlay": 3000 }'>
-  <div id="partneri-div">
-    <a href="https://best.hr">
-    <img class="partner-img" src="https://picsum.photos/400/200?random=1">
-  </a>
-  </div>
-  <div id="partneri-div">
-    <a href="https://best.hr">
-      <img class="partner-img" src="https://picsum.photos/400/200?random=2">
-    </a>
-  </div>
-  <div id="partneri-div">
-    <a href="https://best.hr">
-      <img class="partner-img" src="img/logos/bdd_logo.png">
-    </a>
-  </div>
-  <div id="partneri-div">
-    <a href="https://best.hr">
-      <img class="partner-img" src="https://picsum.photos/400/200?random=4">
-    </a>
-  </div>
-  <div id="partneri-div">
-    <a href="https://best.hr">
-      <img class="partner-img" src="https://picsum.photos/400/200?random=5">
-    </a>  
-  </div>
-</div>
-
+      <hr class="partneri-s__hr" />
+      <div
+        id="part-div"
+        class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true, "draggable":false, "pageDots": false, "autoPlay": 3000 }'
+      >
+        <div id="partneri-div">
+          <a href="https://best.hr">
+            <img
+              class="partner-img"
+              src="https://picsum.photos/400/200?random=1"
+            />
+          </a>
+        </div>
+        <div id="partneri-div">
+          <a href="https://best.hr">
+            <img
+              class="partner-img"
+              src="https://picsum.photos/400/200?random=2"
+            />
+          </a>
+        </div>
+        <div id="partneri-div">
+          <a href="https://best.hr">
+            <img class="partner-img" src="img/logos/bdd_logo.png" />
+          </a>
+        </div>
+        <div id="partneri-div">
+          <a href="https://best.hr">
+            <img
+              class="partner-img"
+              src="https://picsum.photos/400/200?random=4"
+            />
+          </a>
+        </div>
+        <div id="partneri-div">
+          <a href="https://best.hr">
+            <img
+              class="partner-img"
+              src="https://picsum.photos/400/200?random=5"
+            />
+          </a>
+        </div>
+      </div>
     </section>
 
     <svg
@@ -480,7 +658,25 @@
 
     <section class="kontakt-sec" id="kontakt"></section>
 
-    <section class="best-zg-sec" id="best-zg"></section>
+    <section class="best-zg-sec" id="best-zg">
+      <div class="best-zg-sec__container">
+        <h4>BEST Zagreb</h4>
+        <hr />
+        <p>
+          BEST Zagreb je volonterska i neprofitna studentska udruga koja
+          studentima Sveučilišta u Zagrebu pruža mogućnost dodatnog stručnog
+          obrazovanja, kontakta s budućim poslodavcima, rada u međunarodnim
+          timovima, upoznavanje i razumijevanje europskih kultura te razvijanje
+          tolerancije i usavršavanje organizacijskih vještina.
+        </p>
+      </div>
+      <div class="best-zg-sec__container">
+        <h4>Pratite nas na društvenim mrežama</h4>
+        <hr />
+        <div class="best-zg-sec__social-icons"></div>
+      </div>
+      <!-- <hr /> -->
+    </section>
 
     <footer>
       <img class="footer__logo" src="img/logos/BEST_shuriken_white.png" />

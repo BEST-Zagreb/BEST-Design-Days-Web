@@ -9,3 +9,10 @@
     transform: none;
   }
 }
+
+.flipdown {
+  margin-block: min(2rem, 4vw);
+
+  display: flex;
+  justify-content: center;
+}
