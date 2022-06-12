@@ -53,10 +53,10 @@ li {
 h1 {
   margin: 1rem;
 
+  font-size: min(4rem, 8vw);
+
   text-align: center;
   text-transform: uppercase;
-
-  font-size: min(4rem, 8vw);
 
   color: var(--blue-clr);
 }
@@ -65,43 +65,41 @@ h1 {
 h2 {
   margin: 0.75rem;
 
+  font-size: min(8rem, 12vw);
+
   text-align: center;
   text-transform: uppercase;
-
-  font-size: min(8rem, 12vw);
 
   color: var(--pink-clr);
 }
 
 /* names of sections */
 h3 {
-  padding-top: 0.5rem;
-
-  text-transform: uppercase;
+  padding-block: 1rem;
 
   font-size: min(3rem, 5vw);
 
-  color: var(--blue-clr-dark);
+  text-transform: uppercase;
+  color: var(--blue-clr);
 }
 
 /* names of subsections */
 h4 {
-  font-size: min(1.5rem, 4.375vw);
+  padding-block: 1.25rem 0.5rem;
 
-  padding-top: 1.25rem;
+  font-size: min(1.75rem, 4.375vw);
 
-  color: var(--blue-clr-dark);
+  color: var(--blue-clr);
 }
 
 p,
 li {
+  padding-block: 0.25rem;
+
   font-size: min(1.375rem, 3.75vw);
 
   line-height: 1.6;
-
   color: var(--text-clr);
-
-  padding-block: 0.25rem;
 }
 
 a {

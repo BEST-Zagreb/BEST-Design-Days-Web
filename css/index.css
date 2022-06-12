@@ -1,11 +1,11 @@
 .section-divider {
-  padding-block: 2rem;
+  padding-block: 0.5rem;
   transform: scaleY(0.5);
 }
 
 @media only screen and (max-width: 768px) {
   .section-divider {
-    padding-block: 1rem;
+    /* padding-block: 1rem; */
     transform: none;
   }
 }
@@ -13,20 +13,12 @@
 /* ===== hero section ===== */
 
 .hero-sec {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)),
+    url("../img/hero-background-temp.jpeg");
+  background-position: center right;
+  background-size: cover;
 
-  position: relative;
   overflow: hidden;
-}
-
-.hero-sec__background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: right top;
-
-  z-index: -1;
 }
 
 .hero-sec__content-wrapper {
@@ -274,12 +266,25 @@
 
 /* ===== zasto bdd section ===== */
 
-.zasto-bdd-sec {
+.zasto-bdd-sec__content {
   margin: 0 auto;
-
   max-width: 120rem;
-  width: 100vw;
+
   padding: 1rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.zasto-bdd-sec__animated-svg path {
+  fill: url(#svg-gradient);
+  stroke: var(--text-clr-dark);
+}
+
+@media only screen and (max-width: 450px) {
+  .zasto-bdd-sec__animated-svg {
+    display: none;
+  }
 }
 
 .zasto-bdd-sec__ul {
@@ -340,6 +345,234 @@
   padding: 10 rem;
 } */
 
+/* ===== godisnji partneri section ===== */
+
+.godisnji-partneri-sec {
+  margin: 0 auto;
+  max-width: 120rem;
+
+  padding: 1rem;
+}
+
+.godisnji-partneri-sec__images {
+  display: flex;
+  gap: min(4rem, 8vw);
+  justify-content: center;
+  align-items: center;
+}
+
+.godisnji-partneri-sec__images img {
+  width: 100%;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.godisnji-partneri-sec__images img:hover,
+.godisnji-partneri-sec__images img:focus {
+  transform: scale(1.1);
+}
+
+/* ===== kontakt section ===== */
+
+.kontakt-sec {
+  margin: 0 auto;
+
+  max-width: 120rem;
+
+  padding-inline: 1rem;
+  padding-block: 0 min(5rem, 10vw);
+}
+
+.kontakt-sec__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.kontakt-sec__card {
+  margin: min(4rem, 2vw);
+
+  display: grid;
+  grid-template-columns: 30rem;
+  grid-template-rows: 25rem 15rem;
+  grid-template-areas: "image" "text";
+
+  border-radius: 1.5rem;
+
+  background: whitesmoke;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.rgb::after {
+  content: "";
+  background: linear-gradient(
+      45deg,
+      #ff0000 0%,
+      #ff9a00 10%,
+      #d0de21 20%,
+      #4fdc4a 30%,
+      #3fdad8 40%,
+      #2fc9e2 50%,
+      #1c7fee 60%,
+      #5f15f2 70%,
+      #ba0cf8 80%,
+      #fb07d9 90%,
+      #ff0000 100%
+    )
+    repeat 0% 0% / 300% 100%;
+
+  position: absolute;
+  inset: -0.125rem;
+  filter: blur(4px);
+
+  border-radius: 1.25rem;
+
+  transform: translateZ(-1px); /*or z-index */
+
+  animation: rgb 6s linear infinite;
+}
+
+@media only screen and (min-width: 450px) {
+  .rgb::after {
+    inset: -0.25rem;
+    filter: blur(8px);
+  }
+}
+
+@keyframes rgb {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.kontakt-sec__card-image {
+  grid-area: image;
+
+  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+    url("../../img/hero-background-temp.jpeg");
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.kontakt-sec__card-text-container {
+  grid-area: text;
+
+  margin: 25px;
+  transform: translateZ(30px);
+}
+
+.kontakt-sec__card-function {
+  color: var(--brown-clr);
+  font-size: min(1rem, 3vw);
+}
+
+.kontakt-sec__card-name {
+  color: var(--text-clr-dark);
+}
+
+.kontakt-sec__card-text {
+  color: var(--text-clr);
+}
+
+.kontakt-sec__card-link {
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
+/*card1*/
+.kontakt-sec__card-1 > .kontakt-sec__card-image {
+  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+    url("../../img/people/Alen.jpg");
+  background-size: cover;
+}
+
+.kontakt-sec__card-1 .kontakt-sec__card-function,
+.kontakt-sec__card-1 .kontakt-sec__card-link:hover,
+.kontakt-sec__card-1 .kontakt-sec__card-link:focus {
+  color: var(--brown-clr);
+}
+
+/*card2*/
+.kontakt-sec__card-2 > .kontakt-sec__card-image {
+  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+    url("../../img/people/Kristina.jpg");
+  background-size: cover;
+}
+
+.kontakt-sec__card-2 .kontakt-sec__card-function,
+.kontakt-sec__card-2 .kontakt-sec__card-link:hover,
+.kontakt-sec__card-2 .kontakt-sec__card-link:focus {
+  color: var(--blue-clr-light);
+}
+
+/*card3*/
+.kontakt-sec__card-3 > .kontakt-sec__card-image {
+  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+    url("../../img/people/Ajs.jpg");
+  background-size: cover;
+}
+
+.kontakt-sec__card-3 .kontakt-sec__card-function,
+.kontakt-sec__card-3 .kontakt-sec__card-link:hover,
+.kontakt-sec__card-3 .kontakt-sec__card-link:focus {
+  color: var(--pink-clr-light);
+}
+
+@media only screen and (max-width: 768px) {
+  .kontakt-sec__card {
+    width: 80vw;
+
+    display: flex;
+  }
+
+  .kontakt-sec__card-image {
+    float: left;
+    width: 40%;
+
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 0;
+  }
+
+  /*card1*/
+  .kontakt-sec__card-1 > .kontakt-sec__card-image {
+    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
+      url("../../img/people/Alen.jpg");
+    background-size: cover;
+  }
+
+  /*card2*/
+  .kontakt-sec__card-2 > .kontakt-sec__card-image {
+    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
+      url("../../img/people/Kristina.jpg");
+    background-size: cover;
+  }
+
+  /*card3*/
+  .kontakt-sec__card-3 > .kontakt-sec__card-image {
+    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
+      url("../../img/people/Ajs.jpg");
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .kontakt-sec__card-image {
+    display: none;
+  }
+}
+
 /* ===== best zagreb section ===== */
 
 .best-zg-sec {
@@ -389,9 +622,13 @@
 }
 
 .best-zg-sec__social-svg {
-  height: min(15rem, 30vw);
+  height: clamp(6rem, 15vw, 15rem);
+
+  transition: color 500ms ease-in-out;
+  fill: whitesmoke;
 }
 
-.best-zg-sec__social-svg > path {
-  fill: whitesmoke;
+.best-zg-sec__social-svg:hover,
+.best-zg-sec__social-svg:focus {
+  fill: url("#svg-gradient");
 }

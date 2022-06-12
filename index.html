@@ -52,7 +52,6 @@
     <link href="css/index/galerija-sec.css" rel="stylesheet" />
     <link href="css/index/organizatori-sec.css" rel="stylesheet" />
     <link href="css/index/partneri-sec.css" rel="stylesheet" />
-    <link href="css/index/kontakt-sec.css" rel="stylesheet" />
 
     <link
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -64,11 +63,13 @@
     ></script>
     <!-- <script type="text/javascript" src="js/predavaci.js" defer></script> -->
 
-    <script type="text/javascript" src="js/nav.js" defer></script>
-    <script type="text/javascript" src="js/index.js" defer></script>
-
     <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css" />
     <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
+
+    <script src="js/vanilla-tilt.js" defer></script>
+
+    <script type="text/javascript" src="js/index.js" defer></script>
+    <script type="text/javascript" src="js/nav.js" defer></script>
   </head>
   <body>
     <!-- TODO: animated background image -->
@@ -93,6 +94,17 @@
         ></path>
       </svg>
     </div>
+
+    <!-- #svg-gradient color -->
+    <svg width="0" height="0">
+      <defs>
+        <linearGradient id="svg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="var(--brown-clr)" />
+          <stop offset="50%" stop-color="var(--blue-clr-light)" />
+          <stop offset="100%" stop-color="var(--pink-clr-light)" />
+        </linearGradient>
+      </defs>
+    </svg>
 
     <!-- <div class="primary-navigation">
       <button
@@ -123,8 +135,6 @@
     </div> -->
 
     <section class="hero-sec" id="home">
-      <img class="hero-sec__background" src="img/hero-background-temp.jpeg" />
-
       <div class="hero-sec__content-wrapper">
         <div class="hero-sec__content">
           <div class="hero-heading-wrapper">
@@ -329,44 +339,199 @@
     </section>
 
     <section class="zasto-bdd-sec" id="zasto-BDD">
-      <h3 class="zasto-bdd-sec__heading">Zašto trebaš doći na BDD?</h3>
+      <div class="zasto-bdd-sec__content">
+        <svg
+          class="zasto-bdd-sec__animated-svg"
+          version="1.1"
+          width="320"
+          height="320"
+          viewBox="0 0 320 320"
+          fill="none"
+          stroke="#000"
+          stroke-linecap="round"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs>
+            <path id="r1">
+              <animate
+                id="p1"
+                attributeName="d"
+                values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+                dur="6s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="stroke-width"
+                values="0;4;4;4;0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin"
+              />
+            </path>
+            <path id="r2">
+              <animate
+                attributeName="d"
+                values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+1s"
+              />
+              <animate
+                attributeName="stroke-width"
+                values="0;4;4;4;0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+1s"
+              />
+            </path>
+            <path id="r3">
+              <animate
+                attributeName="d"
+                values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+2s"
+              />
+              <animate
+                attributeName="stroke-width"
+                values="0;4;4;4;0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+2s"
+              />
+            </path>
+            <path id="r4">
+              <animate
+                id="p1"
+                attributeName="d"
+                values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+3s"
+              />
+              <animate
+                attributeName="stroke-width"
+                values="0;4;4;4;0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+3s"
+              />
+            </path>
+            <path id="r5">
+              <animate
+                attributeName="d"
+                values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+4s"
+              />
+              <animate
+                attributeName="stroke-width"
+                values="0;4;4;4;0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+4s"
+              />
+            </path>
+            <path id="r6">
+              <animate
+                attributeName="d"
+                values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+5s"
+              />
+              <animate
+                attributeName="stroke-width"
+                values="0;4;4;4;0"
+                dur="6s"
+                repeatCount="indefinite"
+                begin="p1.begin+5s"
+              />
+            </path>
+          </defs>
+          <use xlink:href="#r1" />
+          <use xlink:href="#r1" transform="rotate(60 160 160)" />
+          <use xlink:href="#r1" transform="rotate(120 160 160)" />
+          <use xlink:href="#r1" transform="rotate(180 160 160)" />
+          <use xlink:href="#r1" transform="rotate(240 160 160)" />
+          <use xlink:href="#r1" transform="rotate(300 160 160)" />
+          <use xlink:href="#r2" transform="rotate(30 160 160)" />
+          <use xlink:href="#r2" transform="rotate(90 160 160)" />
+          <use xlink:href="#r2" transform="rotate(150 160 160)" />
+          <use xlink:href="#r2" transform="rotate(210 160 160)" />
+          <use xlink:href="#r2" transform="rotate(270 160 160)" />
+          <use xlink:href="#r2" transform="rotate(330 160 160)" />
+          <use xlink:href="#r3" />
+          <use xlink:href="#r3" transform="rotate(60 160 160)" />
+          <use xlink:href="#r3" transform="rotate(120 160 160)" />
+          <use xlink:href="#r3" transform="rotate(180 160 160)" />
+          <use xlink:href="#r3" transform="rotate(240 160 160)" />
+          <use xlink:href="#r3" transform="rotate(300 160 160)" />
+          <use xlink:href="#r4" transform="rotate(30 160 160)" />
+          <use xlink:href="#r4" transform="rotate(90 160 160)" />
+          <use xlink:href="#r4" transform="rotate(150 160 160)" />
+          <use xlink:href="#r4" transform="rotate(210 160 160)" />
+          <use xlink:href="#r4" transform="rotate(270 160 160)" />
+          <use xlink:href="#r4" transform="rotate(330 160 160)" />
+          <use xlink:href="#r5" />
+          <use xlink:href="#r5" transform="rotate(60 160 160)" />
+          <use xlink:href="#r5" transform="rotate(120 160 160)" />
+          <use xlink:href="#r5" transform="rotate(180 160 160)" />
+          <use xlink:href="#r5" transform="rotate(240 160 160)" />
+          <use xlink:href="#r5" transform="rotate(300 160 160)" />
+          <use xlink:href="#r6" transform="rotate(30 160 160)" />
+          <use xlink:href="#r6" transform="rotate(90 160 160)" />
+          <use xlink:href="#r6" transform="rotate(150 160 160)" />
+          <use xlink:href="#r6" transform="rotate(210 160 160)" />
+          <use xlink:href="#r6" transform="rotate(270 160 160)" />
+          <use xlink:href="#r6" transform="rotate(330 160 160)" />
+        </svg>
 
-      <ul class="zasto-bdd-sec__ul">
-        <li>Zanima te grafički, 3D, web ili mobilni dizajn?</li>
-        <li>
-          Izgubljen/a si u moru izbora i trebaš nekoga tko će ti dati savjet i
-          navesti na pravi put?
-        </li>
-        <li>Tražiš posao i želiš se povezati s poslodavcima?</li>
-        <li>Želiš se natjecati u Case study-u i pokazati svoje vještine?</li>
-      </ul>
+        <div class="zasto-bdd-sec__text">
+          <h3 class="zasto-bdd-sec__heading">Zašto trebaš doći na BDD?</h3>
 
-      <p class="zasto-bdd-sec__text">
-        Ako je tvoj odgovor da na ijedno od ovih pitanja, onda se definitivno
-        trebaš <a href="#home">prijaviti</a> i posjetiti
-        <em class="zasto-bdd-sec__bdd-pink">BEST Design Days</em>!
-      </p>
+          <ul class="zasto-bdd-sec__ul">
+            <li>Zanima te grafički, 3D, web ili mobilni dizajn?</li>
+            <li>
+              Izgubljen/a si u moru izbora i trebaš nekoga tko će ti dati savjet
+              i navesti na pravi put?
+            </li>
+            <li>Tražiš posao i želiš se povezati s poslodavcima?</li>
+            <li>
+              Želiš se natjecati u Case study-u i pokazati svoje vještine?
+            </li>
+          </ul>
 
-      <!-- <div class="zasto-bdd-list-picture-container-sec">
-        <div class="zasto-bdd-list-picture-as-div">
-          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
-          <div class="zasto-bdd-text-wrapper">
-            <p class="zasto-bdd-picture-text">Nauči</p>
-          </div>
+          <p class="zasto-bdd-sec__text">
+            Ako je tvoj odgovor da na ijedno od ovih pitanja, onda se
+            definitivno trebaš <a href="#home">prijaviti</a> i posjetiti
+            <em class="zasto-bdd-sec__bdd-pink">BEST Design Days</em>!
+          </p>
         </div>
-        <div class="zasto-bdd-list-picture-as-div">
-          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
-          <div class="zasto-bdd-text-wrapper">
-            <p class="zasto-bdd-picture-text">Poveži se</p>
+
+        <!-- <div class="zasto-bdd-list-picture-container-sec">
+          <div class="zasto-bdd-list-picture-as-div">
+            <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
+            <div class="zasto-bdd-text-wrapper">
+              <p class="zasto-bdd-picture-text">Nauči</p>
+            </div>
           </div>
-        </div>
-        <div class="zasto-bdd-list-picture-as-div">
-          <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
-          <div class="zasto-bdd-text-wrapper">
-            <p class="zasto-bdd-picture-text">Stvaraj</p>
+          <div class="zasto-bdd-list-picture-as-div">
+            <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
+            <div class="zasto-bdd-text-wrapper">
+              <p class="zasto-bdd-picture-text">Poveži se</p>
+            </div>
           </div>
-        </div>
-      </div> -->
+          <div class="zasto-bdd-list-picture-as-div">
+            <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
+            <div class="zasto-bdd-text-wrapper">
+              <p class="zasto-bdd-picture-text">Stvaraj</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
     </section>
 
     <!-- <section class="raspored-sec" id="raspored">
@@ -670,7 +835,115 @@
       />
     </svg>
 
-    <section class="kontakt-sec" id="kontakt"></section>
+    <section class="godisnji-partneri-sec">
+      <h3>Godišnji partneri</h3>
+
+      <div class="godisnji-partneri-sec__images">
+        <a href="https://best.hr/partneri/vertiv/" target="_blank"
+          ><img src="img/partners/Vertiv.png"
+        /></a>
+
+        <a href="https://best.hr/partneri/photomath/" target="_blank"
+          ><img src="img/partners/Photomath-logo-RGB.png"
+        /></a>
+      </div>
+    </section>
+
+    <svg
+      class="section-divider"
+      viewBox="0 0 740 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-23.1638"
+        width="804"
+        height="37"
+        transform="rotate(2.84461 -23.1638 0)"
+        fill="#BA67AE"
+        fill-opacity="0.2"
+      />
+      <rect
+        opacity="0.5"
+        x="-31.7477"
+        y="23.9795"
+        width="804"
+        height="38.4828"
+        transform="rotate(-0.711186 -31.7477 23.9795)"
+        fill="#BA67AE"
+      />
+    </svg>
+
+    <section class="kontakt-sec" id="kontakt">
+      <h3>Kontakt</h3>
+
+      <p>U slučaju bilo kakvih pitanja, slobodno nam se javite:</p>
+
+      <div class="kontakt-sec__cards">
+        <div class="kontakt-sec__card rgb kontakt-sec__card-1">
+          <div class="kontakt-sec__card-image"></div>
+          <div class="kontakt-sec__card-text-container">
+            <p class="kontakt-sec__card-function">Main organiser</p>
+            <h4 class="kontakt-sec__card-name">Alen Komadina</h4>
+            <p class="kontakt-sec__card-info">
+              E-mail:
+              <a
+                class="kontakt-sec__card-link"
+                href="mailto:alen.komadina@best.hr"
+                >alen.komadina@best.hr</a
+              >
+              <br />
+              Tel:
+              <a class="kontakt-sec__card-link" href="tel:+385989145659"
+                >+385 98 914 5659</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="kontakt-sec__card rgb kontakt-sec__card-2">
+          <div class="kontakt-sec__card-image"></div>
+          <div class="kontakt-sec__card-text-container">
+            <p class="kontakt-sec__card-function">FR responsible</p>
+            <h4 class="kontakt-sec__card-name">Kristina Vukušić</h4>
+            <p class="kontakt-sec__card-info">
+              E-mail:
+              <a
+                class="kontakt-sec__card-link"
+                href="mailto:kristina.vukusic@best.hr"
+                >kristina.vukusic@best.hr</a
+              >
+              <br />
+              Tel:
+              <a class="kontakt-sec__card-link" href="tel:+385989341835"
+                >+385 98 934 1835</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="kontakt-sec__card rgb kontakt-sec__card-3">
+          <div class="kontakt-sec__card-image"></div>
+          <div class="kontakt-sec__card-text-container">
+            <p class="kontakt-sec__card-function">PR responsible</p>
+            <h4 class="kontakt-sec__card-name">Alen Jakupek Strbad</h4>
+            <p class="kontakt-sec__card-info">
+              E-mail:
+              <a
+                class="kontakt-sec__card-link"
+                href="mailto:alen.jakupek.strbad@best.hr"
+                >alen.jakupek.strbad@best.hr</a
+              >
+              <br />
+              Tel:
+              <a class="kontakt-sec__card-link" href="tel:+385915806626"
+                >+385 91 580 6626</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="best-zg-sec" id="best-zg">
       <div class="best-zg-sec__content">
