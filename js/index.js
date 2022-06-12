@@ -35,6 +35,8 @@ document.addEventListener("scroll", () => {
   backgroundImage.style.left = -scrolledPercentage / 2 + "%";
 });
 
+// ===== hero sections flipdown =====
+
 // Unix timestamp (in seconds) to count down to
 const eventStart = Math.round(+new Date(2022, 10, 15, 16) / 1000); // 15th October 2022 at 4 pm in seconds
 
@@ -49,4 +51,12 @@ flipdown.start();
 // Do something when the countdown ends
 flipdown.ifEnded(() => {
   console.log("The countdown has ended!");
+});
+
+// ===== kontakt sections cards =====
+
+VanillaTilt.init(document.querySelectorAll(".kontakt-sec__card"), {
+  glare: true,
+  reverse: true,
+  "max-glare": 0.15,
 });
