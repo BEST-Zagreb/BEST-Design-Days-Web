@@ -1,0 +1,84 @@
+/* ===== info icons section ===== */
+
+.info-icons-sec {
+  padding-block: min(32vw, 10rem);
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.info-icons-sec__background {
+  position: absolute;
+
+  height: min(120vw, 1200px);
+  width: 100%;
+  object-fit: cover;
+
+  z-index: -9999;
+
+  top: -50%;
+}
+
+.info-icons-sec__files-cards {
+  margin: auto;
+
+  max-width: 100rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: top;
+  justify-content: space-around;
+}
+
+.info-icons-sec__file-card {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 3 auto;
+  gap: 1.5rem;
+
+  text-align: center;
+}
+
+.info-icons-sec__file-card svg {
+  height: min(16rem, 24vw);
+}
+
+.info-icons-sec__doc-name {
+  font-size: min(2rem, 4.5vw);
+  letter-spacing: min(2px, 0.25vw);
+
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.info-icons-sec__doc-text {
+  max-width: 30vw;
+
+  color: var(--text-clr-dark);
+}
+
+@media only screen and (max-width: 768px) {
+  .info-icons-sec {
+    /* padding-block: 32vw; */
+  }
+
+  .info-icons-sec__background {
+    top: 0;
+  }
+
+  .info-icons-sec__files-cards {
+    gap: 0.5rem;
+  }
+
+  .info-icons-sec__file-card {
+    gap: 0.75rem;
+  }
+}

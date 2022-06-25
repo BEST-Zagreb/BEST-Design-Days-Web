@@ -1,0 +1,27 @@
+/* ===== godisnji partneri section ===== */
+
+.godisnji-partneri-sec {
+  margin: 0 auto;
+
+  max-width: 120rem;
+
+  padding: min(1rem, 2vw) min(5rem, 2vw);
+}
+
+.godisnji-partneri-sec__images {
+  display: flex;
+  gap: min(4rem, 8vw);
+  justify-content: center;
+  align-items: center;
+}
+
+.godisnji-partneri-sec__images img {
+  width: 100%;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.godisnji-partneri-sec__images img:hover,
+.godisnji-partneri-sec__images img:focus {
+  transform: scale(1.1);
+}
