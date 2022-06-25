@@ -6,12 +6,20 @@
 :root {
   /* colors depend on project */
   --blue-clr: #3c6f9b;
+  --blue-clr-lighter: #578ab7;
   --blue-clr-light: #72b1e8;
   --blue-clr-dark: #17354f;
   --brown-clr: #b5806b;
   --pink-clr: #ba67ab;
   --pink-clr-light: #ffa6ef;
   --pink-clr-dark: #6e3163;
+
+  --tricolor: linear-gradient(
+    45deg,
+    var(--pink-clr),
+    var(--blue-clr),
+    var(--brown-clr)
+  );
 
   --text-clr: #666666;
   --text-clr-dark: #333333;
@@ -65,7 +73,7 @@ h1 {
 h2 {
   margin: 0.75rem;
 
-  font-size: min(8rem, 12vw);
+  font-size: min(10rem, 12vw);
 
   text-align: center;
   text-transform: uppercase;

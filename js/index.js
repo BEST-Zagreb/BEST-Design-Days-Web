@@ -32,13 +32,14 @@ document.addEventListener("scroll", () => {
     backToTopButton.classList.remove("hidden");
   else backToTopButton.classList.add("hidden");
 
+  backgroundImage.style.top = -scrolledPercentage / 4 + "%";
   backgroundImage.style.left = -scrolledPercentage / 2 + "%";
 });
 
 // ===== hero sections flipdown =====
 
 // Unix timestamp (in seconds) to count down to
-const eventStart = Math.round(+new Date(2022, 10, 15, 16) / 1000); // 15th October 2022 at 4 pm in seconds
+const eventStart = Math.round(+new Date(2022, 10, 17, 16) / 1000); // 17th October 2022 at 4 pm in seconds
 
 // Set up FlipDown
 const flipdown = new FlipDown(eventStart, {
@@ -50,13 +51,22 @@ flipdown.start();
 
 // Do something when the countdown ends
 flipdown.ifEnded(() => {
-  console.log("The countdown has ended!");
+  console.log("Event ended!");
 });
 
-// ===== kontakt sections cards =====
+// ===== kontakt sections cards tilt =====
+function isTouchDevice() {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+}
 
-VanillaTilt.init(document.querySelectorAll(".kontakt-sec__card"), {
-  glare: true,
-  reverse: true,
-  "max-glare": 0.15,
-});
+if (!isTouchDevice()) {
+  VanillaTilt.init(document.querySelectorAll(".kontakt-sec__card"), {
+    glare: true,
+    reverse: true,
+    "max-glare": 0.75,
+  });
+}

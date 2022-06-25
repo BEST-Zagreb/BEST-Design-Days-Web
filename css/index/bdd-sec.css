@@ -1,0 +1,48 @@
+/* ===== bdd-section ===== */
+
+.bdd-sec__heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bdd-sec__heading-logo {
+  height: min(8rem, 10vw);
+}
+
+.bdd-sec__heading {
+  background: var(--tricolor);
+
+  font-family: "Train One";
+  font-weight: 500;
+
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bdd-sec__heading-hr {
+  margin: 0 auto;
+
+  width: min(80rem, 80vw);
+  height: min(0.5rem, 8vw);
+
+  border: none;
+  border-radius: 30%;
+  background: linear-gradient(
+    45deg,
+    var(--pink-clr-light),
+    var(--blue-clr-light),
+    var(--brown-clr)
+  );
+}
+
+.bdd-sec__text {
+  margin: 0 auto;
+  max-width: 120rem;
+
+  padding: min(1rem, 2vw) min(5rem, 2vw);
+
+  text-align: center;
+}

@@ -1,0 +1,208 @@
+/* ===== kontakt section ===== */
+
+.kontakt-sec {
+  margin: 0 auto;
+
+  max-width: 120rem;
+  width: 100%;
+
+  padding-inline: min(5rem, 2vw);
+  padding-block: 0 min(5rem, 10vw);
+}
+
+.kontakt-sec__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.kontakt-sec__card {
+  margin: min(4rem, 2vw);
+
+  display: grid;
+  grid-template-columns: clamp(22rem, 25vw, 30rem);
+
+  grid-template-rows: min(25rem, 20vw) 15rem;
+  grid-template-areas: "image" "text";
+
+  border-radius: 1.5rem;
+
+  background: whitesmoke;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.rgb::after {
+  content: "";
+  background: linear-gradient(
+      45deg,
+      #ff0000 0%,
+      #ff9a00 10%,
+      #d0de21 20%,
+      #4fdc4a 30%,
+      #3fdad8 40%,
+      #2fc9e2 50%,
+      #1c7fee 60%,
+      #5f15f2 70%,
+      #ba0cf8 80%,
+      #fb07d9 90%,
+      #ff0000 100%
+    )
+    repeat 0% 0% / 300% 100%;
+
+  position: absolute;
+  inset: -0.25rem;
+
+  border-radius: 1.5rem;
+
+  transform: translateZ(-1px); /*or z-index */
+
+  /* background-xyz on mobile devices also loses performace */
+  animation: rgb 6s linear infinite;
+}
+
+@media only screen and (min-width: 450px) {
+  .rgb::after {
+    /* blur on mobile devices tanks performace */
+    filter: blur(8px);
+  }
+}
+
+@keyframes rgb {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.kontakt-sec__card-image {
+  grid-area: image;
+
+  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+    url("../../img/hero-background-temp.jpeg");
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.kontakt-sec__card-text-container {
+  grid-area: text;
+
+  margin: 25px;
+  transform: translateZ(30px);
+}
+
+.kontakt-sec__card-function {
+  color: var(--brown-clr);
+  font-size: min(1rem, 3vw);
+}
+
+.kontakt-sec__card-name {
+  color: var(--text-clr-dark);
+}
+
+.kontakt-sec__card-text {
+  color: var(--text-clr);
+}
+
+.kontakt-sec__card-link {
+  text-decoration: none;
+  color: var(--text-clr);
+}
+
+/*card1*/
+.kontakt-sec__card-1 > .kontakt-sec__card-image {
+  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+    url("../../img/people/Alen.jpg");
+  background-size: cover;
+}
+
+.kontakt-sec__card-1 .kontakt-sec__card-function,
+.kontakt-sec__card-1 .kontakt-sec__card-link:hover,
+.kontakt-sec__card-1 .kontakt-sec__card-link:focus {
+  color: var(--brown-clr);
+}
+
+/*card2*/
+.kontakt-sec__card-2 > .kontakt-sec__card-image {
+  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+    url("../../img/people/Kristina.jpg");
+  background-size: cover;
+}
+
+.kontakt-sec__card-2 .kontakt-sec__card-function,
+.kontakt-sec__card-2 .kontakt-sec__card-link:hover,
+.kontakt-sec__card-2 .kontakt-sec__card-link:focus {
+  color: var(--blue-clr-light);
+}
+
+/*card3*/
+.kontakt-sec__card-3 > .kontakt-sec__card-image {
+  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+    url("../../img/people/Ajs.jpg");
+  background-size: cover;
+}
+
+.kontakt-sec__card-3 .kontakt-sec__card-function,
+.kontakt-sec__card-3 .kontakt-sec__card-link:hover,
+.kontakt-sec__card-3 .kontakt-sec__card-link:focus {
+  color: var(--pink-clr-light);
+}
+
+@media only screen and (max-width: 1280px) {
+  .kontakt-sec__card {
+    grid-template-rows: min(25rem, 20vw) 17rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .kontakt-sec__card {
+    width: 80vw;
+
+    display: flex;
+  }
+
+  .kontakt-sec__card-image {
+    float: left;
+    width: 40%;
+
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 0;
+  }
+
+  /*card1*/
+  .kontakt-sec__card-1 > .kontakt-sec__card-image {
+    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
+      url("../../img/people/Alen.jpg");
+    background-size: cover;
+  }
+
+  /*card2*/
+  .kontakt-sec__card-2 > .kontakt-sec__card-image {
+    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
+      url("../../img/people/Kristina.jpg");
+    background-size: cover;
+  }
+
+  /*card3*/
+  .kontakt-sec__card-3 > .kontakt-sec__card-image {
+    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
+      url("../../img/people/Ajs.jpg");
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .kontakt-sec__card-image {
+    display: none;
+  }
+}

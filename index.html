@@ -28,7 +28,7 @@
     <!-- Google page indexing -->
     <meta
       name="google-site-verification"
-      content="2SaRq8ashWboMZMlu-0N0krXkePGfJXeh0S9mfI7wyY"
+      content="VSdvgu74Ql0gid6CTJF100AokkKB2NqoWKyRHhL0udM"
     />
 
     <link rel="icon" href="bdd_logo.ico" />
@@ -46,12 +46,19 @@
 
     <link href="css/index.css" rel="stylesheet" />
 
+    <link href="css/index/hero-sec.css" rel="stylesheet" />
+    <link href="css/index/bdd-sec.css" rel="stylesheet" />
+    <link href="css/index/info-icons-sec.css" rel="stylesheet" />
+    <link href="css/index/zasto-bdd-sec.css" rel="stylesheet" />
     <link href="css/index/raspored-sec.css" rel="stylesheet" />
     <link href="css/index/predavaci-sec.css" rel="stylesheet" />
     <link href="css/index/faq-sec.css" rel="stylesheet" />
     <link href="css/index/galerija-sec.css" rel="stylesheet" />
     <link href="css/index/organizatori-sec.css" rel="stylesheet" />
     <link href="css/index/partneri-sec.css" rel="stylesheet" />
+    <link href="css/index/god-partneri-sec.css" rel="stylesheet" />
+    <link href="css/index/kontakt-sec.css" rel="stylesheet" />
+    <link href="css/index/best-zg-sec.css" rel="stylesheet" />
 
     <link
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -63,10 +70,10 @@
     ></script>
     <!-- <script type="text/javascript" src="js/predavaci.js" defer></script> -->
 
-    <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css" />
-    <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/libraries/flipdown.css" />
+    <script type="text/javascript" src="js/libraries/flipdown.js"></script>
 
-    <script src="js/vanilla-tilt.js" defer></script>
+    <script src="js/libraries/vanilla-tilt.js" defer></script>
 
     <script type="text/javascript" src="js/index.js" defer></script>
     <script type="text/javascript" src="js/nav.js" defer></script>
@@ -161,7 +168,7 @@
           src="img/logos/bdd_logo.png"
           alt="BEST_Design_Days_logo"
         />
-        <h2 class="bdd-sec__heading">&nbsp;?</h2>
+        <h2 class="bdd-sec__heading">?</h2>
       </div>
 
       <hr class="bdd-sec__heading-hr" />
@@ -169,11 +176,11 @@
       <div class="bdd-sec__text-container">
         <p class="bdd-sec__text">
           BEST Design Days (<strong>BDD</strong>) jedan je od rastućih projekata
-          studentske udruge BEST Zagreb. Cilj projekta je kroz radionice i
-          predavanja približiti značenje, ulogu i proces dizajniranja
+          studentske udruge BEST Zagreb. Cilj projekta je radionicama i
+          predavanjima približiti značenje, ulogu i proces dizajniranja
           zainteresiranim studentima. Tijekom radionica i predavanja u trajanju
           od 60 do 90 minuta, sudionici imaju priliku susresti se s vodećim i
-          iskusnim tvrtkama i profesorima s područja dizajna te iz prve ruke
+          iskusnim tvrtkama i profesorima iz područja dizajna te iz prve ruke
           čuti brojna iskustva dizajnera i grafičara.
         </p>
         <p class="bdd-sec__text">
@@ -267,37 +274,33 @@
 
           <h5 class="info-icons-sec__doc-name">Kada?</h5>
 
-          <p class="info-icons-sec__doc-text">Sredina listopada!</p>
+          <p class="info-icons-sec__doc-text">17. do 22. listopad!</p>
         </div>
 
         <div class="info-icons-sec__file-card">
-          <a href="https://goo.gl/maps/KnkTAWCeuovFd5nm7" target="_blank"
-            ><svg
-              class="info-icons-sec__map-svg"
-              aria-hidden="true"
-              focusable="false"
-              viewBox="0 0 70 98"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M24.8072 1.16174C20.8265 2.31774 15.4613 4.91875 13.1249 6.85918C12.4326 7.43718 11.3942 8.30418 10.7884 8.79961C8.62503 10.5749 5.07707 15.1163 3.64924 17.9238C1.05317 23.0432 0.360886 25.6855 0.101279 31.5481C-0.11506 36.2134 -0.0285242 37.4107 0.793563 40.4245C3.95211 51.902 8.40869 60.6133 21.1727 79.8525C21.5188 80.3892 22.3842 81.6278 23.1197 82.6186C26.4513 87.2013 29.6099 91.4538 29.9128 91.8254C30.1291 92.0318 31.1675 93.3529 32.2492 94.7154C33.3309 96.0778 34.4126 97.1925 34.5857 97.1925C34.7588 97.1925 35.8405 96.0778 36.9221 94.7154C38.0038 93.3529 39.0423 92.0318 39.2586 91.8254C39.5615 91.4538 41.2057 89.2243 46.0516 82.6186C46.7872 81.669 47.566 80.5543 47.7823 80.1415C48.042 79.7699 49.1236 78.1185 50.2053 76.5496C57.3878 65.9804 63.7049 54.3378 66.6038 46.2045C68.8537 39.8052 69.3297 37.2042 69.0701 31.5481C68.8105 25.8094 68.2047 23.3735 65.7817 18.4192C64.4404 15.6531 60.33 10.3685 58.2531 8.67575C57.5609 8.09776 56.782 7.47846 56.4792 7.23075C53.8398 4.83617 48.7342 2.35902 43.8017 1.03788C40.4268 0.129593 38.9557 -0.035553 34.2828 0.0057373C29.5234 0.0057373 28.1821 0.170883 24.8072 1.16174ZM42.9364 2.19389C44.0613 2.52417 45.0997 2.81317 45.2295 2.81317C46.0084 2.7306 50.8111 4.96003 53.1908 6.48761C58.2531 9.79047 61.9742 13.8365 64.6135 18.7908C68.8537 26.8415 69.0701 35.6354 65.3058 46.2045C63.0991 52.3974 58.9887 60.4481 53.8398 68.7053C47.566 78.7378 35.5376 95.3346 34.5424 95.3346C33.3742 95.3346 18.317 74.155 12.822 64.7419C10.7019 61.0674 6.46164 52.9341 5.76936 51.1588C5.46648 50.3744 4.81746 48.6817 4.29825 47.4431C0.101279 36.9152 0.187815 27.0479 4.64439 18.6256C9.36058 9.7079 18.2737 3.47375 28.9609 1.61588C31.7733 1.12045 40.5134 1.49203 42.9364 2.19389Z"
-                fill="black"
-              />
-              <path
-                d="M30.4752 15.8182C22.3409 17.7586 16.4132 24.9424 16.4132 32.8279C16.4132 41.5805 22.7736 48.8056 31.9896 50.4157C39.3019 51.7368 47.3064 47.4844 51.1572 40.2594C52.3687 37.9061 52.4985 37.452 52.4985 33.1995C52.5418 29.5251 52.3687 28.2865 51.6764 26.8002C49.7727 22.5891 46.7006 19.3275 42.8931 17.3871C38.7826 15.3228 34.7155 14.8273 30.4752 15.8182ZM42.3306 18.3779C45.0565 19.7816 48.9506 23.6212 50.0755 26.0984C50.5082 27.0479 51.114 28.9058 51.4168 30.2682C52.4985 34.851 50.4217 40.8787 46.5708 44.4705C44.6238 46.2458 41.0326 48.2688 39.7345 48.2688C39.3019 48.2688 38.8259 48.434 38.6961 48.6817C38.5663 48.8881 36.7058 49.0946 34.5857 49.0946C32.4655 49.0946 30.605 48.8881 30.4752 48.6817C30.3454 48.434 29.8695 48.2688 29.4368 48.2688C28.1388 48.2688 24.5475 46.2458 22.5572 44.4293C20.2208 42.2824 18.317 38.5667 17.7112 35.0161C16.543 28.4517 20.8265 21.1854 27.6628 18.0476C29.9127 17.0155 30.5185 16.9329 35.451 17.0568C39.5182 17.1806 40.2537 17.3045 42.3306 18.3779Z"
-                fill="black"
-              />
-            </svg>
-          </a>
+          <!-- <a href="https://goo.gl/maps/KnkTAWCeuovFd5nm7" target="_blank"> -->
+          <svg
+            class="info-icons-sec__map-svg"
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 70 98"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24.8072 1.16174C20.8265 2.31774 15.4613 4.91875 13.1249 6.85918C12.4326 7.43718 11.3942 8.30418 10.7884 8.79961C8.62503 10.5749 5.07707 15.1163 3.64924 17.9238C1.05317 23.0432 0.360886 25.6855 0.101279 31.5481C-0.11506 36.2134 -0.0285242 37.4107 0.793563 40.4245C3.95211 51.902 8.40869 60.6133 21.1727 79.8525C21.5188 80.3892 22.3842 81.6278 23.1197 82.6186C26.4513 87.2013 29.6099 91.4538 29.9128 91.8254C30.1291 92.0318 31.1675 93.3529 32.2492 94.7154C33.3309 96.0778 34.4126 97.1925 34.5857 97.1925C34.7588 97.1925 35.8405 96.0778 36.9221 94.7154C38.0038 93.3529 39.0423 92.0318 39.2586 91.8254C39.5615 91.4538 41.2057 89.2243 46.0516 82.6186C46.7872 81.669 47.566 80.5543 47.7823 80.1415C48.042 79.7699 49.1236 78.1185 50.2053 76.5496C57.3878 65.9804 63.7049 54.3378 66.6038 46.2045C68.8537 39.8052 69.3297 37.2042 69.0701 31.5481C68.8105 25.8094 68.2047 23.3735 65.7817 18.4192C64.4404 15.6531 60.33 10.3685 58.2531 8.67575C57.5609 8.09776 56.782 7.47846 56.4792 7.23075C53.8398 4.83617 48.7342 2.35902 43.8017 1.03788C40.4268 0.129593 38.9557 -0.035553 34.2828 0.0057373C29.5234 0.0057373 28.1821 0.170883 24.8072 1.16174ZM42.9364 2.19389C44.0613 2.52417 45.0997 2.81317 45.2295 2.81317C46.0084 2.7306 50.8111 4.96003 53.1908 6.48761C58.2531 9.79047 61.9742 13.8365 64.6135 18.7908C68.8537 26.8415 69.0701 35.6354 65.3058 46.2045C63.0991 52.3974 58.9887 60.4481 53.8398 68.7053C47.566 78.7378 35.5376 95.3346 34.5424 95.3346C33.3742 95.3346 18.317 74.155 12.822 64.7419C10.7019 61.0674 6.46164 52.9341 5.76936 51.1588C5.46648 50.3744 4.81746 48.6817 4.29825 47.4431C0.101279 36.9152 0.187815 27.0479 4.64439 18.6256C9.36058 9.7079 18.2737 3.47375 28.9609 1.61588C31.7733 1.12045 40.5134 1.49203 42.9364 2.19389Z"
+              fill="black"
+            />
+            <path
+              d="M30.4752 15.8182C22.3409 17.7586 16.4132 24.9424 16.4132 32.8279C16.4132 41.5805 22.7736 48.8056 31.9896 50.4157C39.3019 51.7368 47.3064 47.4844 51.1572 40.2594C52.3687 37.9061 52.4985 37.452 52.4985 33.1995C52.5418 29.5251 52.3687 28.2865 51.6764 26.8002C49.7727 22.5891 46.7006 19.3275 42.8931 17.3871C38.7826 15.3228 34.7155 14.8273 30.4752 15.8182ZM42.3306 18.3779C45.0565 19.7816 48.9506 23.6212 50.0755 26.0984C50.5082 27.0479 51.114 28.9058 51.4168 30.2682C52.4985 34.851 50.4217 40.8787 46.5708 44.4705C44.6238 46.2458 41.0326 48.2688 39.7345 48.2688C39.3019 48.2688 38.8259 48.434 38.6961 48.6817C38.5663 48.8881 36.7058 49.0946 34.5857 49.0946C32.4655 49.0946 30.605 48.8881 30.4752 48.6817C30.3454 48.434 29.8695 48.2688 29.4368 48.2688C28.1388 48.2688 24.5475 46.2458 22.5572 44.4293C20.2208 42.2824 18.317 38.5667 17.7112 35.0161C16.543 28.4517 20.8265 21.1854 27.6628 18.0476C29.9127 17.0155 30.5185 16.9329 35.451 17.0568C39.5182 17.1806 40.2537 17.3045 42.3306 18.3779Z"
+              fill="black"
+            />
+          </svg>
+          <!-- </a> -->
 
           <h5 class="info-icons-sec__doc-name">Gdje?</h5>
 
-          <p class="info-icons-sec__doc-text">
-            <a href="https://goo.gl/maps/KnkTAWCeuovFd5nm7" target="_blank"
-              >Fakultet elektrotehnike i računarstva</a
-            >!
-          </p>
+          <p class="info-icons-sec__doc-text">Lokacija dostupna uskoro!</p>
         </div>
 
         <div class="info-icons-sec__file-card">
@@ -332,7 +335,7 @@
           <h5 class="info-icons-sec__doc-name">Kako?</h5>
 
           <p class="info-icons-sec__doc-text">
-            Prijava na <a href="#home" target="_self">formu</a>!
+            Prijavom na <a href="#home" target="_self">formu</a>!
           </p>
         </div>
       </div>
@@ -499,13 +502,11 @@
               i navesti na pravi put?
             </li>
             <li>Tražiš posao i želiš se povezati s poslodavcima?</li>
-            <li>
-              Želiš se natjecati u Case study-u i pokazati svoje vještine?
-            </li>
+            <li>Želiš se natjecati u Case studyu i pokazati svoje vještine?</li>
           </ul>
 
           <p class="zasto-bdd-sec__text">
-            Ako je tvoj odgovor da na ijedno od ovih pitanja, onda se
+            Ako je tvoj odgovor da i na jedno od ovih pitanja, onda se
             definitivno trebaš <a href="#home">prijaviti</a> i posjetiti
             <em class="zasto-bdd-sec__bdd-pink">BEST Design Days</em>!
           </p>
@@ -513,19 +514,19 @@
 
         <!-- <div class="zasto-bdd-list-picture-container-sec">
           <div class="zasto-bdd-list-picture-as-div">
-            <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
+            <img src="https://picsum.photos/200/300" />
             <div class="zasto-bdd-text-wrapper">
               <p class="zasto-bdd-picture-text">Nauči</p>
             </div>
           </div>
           <div class="zasto-bdd-list-picture-as-div">
-            <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
+            <img src="https://picsum.photos/200/300" />
             <div class="zasto-bdd-text-wrapper">
               <p class="zasto-bdd-picture-text">Poveži se</p>
             </div>
           </div>
           <div class="zasto-bdd-list-picture-as-div">
-            <img src="http://127.0.0.1:5500/img/logos/bdd_logo.png" />
+            <img src="https://picsum.photos/200/300" />
             <div class="zasto-bdd-text-wrapper">
               <p class="zasto-bdd-picture-text">Stvaraj</p>
             </div>
@@ -948,7 +949,9 @@
     <section class="best-zg-sec" id="best-zg">
       <div class="best-zg-sec__content">
         <div class="best-zg-sec__container">
-          <h4>BEST Zagreb</h4>
+          <h4>
+            <a href="https://www.best.hr/" target="_blank">BEST Zagreb</a>
+          </h4>
 
           <hr />
 
