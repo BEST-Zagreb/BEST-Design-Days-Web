@@ -1,41 +1,3 @@
-/* Progress bar and scrolling background */
-const pageProgressBar = document.querySelector(".progress-bar");
-const progBarShowOnPx = 10; // amount of pixels before bar is shown
-
-const backToTopButton = document.querySelector(".backToTopBtn");
-const bttBtnShowOnPx = 100; // amount of pixels before button is shown
-
-const backgroundImage = document.querySelector(".background-image");
-
-const scrollContainer = () => {
-  return document.documentElement || document.body;
-};
-
-backToTopButton.addEventListener("click", () => {
-  document.body.scrollIntoView();
-});
-
-document.addEventListener("scroll", () => {
-  const scrolledPercentage =
-    (scrollContainer().scrollTop /
-      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
-    100;
-
-  // console.log(scrolledPercentage);
-  pageProgressBar.style.width = scrolledPercentage + "%";
-
-  if (scrollContainer().scrollTop > progBarShowOnPx)
-    pageProgressBar.classList.remove("hidden");
-  else pageProgressBar.classList.add("hidden");
-
-  if (scrollContainer().scrollTop > bttBtnShowOnPx)
-    backToTopButton.classList.remove("hidden");
-  else backToTopButton.classList.add("hidden");
-
-  backgroundImage.style.top = -scrolledPercentage / 4 + "%";
-  backgroundImage.style.left = -scrolledPercentage / 2 + "%";
-});
-
 // ===== hero sections flipdown =====
 
 // Unix timestamp (in seconds) to count down to
@@ -54,7 +16,49 @@ flipdown.ifEnded(() => {
   console.log("Event ended!");
 });
 
-// ===== kontakt sections cards tilt =====
+// ===== annual partners carousel =====
+
+const slideElement = document.querySelector(".godisnji-partneri-sec__slide");
+const slideImg = document.querySelectorAll(
+  ".godisnji-partneri-sec__slide > a > img"
+);
+
+let counter = 1; // for seamless infinite sliding
+
+let numberOfItemsToSlide = 2; // must be <= number of items in carousel
+let slideDuration = 1500; // in miliseconds
+let pauseDuration = 2500; // must be >= slideDuration, in miliseconds
+
+if (window.matchMedia("(max-width: 450px)").matches) {
+  numberOfItemsToSlide = 1; // must be <= number of items in carousel
+  slideDuration = 750; // in miliseconds
+  pauseDuration = 1500; // must be >= slideDuration, in miliseconds
+}
+
+slideElement.style.transition = "all " + slideDuration + "ms" + " ease-out";
+
+setInterval(() => {
+  slideElement.style.marginLeft =
+    "-" +
+    numberOfItemsToSlide * counter * slideImg[0].getBoundingClientRect().width +
+    "px";
+
+  counter++;
+}, pauseDuration + 50);
+
+slideElement.addEventListener("transitionend", () => {
+  if (counter === slideImg.length / 2 / numberOfItemsToSlide + 1) {
+    // set slide to start
+    slideElement.style.transitionDuration = "1ms";
+    slideElement.style.marginLeft = "0px";
+
+    counter = 1; // reset counter
+  } else {
+    slideElement.style.transitionDuration = slideDuration + "ms";
+  }
+});
+
+// ===== contact sections cards tilt =====
 function isTouchDevice() {
   return (
     "ontouchstart" in window ||
