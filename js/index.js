@@ -1,7 +1,7 @@
 // ===== hero sections flipdown =====
 
 // Unix timestamp (in seconds) to count down to
-const eventStart = Math.round(+new Date(2022, 10, 17, 16) / 1000); // 17th October 2022 at 4 pm in seconds
+const eventStart = Math.round(new Date(2022, 09, 14, 16) / 1000); // 17th October 2022 at 4 pm in seconds
 
 // Set up FlipDown
 const flipdown = new FlipDown(eventStart, {
@@ -47,7 +47,8 @@ setInterval(() => {
 }, pauseDuration + 50);
 
 slideElement.addEventListener("transitionend", () => {
-  if (counter === slideImg.length / 2 / numberOfItemsToSlide + 1) {
+  // needs to be bigger or equal (not just equal) because of some bug
+  if (counter >= slideImg.length / 2 / numberOfItemsToSlide + 1) {
     // set slide to start
     slideElement.style.transitionDuration = "1ms";
     slideElement.style.marginLeft = "0px";
