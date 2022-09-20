@@ -26,6 +26,7 @@
     <meta property="og:title" content="BEST Design Days" />
 
     <!-- Google page indexing -->
+    <link rel="canonical" href="https://designdays.best.hr/" />
     <meta
       name="google-site-verification"
       content="VSdvgu74Ql0gid6CTJF100AokkKB2NqoWKyRHhL0udM"
@@ -60,14 +61,14 @@
     <link href="css/index/kontakt-sec.css" rel="stylesheet" />
     <link href="css/index/best-zg-sec.css" rel="stylesheet" />
 
-    <!-- <link
+    <link
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
       rel="stylesheet"
     />
     <script
       src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
       defer
-    ></script> -->
+    ></script>
     <!-- <script type="text/javascript" src="js/predavaci.js" defer></script> -->
 
     <link rel="stylesheet" type="text/css" href="css/libraries/flipdown.css" />
@@ -75,12 +76,32 @@
 
     <script src="js/libraries/vanilla-tilt.js" defer></script>
 
-    <script type="text/javascript" src="js/default.js" defer></script>
-    <!-- <script type="text/javascript" src="js/nav.js" defer></script> -->
-
     <script type="text/javascript" src="js/index.js" defer></script>
+    <script type="text/javascript" src="js/nav.js" defer></script>
   </head>
   <body>
+    <div class="background-image"></div>
+
+    <div class="progress-bar"></div>
+
+    <div class="backToTopBtn hidden">
+      <svg
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="black"
+          d="M240.971 130.524l194.343 194.343
+        c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667
+        c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516
+        c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667
+        c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525
+        c9.372-9.373 24.568-9.373 33.941-.001z"
+        ></path>
+      </svg>
+    </div>
+
     <!-- #svg-gradient color -->
     <svg width="0" height="0">
       <defs>
@@ -139,7 +160,7 @@
       <div id="flipdown" class="flipdown"></div>
     </section>
 
-    <section class="bdd-sec box-content" id="BDD">
+    <section class="bdd-sec" id="BDD">
       <div class="bdd-sec__heading-container">
         <h2 class="bdd-sec__heading">Što je&nbsp;</h2>
         <img
@@ -180,18 +201,14 @@
       </div>
     </section>
 
+    <!-- TODO: zamijeniti pozadinu za info icons section s top i bottom dividerima te samo postaviti jednobojnu pozadinu -->
     <section class="info-icons-sec" id="info">
-      <div class="ocean">
-        <div class="wave wave-top"></div>
-        <div class="wave wave-top"></div>
-      </div>
+      <img
+        class="info-icons-sec__background"
+        src="./img/info-icons-sec-background.svg"
+      />
 
-      <div class="ocean">
-        <div class="wave wave-bottom"></div>
-        <div class="wave wave-bottom"></div>
-      </div>
-
-      <div class="info-icons-sec__files-cards box-content">
+      <div class="info-icons-sec__files-cards">
         <div class="info-icons-sec__file-card">
           <svg
             class="info-icons-sec__calendar-svg"
@@ -257,7 +274,7 @@
 
           <h5 class="info-icons-sec__doc-name">Kada?</h5>
 
-          <p class="info-icons-sec__doc-text">17. do 22. listopada!</p>
+          <p class="info-icons-sec__doc-text">17. do 22. listopad!</p>
         </div>
 
         <div class="info-icons-sec__file-card">
@@ -324,7 +341,7 @@
       </div>
     </section>
 
-    <section class="zasto-bdd-sec box-content" id="zasto-BDD">
+    <section class="zasto-bdd-sec" id="zasto-BDD">
       <div class="zasto-bdd-sec__content">
         <svg
           class="zasto-bdd-sec__animated-svg"
@@ -518,7 +535,7 @@
       </div>
     </section>
 
-    <!-- <section class="raspored-sec box-content" id="raspored">
+    <!-- <section class="raspored-sec" id="raspored">
       <div class="text-container">
         <h3>Raspored</h3>
         <hr class="line-header" />
@@ -644,7 +661,7 @@
             <div id="predavaci-termin"></div>
         </div>
         </template>  -->
-    <!-- <section class="predavaci-sec  box-content" id="predavaci">
+    <!-- <section class="predavaci-sec" id="predavaci">
       <h3 id="predavaci-header">Predavači</h3>
       <hr class="predavaci-s__hr" />
       <div
@@ -690,36 +707,9 @@
       </div>
     </section> -->
 
-    <!-- <section class="faq-sec box-content" id="faq"></section> -->
+    <!-- <section class="faq-sec" id="faq"></section> -->
 
-    <!-- <section class="galerija-sec box-content" id="galerija"></section> -->
-
-    <!-- <svg
-      class="section-divider"
-      viewBox="0 0 740 77"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="-23.1638"
-        width="804"
-        height="37"
-        transform="rotate(2.84461 -23.1638 0)"
-        fill="#BA67AE"
-        fill-opacity="0.2"
-      />
-      <rect
-        opacity="0.5"
-        x="-31.7477"
-        y="23.9795"
-        width="804"
-        height="38.4828"
-        transform="rotate(-0.711186 -31.7477 23.9795)"
-        fill="#BA67AE"
-      />
-    </svg> -->
-
-    <!-- <section class="organizatori-sec box-content" id="organizatori"></section> -->
+    <!-- <section class="galerija-sec" id="galerija"></section> -->
 
     <!-- <svg
       class="section-divider"
@@ -746,7 +736,34 @@
       />
     </svg> -->
 
-    <!-- <section class="partneri-sec box-content" id="partneri">
+    <!-- <section class="organizatori-sec" id="organizatori"></section> -->
+
+    <!-- <svg
+      class="section-divider"
+      viewBox="0 0 740 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-23.1638"
+        width="804"
+        height="37"
+        transform="rotate(2.84461 -23.1638 0)"
+        fill="#BA67AE"
+        fill-opacity="0.2"
+      />
+      <rect
+        opacity="0.5"
+        x="-31.7477"
+        y="23.9795"
+        width="804"
+        height="38.4828"
+        transform="rotate(-0.711186 -31.7477 23.9795)"
+        fill="#BA67AE"
+      />
+    </svg> -->
+
+    <!-- <section class="partneri-sec" id="partneri">
       <h3 id="partneri-header">Partneri projekta</h3>
       <hr class="partneri-s__hr" />
       <div
@@ -819,120 +836,17 @@
       />
     </svg>
 
-    <section class="godisnji-partneri-sec box-content">
-      <div>
-        <h3>Godišnji partneri</h3>
-      </div>
+    <section class="godisnji-partneri-sec">
+      <h3>Godišnji partneri</h3>
 
-      <div class="godisnji-partneri-sec__slider-wrapper">
-        <div class="godisnji-partneri-sec__slider">
-          <div class="godisnji-partneri-sec__slide">
-            <a href="https://best.hr/partneri/vertiv/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/Vertiv-logo.png"
-                alt="Vertiv partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-            <a href="https://best.hr/partneri/deegloo/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/Deegloo-logo.png"
-                alt="Degloo partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
+      <div class="godisnji-partneri-sec__images">
+        <a href="https://best.hr/partneri/vertiv/" target="_blank"
+          ><img src="img/partners/Vertiv.png"
+        /></a>
 
-            <a href="https://best.hr/partneri/microblink/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/Microblink-logo.gif"
-                alt="Microblink partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-
-            <a href="https://best.hr/partneri/optimoroute/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/OptimoRoute-logo.png"
-                alt="OptimoRoute partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-            <a href="https://best.hr/partneri/photomath/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/Photomath-logo.png"
-                alt="Photomath partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-
-            <a href="https://best.hr/partneri/reversinglabs/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/ReversingLabs-logo.png"
-                alt="ReversingLabs partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-          </div>
-          <div class="godisnji-partneri-sec__slide">
-            <a href="https://best.hr/partneri/vertiv/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/Vertiv-logo.png"
-                alt="Vertiv partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-            <a href="https://best.hr/partneri/deegloo/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/Deegloo-logo.png"
-                alt="Degloo partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-
-            <a href="https://best.hr/partneri/microblink/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/Microblink-logo.gif"
-                alt="Microblink partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-
-            <a href="https://best.hr/partneri/optimoroute/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/OptimoRoute-logo.png"
-                alt="OptimoRoute partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-            <a href="https://best.hr/partneri/photomath/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/Photomath-logo.png"
-                alt="Photomath partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-
-            <a href="https://best.hr/partneri/reversinglabs/" target="_blank">
-              <img
-                src="img/partners/BEST Zagreb/ReversingLabs-logo.png"
-                alt="ReversingLabs partner logo"
-                loading="lazy"
-                data-disable-lightbox="true"
-              />
-            </a>
-          </div>
-        </div>
+        <a href="https://best.hr/partneri/photomath/" target="_blank"
+          ><img src="img/partners/Photomath-logo-RGB.png"
+        /></a>
       </div>
     </section>
 
@@ -961,7 +875,7 @@
       />
     </svg>
 
-    <section class="kontakt-sec box-content" id="kontakt">
+    <section class="kontakt-sec" id="kontakt">
       <h3>Kontakt</h3>
 
       <p>U slučaju bilo kakvih pitanja, slobodno nam se javite:</p>
@@ -1012,19 +926,19 @@
         <div class="kontakt-sec__card rgb kontakt-sec__card-3">
           <div class="kontakt-sec__card-image"></div>
           <div class="kontakt-sec__card-text-container">
-            <p class="kontakt-sec__card-function">Participants responsible</p>
-            <h4 class="kontakt-sec__card-name">Jakov Jakovac</h4>
+            <p class="kontakt-sec__card-function">PR responsible</p>
+            <h4 class="kontakt-sec__card-name">Alen Jakupek Strbad</h4>
             <p class="kontakt-sec__card-info">
               E-mail:
               <a
                 class="kontakt-sec__card-link"
-                href="mailto:jakov.jakovac@best.hr"
-                >jakov.jakovac@best.hr</a
+                href="mailto:alen.jakupek.strbad@best.hr"
+                >alen.jakupek.strbad@best.hr</a
               >
               <br />
               Tel:
-              <a class="kontakt-sec__card-link" href="tel:+385995903943"
-                >+385 99 590 3943</a
+              <a class="kontakt-sec__card-link" href="tel:+385915806626"
+                >+385 91 580 6626</a
               >
             </p>
           </div>
@@ -1033,7 +947,7 @@
     </section>
 
     <section class="best-zg-sec" id="best-zg">
-      <div class="best-zg-sec__content box-content">
+      <div class="best-zg-sec__content">
         <div class="best-zg-sec__container">
           <h4>
             <a href="https://www.best.hr/" target="_blank">BEST Zagreb</a>

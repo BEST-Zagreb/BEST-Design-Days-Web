@@ -1,7 +1,10 @@
 /* ===== zasto bdd section ===== */
 
 .zasto-bdd-sec__content {
-  padding-block: min(1rem, 2vw);
+  margin: 0 auto;
+  max-width: 120rem;
+
+  padding: min(1rem, 2vw) min(5rem, 2vw);
 
   display: flex;
   align-items: center;

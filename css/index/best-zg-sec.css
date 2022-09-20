@@ -5,7 +5,10 @@
 }
 
 .best-zg-sec__content {
-  padding-block: min(1rem, 2vw);
+  margin: 0 auto;
+  max-width: 120rem;
+
+  padding: 1rem;
 
   display: flex;
   flex-wrap: wrap;
@@ -54,13 +57,13 @@
 }
 
 .best-zg-sec__social-svg {
-  height: min(15vw, 15rem);
+  height: clamp(6rem, 15vw, 15rem);
 
   transition: color 500ms ease-in-out;
   fill: whitesmoke;
 }
 
 .best-zg-sec__social-svg:hover,
-.best-zg-sec__social-icons > a:focus > svg {
+.best-zg-sec__social-svg:focus {
   fill: url("#svg-gradient");
 }

@@ -213,7 +213,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .flipdown {
     /* width: 312px; */
     height: 70px;
@@ -285,7 +285,7 @@
 }
 
 /* custom added for 3 digit days */
-@media screen and (max-width: 450px) {
+@media (max-width: 350px) {
   .flipdown .rotor,
   .flipdown .rotor-leaf,
   .flipdown .rotor-leaf-front,
@@ -294,13 +294,5 @@
   .flipdown .rotor-bottom,
   .flipdown .rotor:after {
     width: 20px;
-  }
-}
-
-@media screen and (max-width: 270px) {
-  .flipdown,
-  .flipdown * {
-    display: none;
-    height: 0;
   }
 }
