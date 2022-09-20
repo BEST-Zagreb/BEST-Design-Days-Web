@@ -1,12 +1,6 @@
 /* ===== kontakt section ===== */
 
 .kontakt-sec {
-  margin: 0 auto;
-
-  max-width: 120rem;
-  width: 100%;
-
-  padding-inline: min(5rem, 2vw);
   padding-block: 0 min(5rem, 10vw);
 }
 
@@ -18,10 +12,10 @@
 }
 
 .kontakt-sec__card {
-  margin: min(4rem, 2vw);
+  margin: min(2rem, 2vw);
 
   display: grid;
-  grid-template-columns: clamp(22rem, 25vw, 30rem);
+  grid-template-columns: clamp(18rem, 25vw, 30rem);
 
   grid-template-rows: min(25rem, 20vw) 15rem;
   grid-template-areas: "image" "text";
@@ -96,8 +90,8 @@
 .kontakt-sec__card-text-container {
   grid-area: text;
 
-  margin: 25px;
-  transform: translateZ(30px);
+  margin: clamp(1rem, 2vw, 3rem);
+  transform: translateZ(1rem);
 }
 
 .kontakt-sec__card-function {
@@ -147,7 +141,7 @@
 /*card3*/
 .kontakt-sec__card-3 > .kontakt-sec__card-image {
   background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
-    url("../../img/people/Ajs.jpg");
+    url("../../img/people/JJ.jpg");
   background-size: cover;
 }
 
@@ -157,13 +151,7 @@
   color: var(--pink-clr-light);
 }
 
-@media only screen and (max-width: 1280px) {
-  .kontakt-sec__card {
-    grid-template-rows: min(25rem, 20vw) 17rem;
-  }
-}
-
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
   .kontakt-sec__card {
     width: 80vw;
 
@@ -196,7 +184,7 @@
   /*card3*/
   .kontakt-sec__card-3 > .kontakt-sec__card-image {
     background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
-      url("../../img/people/Ajs.jpg");
+      url("../../img/people/JJ.jpg");
     background-size: cover;
   }
 }

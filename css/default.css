@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -13,6 +15,8 @@
   --pink-clr: #ba67ab;
   --pink-clr-light: #ffa6ef;
   --pink-clr-dark: #6e3163;
+  --white: white;
+  --whitesmoke: whitesmoke;
 
   --tricolor: linear-gradient(
     45deg,
@@ -122,16 +126,6 @@ a:focus {
 .hidden {
   display: none;
 }
-
-/* section {
-  padding: 0.5rem;
-}
-
-@media only screen and (min-width: 1550px) {
-  section {
-    padding-inline: 15%;
-  }
-} */
 
 hr {
   margin-block: 1.5rem;
