@@ -76,7 +76,7 @@
     <script src="js/libraries/vanilla-tilt.js" defer></script>
 
     <script type="text/javascript" src="js/default.js" defer></script>
-    <!-- <script type="text/javascript" src="js/nav.js" defer></script> -->
+    <script type="text/javascript" src="js/nav.js" defer></script>
 
     <script type="text/javascript" src="js/index.js" defer></script>
   </head>
@@ -92,33 +92,47 @@
       </defs>
     </svg>
 
-    <!-- <div class="primary-navigation">
-      <button
-        class="mobile-nav-toggle"
-        aria-controls="primary-nav"
-        aria-expanded="false"
-      ></button>
+    <!-- <nav data-expanded="false">
+      <a class="nav__logo" href="index.html#home">
+        <img src="img/logos/bdd_logo.png" alt="BEST_Design_Days_logo" />
+      </a>
 
-      <nav>
-        <a href="index.html#home">
-          <img
-            class="nav__logo"
-            src="img/logos/bdd_logo.png"
-            alt="BEST_Design_Days_logo"
+      <button class="nav__mobile-menu-btn">
+        <svg
+          class="nav__hamburger-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
           />
-        </a>
+        </svg>
 
-        <ul class="primary-nav" data-visible="false">
-          <li>
-            <a class="current-site" href="index.html#BDD">O projektu</a>
-          </li>
-          <li><a href="index.html#raspored">Raspored</a></li>
-          <li><a href="index.html#predavaci">Predavači</a></li>
-          <li class="hidden"><a href="#">Prijava</a></li>
-          <li><a href="index.html#kontakt">Kontakt</a></li>
-        </ul>
-      </nav>
-    </div> -->
+        <svg
+          class="nav__close-svg hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M162.7 210c-1.8 3.3-25.2 44.4-70.1 123.5-4.9 8.3-10.8 12.5-17.7 12.5H9.8c-7.7 0-12.1-7.5-8.5-14.4l69-121.3c.2 0 .2-.1 0-.3l-43.9-75.6c-4.3-7.8.3-14.1 8.5-14.1H100c7.3 0 13.3 4.1 18 12.2l44.7 77.5zM382.6 46.1l-144 253v.3L330.2 466c3.9 7.1.2 14.1-8.5 14.1h-65.2c-7.6 0-13.6-4-18-12.2l-92.4-168.5c3.3-5.8 51.5-90.8 144.8-255.2 4.6-8.1 10.4-12.2 17.5-12.2h65.7c8 0 12.3 6.7 8.5 14.1z"
+          />
+        </svg>
+      </button>
+
+      <ul class="nav__links">
+        <li>
+          <a href="#BDD" data-current-site>O projektu</a>
+        </li>
+        <hr />
+        <li><a href="#raspored">Raspored</a></li>
+        <hr />
+        <li><a href="#predavaci">Predavači</a></li>
+        <hr />
+        <li><a href="#kontakt">Kontakt</a></li>
+        <hr />
+        <li><a href="#home">Prijava</a></li>
+      </ul>
+    </nav> -->
 
     <section class="hero-sec" id="home">
       <div class="hero-sec__content-wrapper">
@@ -132,7 +146,14 @@
             </h1>
           </div>
 
-          <button class="hero-sec__prijava-btn" disabled>Prijave uskoro</button>
+          <button class="hero-sec__prijava-btn">
+            <a
+              href="https://forms.gle/Ffki5hZrpzjpcUuV7"
+              target="_blank"
+              tabindex="-1"
+              >Prijavi se</a
+            >
+          </button>
         </div>
       </div>
 
@@ -287,7 +308,7 @@
         </div>
 
         <div class="info-icons-sec__file-card">
-          <a href="#home" target="_self">
+          <a href="#home" target="_self" tabindex="-1">
             <svg
               class="info-icons-sec__form-svg"
               aria-hidden="true"
@@ -721,7 +742,7 @@
 
     <!-- <section class="organizatori-sec box-content" id="organizatori"></section> -->
 
-    <!-- <svg
+    <svg
       class="section-divider"
       viewBox="0 0 740 77"
       fill="none"
@@ -744,55 +765,70 @@
         transform="rotate(-0.711186 -31.7477 23.9795)"
         fill="#BA67AE"
       />
-    </svg> -->
+    </svg>
 
-    <!-- <section class="partneri-sec box-content" id="partneri">
-      <h3 id="partneri-header">Partneri projekta</h3>
-      <hr class="partneri-s__hr" />
-      <div
-        id="part-div"
-        class="gallery js-flickity"
-        data-flickity-options='{ "wrapAround": true, "draggable":false, "pageDots": false, "autoPlay": 3000 }'
-      >
-        <div id="partneri-div">
-          <a href="https://best.hr">
+    <section class="partneri-sec box-content" id="partneri">
+      <h3>Partneri projekta</h3>
+
+      <div class="partneri-sec__imgs-container">
+        <svg
+          class="partneri-sec__background-blob"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#000000"
+            d="M25.8,-41.5C37,-33.1,51.9,-31.8,57.3,-24.8C62.7,-17.8,58.5,-5,58.3,9.6C58.1,24.2,62,40.7,55.5,48C49,55.3,32.1,53.4,20.5,46C8.9,38.6,2.6,25.7,-11.4,27C-25.3,28.2,-46.8,43.7,-58.5,43.4C-70.2,43.1,-72.1,26.8,-67.2,14C-62.3,1.2,-50.6,-8.3,-47.1,-23.8C-43.6,-39.4,-48.4,-61,-41.9,-71.6C-35.4,-82.1,-17.7,-81.7,-5.2,-73.6C7.3,-65.6,14.7,-49.9,25.8,-41.5Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+
+        <div class="partneri-sec__grid">
+          <a href="https://bracopone.com/" target="_blank">
             <img
-              class="partner-img"
-              src="https://picsum.photos/400/200?random=1"
+              src="img/Partners/Project/BRACOPONE-logo.png"
+              alt="BRACOPONE partner logo"
+              loading="lazy"
             />
           </a>
         </div>
-        <div id="partneri-div">
-          <a href="https://best.hr">
+        <div class="partneri-sec__grid">
+          <a href="https://netgen.io/" target="_blank">
             <img
-              class="partner-img"
-              src="https://picsum.photos/400/200?random=2"
+              src="img/Partners/Project/Netgen-logo.svg"
+              alt="Netgen partner logo"
+              loading="lazy"
+            />
+          </a>
+
+          <a href="https://bruketa-zinic.com/hr/" target="_blank">
+            <img
+              src="img/Partners/Project/BZG/BZG-logo-3-rgb.png"
+              alt="Bruketa&Žinić&Grey partner logo"
+              loading="lazy"
             />
           </a>
         </div>
-        <div id="partneri-div">
-          <a href="https://best.hr">
-            <img class="partner-img" src="img/logos/bdd_logo.png" />
-          </a>
-        </div>
-        <div id="partneri-div">
-          <a href="https://best.hr">
+        <div class="partneri-sec__grid">
+          <a href="https://macan.hr/" target="_blank">
             <img
-              class="partner-img"
-              src="https://picsum.photos/400/200?random=4"
+              src="img/Partners/Project/Macan-logo.png"
+              alt="Macan partner logo"
+              loading="lazy"
             />
           </a>
         </div>
-        <div id="partneri-div">
-          <a href="https://best.hr">
+        <div class="partneri-sec__grid">
+          <a href="https://five.agency/" target="_blank">
             <img
-              class="partner-img"
-              src="https://picsum.photos/400/200?random=5"
+              src="img/Partners/Project/FIVE/FIVE-logo-black-highres.png"
+              alt="FIVE partner logo"
+              loading="lazy"
             />
           </a>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <svg
       class="section-divider"
@@ -820,115 +856,101 @@
     </svg>
 
     <section class="godisnji-partneri-sec box-content">
-      <div>
-        <h3>Godišnji partneri</h3>
-      </div>
+      <h3>Godišnji partneri</h3>
 
       <div class="godisnji-partneri-sec__slider-wrapper">
         <div class="godisnji-partneri-sec__slider">
           <div class="godisnji-partneri-sec__slide">
             <a href="https://best.hr/partneri/vertiv/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/Vertiv-logo.png"
+                src="img/Partners/Annual/Vertiv-logo.png"
                 alt="Vertiv partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
             <a href="https://best.hr/partneri/deegloo/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/Deegloo-logo.png"
+                src="img/Partners/Annual/Deegloo-logo.png"
                 alt="Degloo partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
 
             <a href="https://best.hr/partneri/microblink/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/Microblink-logo.gif"
+                src="img/Partners/Annual/Microblink-logo.gif"
                 alt="Microblink partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
 
             <a href="https://best.hr/partneri/optimoroute/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/OptimoRoute-logo.png"
+                src="img/Partners/Annual/OptimoRoute-logo.png"
                 alt="OptimoRoute partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
-            <a href="https://best.hr/partneri/photomath/" target="_blank">
+            <a href="https://best.hr/partneri/bracopone/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/Photomath-logo.png"
-                alt="Photomath partner logo"
+                src="img/Partners/Annual/BRACOPONE-logo.png"
+                alt="BRACOPONE partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
 
             <a href="https://best.hr/partneri/reversinglabs/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/ReversingLabs-logo.png"
+                src="img/Partners/Annual/ReversingLabs-logo.png"
                 alt="ReversingLabs partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
           </div>
           <div class="godisnji-partneri-sec__slide">
             <a href="https://best.hr/partneri/vertiv/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/Vertiv-logo.png"
+                src="img/Partners/Annual/Vertiv-logo.png"
                 alt="Vertiv partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
             <a href="https://best.hr/partneri/deegloo/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/Deegloo-logo.png"
+                src="img/Partners/Annual/Deegloo-logo.png"
                 alt="Degloo partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
 
             <a href="https://best.hr/partneri/microblink/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/Microblink-logo.gif"
+                src="img/Partners/Annual/Microblink-logo.gif"
                 alt="Microblink partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
 
             <a href="https://best.hr/partneri/optimoroute/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/OptimoRoute-logo.png"
+                src="img/Partners/Annual/OptimoRoute-logo.png"
                 alt="OptimoRoute partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
             <a href="https://best.hr/partneri/photomath/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/Photomath-logo.png"
+                src="img/Partners/Annual/Photomath-logo.png"
                 alt="Photomath partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
 
             <a href="https://best.hr/partneri/reversinglabs/" target="_blank">
               <img
-                src="img/partners/BEST Zagreb/ReversingLabs-logo.png"
+                src="img/Partners/Annual/ReversingLabs-logo.png"
                 alt="ReversingLabs partner logo"
                 loading="lazy"
-                data-disable-lightbox="true"
               />
             </a>
           </div>

@@ -20,7 +20,8 @@
 
 .zasto-bdd-sec__ul {
   list-style-type: circle;
-  list-style-position: outside;
+
+  padding-left: clamp(1.25rem, 6vw, 3rem);
 }
 
 .zasto-bdd-sec__bdd-pink {

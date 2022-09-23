@@ -38,6 +38,56 @@ backToTopBtn.addEventListener("click", () => {
   document.body.scrollIntoView();
 });
 
+// Nav
+const nav = document.querySelector("nav");
+const navToggle = document.querySelector(".nav__mobile-menu-btn");
+const menuHamburgerSvg = document.querySelector(".nav__hamburger-svg");
+const menuCloseSvg = document.querySelector(".nav__close-svg");
+
+const navLinks = document.querySelectorAll(".nav__links > li > a");
+
+// TODO: change data-current-site when scrolling with intersection observers
+
+function toggleNav() {
+  const navExpanded = nav.getAttribute("data-expanded");
+  if (navExpanded === "false") {
+    nav.setAttribute("data-expanded", "true");
+
+    menuHamburgerSvg.classList.add("hidden");
+    menuCloseSvg.classList.remove("hidden");
+  } else {
+    nav.setAttribute("data-expanded", "false");
+
+    menuCloseSvg.classList.add("hidden");
+    menuHamburgerSvg.classList.remove("hidden");
+  }
+}
+
+// close nav when clicked on close (X)
+navToggle.addEventListener("click", () => {
+  toggleNav();
+});
+
+// close nav when clicked on link (for links that go to sections)
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    toggleNav();
+  });
+});
+
+// close nav when clicked outside nav
+window.addEventListener("click", function (e) {
+  const navExpanded = nav.getAttribute("data-expanded");
+
+  if (
+    navExpanded === "true" &&
+    !nav.contains(e.target) &&
+    !navToggle.contains(e.target)
+  ) {
+    toggleNav();
+  }
+});
+
 document.addEventListener("scroll", () => {
   const scrolledPercentage =
     (scrollContainer().scrollTop /
@@ -56,4 +106,6 @@ document.addEventListener("scroll", () => {
 
   backgroundElement.style.top = -scrolledPercentage / 4 + "%";
   backgroundElement.style.left = -scrolledPercentage / 2 + "%";
+
+  nav.setAttribute("data-scrolled", "true");
 });
