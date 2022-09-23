@@ -66,6 +66,16 @@
     swell 9s ease -1.25s infinite;
 }
 
+@media (prefers-reduced-motion) {
+  .wave {
+    animation: none;
+  }
+
+  .wave:nth-of-type(2) {
+    animation: none;
+  }
+}
+
 @keyframes wave {
   0% {
     margin-left: 0;
