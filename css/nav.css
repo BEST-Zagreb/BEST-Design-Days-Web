@@ -15,12 +15,11 @@ nav {
   padding-inline: 5vw;
   padding-block: max(0.75vw, 0.75rem);
 
-  /* added in js */
   background-color: transparent;
   backdrop-filter: blur(3rem);
   border-radius: 0 0 7rem 3rem / 0 0 1.5rem 1rem;
 
-  transition: max-height, background-color 200ms ease-in-out;
+  transition: max-height 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 nav[data-scrolled] {
@@ -45,14 +44,13 @@ nav[data-scrolled] {
 
 .nav__links > li {
   list-style-type: none;
-}
 
-.nav__links > li {
   transition: transform 200ms ease-in-out;
 }
 
 .nav__links > li:hover,
-.nav__links > li:focus {
+.nav__links > li:focus,
+.nav__links > li[data-current-site] {
   transform: scale(1.1);
 }
 
@@ -70,15 +68,13 @@ nav[data-scrolled] {
     "Lucida Sans", Arial, sans-serif;
 }
 
-.nav__links > li > a:hover,
-.nav__links > li > a:focus {
-  color: var(--pink-clr-light);
+.nav__links > li[data-current-site] > a {
+  color: var(--pink-clr);
 }
 
-.nav__links > li [data-current-site] {
-  color: var(--pink-clr);
-  font-size: min(2rem, 2.5vw);
-  font-weight: 900;
+.nav__links > li:hover > a,
+.nav__links > li:focus > a {
+  color: var(--pink-clr-light);
 }
 
 .nav__links > hr {
@@ -89,8 +85,6 @@ nav[data-scrolled] {
 
 @media screen and (max-width: 600px) {
   nav {
-    max-height: var(--nav-height);
-
     padding-inline: 5vw;
 
     border-radius: 0 0 5vw 3vw/ 0 0 3vw 2vw;
@@ -126,21 +120,16 @@ nav[data-scrolled] {
 
   .nav__links > li {
     width: 100%;
-  }
-
-  .nav__links > li:hover,
-  .nav__links > li:focus {
-    transform: none;
-  }
-
-  .nav__links > li > a {
     margin-left: 3vw;
 
     transition: margin-left 200ms ease-in-out;
   }
 
-  .nav__links > li > a:hover,
-  .nav__links > li > a:focus {
+  .nav__links > li:hover,
+  .nav__links > li:focus,
+  .nav__links > li[data-current-site] {
+    transform: none;
+
     margin-left: 4vw;
   }
 

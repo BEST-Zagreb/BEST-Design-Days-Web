@@ -1,3 +1,42 @@
+// ===== nav intersection observers =====
+
+const navIntersectionUl = document.querySelectorAll(".nav__links > li");
+let currentListItem = null;
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // console.log(entry.target);
+
+        let currentSection = entry.target.getAttribute("id");
+
+        // go through all nav items
+        navIntersectionUl.forEach((listItem) => {
+          if (
+            listItem.firstChild.getAttribute("href") ===
+            "#" + currentSection
+          ) {
+            console.log(listItem.firstChild.getAttribute("href"));
+            // remove current-site attribute from last current nav item
+            if (currentListItem)
+              currentListItem.removeAttribute("data-current-site");
+
+            // add current-site attribute to current nav item
+            listItem.setAttribute("data-current-site", "");
+            currentListItem = listItem;
+          }
+        });
+      }
+    });
+  },
+  { threshold: 0.75 }
+);
+
+document.querySelectorAll("section").forEach((section) => {
+  sectionObserver.observe(section);
+});
+
 // ===== hero sections flipdown =====
 
 // Unix timestamp (in seconds) to count down to
