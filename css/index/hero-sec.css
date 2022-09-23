@@ -17,12 +17,13 @@
 .hero-sec__content {
   margin-right: 6vw;
 
-  padding-top: min(4rem, 2vw, 2vh);
-  padding-bottom: min(3.5rem, 12vw, 12vh);
+  /* padding-top: ; */
+  /* padding-bottom: min(3.5rem, 12vw, 12vh); */
 }
 
 .hero-sec__bdd-heading {
   font-size: clamp(3.5rem, 2rem + 4vw + 1vh, 12rem);
+  margin-top: calc(var(--nav-height) + 1rem);
   margin-bottom: 4vh;
 
   font-family: "Zen Tokyo Zoo", "Gill Sans", "Gill Sans MT", Calibri,
@@ -53,6 +54,10 @@
   transition: box-shadow 250ms;
 }
 
+.hero-sec__prijava-btn > a {
+  text-decoration: none;
+}
+
 .hero-sec__prijava-btn:disabled {
   opacity: 0.4;
   cursor: default;
@@ -60,9 +65,13 @@
 
 .hero-sec__prijava-btn:enabled:hover,
 .hero-sec__prijava-btn:enabled:focus {
-  color: whitesmoke;
   box-shadow: 0 0 0 0 var(--blue-clr-light),
     inset 6em 3.5em 0 0 var(--blue-clr-light);
+}
+
+.hero-sec__prijava-btn:enabled:hover > a,
+.hero-sec__prijava-btn:enabled:focus > a {
+  color: whitesmoke;
 }
 
 .hero-sec__prijava-btn:disabled:hover,

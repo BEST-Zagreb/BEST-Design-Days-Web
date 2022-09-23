@@ -297,7 +297,7 @@
   }
 }
 
-@media screen and (max-width: 270px) {
+@media screen and (max-width: 255px) {
   .flipdown,
   .flipdown * {
     display: none;

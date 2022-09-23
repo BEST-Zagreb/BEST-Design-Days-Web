@@ -30,7 +30,7 @@
 
   --bg-clr-dark: #252525;
 
-  --nav-height: calc(1.5rem * 2 + 5rem);
+  --nav-height: clamp(2.5rem, 10vw, 6.5rem);
 }
 
 html {
@@ -87,12 +87,15 @@ h2 {
 
 /* names of sections */
 h3 {
-  padding-block: 1rem;
+  margin-block: 1rem;
 
   font-size: min(3rem, 5vw);
 
   text-transform: uppercase;
   color: var(--blue-clr);
+
+  width: max-content;
+  border-bottom: 2px solid var(--blue-clr);
 }
 
 /* names of subsections */
@@ -125,8 +128,4 @@ a:focus {
 
 .hidden {
   display: none;
-}
-
-hr {
-  margin-block: 1.5rem;
 }
