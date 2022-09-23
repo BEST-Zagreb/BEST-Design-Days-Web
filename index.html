@@ -50,11 +50,11 @@
     <link href="css/index/bdd-sec.css" rel="stylesheet" />
     <link href="css/index/info-icons-sec.css" rel="stylesheet" />
     <link href="css/index/zasto-bdd-sec.css" rel="stylesheet" />
-    <link href="css/index/raspored-sec.css" rel="stylesheet" />
-    <link href="css/index/predavaci-sec.css" rel="stylesheet" />
-    <link href="css/index/faq-sec.css" rel="stylesheet" />
-    <link href="css/index/galerija-sec.css" rel="stylesheet" />
-    <link href="css/index/organizatori-sec.css" rel="stylesheet" />
+    <!-- <link href="css/index/raspored-sec.css" rel="stylesheet" /> -->
+    <!-- <link href="css/index/predavaci-sec.css" rel="stylesheet" /> -->
+    <!-- <link href="css/index/faq-sec.css" rel="stylesheet" /> -->
+    <!-- <link href="css/index/galerija-sec.css" rel="stylesheet" /> -->
+    <!-- <link href="css/index/organizatori-sec.css" rel="stylesheet" /> -->
     <link href="css/index/partneri-sec.css" rel="stylesheet" />
     <link href="css/index/god-partneri-sec.css" rel="stylesheet" />
     <link href="css/index/kontakt-sec.css" rel="stylesheet" />
@@ -76,7 +76,6 @@
     <script src="js/libraries/vanilla-tilt.js" defer></script>
 
     <script type="text/javascript" src="js/default.js" defer></script>
-    <script type="text/javascript" src="js/nav.js" defer></script>
 
     <script type="text/javascript" src="js/index.js" defer></script>
   </head>
@@ -92,7 +91,7 @@
       </defs>
     </svg>
 
-    <!-- <nav data-expanded="false">
+    <nav data-expanded="false">
       <a class="nav__logo" href="index.html#home">
         <img src="img/logos/bdd_logo.png" alt="BEST_Design_Days_logo" />
       </a>
@@ -120,19 +119,13 @@
       </button>
 
       <ul class="nav__links">
-        <li>
-          <a href="#BDD" data-current-site>O projektu</a>
-        </li>
+        <li tabindex="0"><a href="#home" tabindex="-1">Prijava</a></li>
         <hr />
-        <li><a href="#raspored">Raspored</a></li>
+        <li tabindex="0"><a href="#BDD" tabindex="-1">O projektu</a></li>
         <hr />
-        <li><a href="#predavaci">Predavači</a></li>
-        <hr />
-        <li><a href="#kontakt">Kontakt</a></li>
-        <hr />
-        <li><a href="#home">Prijava</a></li>
+        <li tabindex="0"><a href="#kontakt" tabindex="-1">Kontakt</a></li>
       </ul>
-    </nav> -->
+    </nav>
 
     <section class="hero-sec" id="home">
       <div class="hero-sec__content-wrapper">
