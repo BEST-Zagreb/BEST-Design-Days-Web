@@ -117,50 +117,114 @@ fetch("../data/aktivnosti.json")
     console.error(err);
   });
 
-// ===== annual partners carousel =====
+// ===== BDD partners json data import =====
 
-const slideElement = document.querySelector(".godisnji-partneri-sec__slide");
-const slideImg = document.querySelectorAll(
-  ".godisnji-partneri-sec__slide > a > img"
+const partnerTemplate = document.querySelector("[data-partner-template]");
+
+const partnerImgsContainer = document.querySelector(
+  ".partneri-sec__imgs-container"
 );
+const annualPartnersCarousel = document.querySelector(
+  ".godisnji-partneri-sec__slider"
+);
+
+fetch("../data/partneri.json")
+  .then((res) => res.json())
+  .then((data) => {
+    // add project partners
+    Object.values(data.BDD).forEach((partnerLevel) => {
+      const partnerRow = document.createElement("div");
+      // each partner level in seperate row
+      partnerLevel.forEach((partner) => {
+        const partnerElement =
+          partnerTemplate.content.cloneNode(true).children[0];
+        partnerElement.setAttribute("href", partner.linkUrl);
+        partnerElement.firstElementChild.setAttribute("src", partner.imgUrl);
+        partnerElement.firstElementChild.setAttribute(
+          "alt",
+          partner.naziv + " partner logo"
+        );
+        partnerRow.append(partnerElement);
+      });
+      partnerImgsContainer.append(partnerRow);
+    });
+
+    // add annual partners
+    const partnersSlide = document.createElement("div");
+    partnersSlide.classList.add("godisnji-partneri-sec__slide");
+    Object.values(
+      data.godisnji.map((partner) => {
+        const partnerElement =
+          partnerTemplate.content.cloneNode(true).children[0];
+        partnerElement.setAttribute("href", partner.linkUrl);
+        partnerElement.firstElementChild.setAttribute("src", partner.imgUrl);
+        partnerElement.firstElementChild.setAttribute(
+          "alt",
+          partner.naziv + " partner logo"
+        );
+        partnersSlide.append(partnerElement);
+      })
+    );
+
+    // 2 puta zbog nacina na koji carousel radi
+    annualPartnersCarousel.append(partnersSlide);
+    annualPartnersCarousel.append(partnersSlide.cloneNode(true));
+  })
+  .then(() => {
+    // ===== annual partners carousel =====
+    const slideElement = document.querySelector(
+      ".godisnji-partneri-sec__slide"
+    );
+    const slideImg = document.querySelectorAll(
+      ".godisnji-partneri-sec__slide > a > img"
+    );
+
+    slideElement.style.transition = "all " + slideDuration + "ms" + " ease-out";
+
+    setInterval(() => {
+      slideElement.style.marginLeft =
+        "-" +
+        numberOfItemsToSlide *
+          counter *
+          slideImg[0].getBoundingClientRect().width +
+        "px";
+
+      counter++;
+    }, pauseDuration + 50);
+
+    slideElement.addEventListener("transitionend", () => {
+      // needs to be bigger or equal (not just equal) because of some bug
+      if (counter >= slideImg.length / 2 / numberOfItemsToSlide + 1) {
+        // set slide to start
+        slideElement.style.transitionDuration = "1ms";
+        slideElement.style.marginLeft = "0px";
+
+        counter = 1; // reset counter
+      } else {
+        slideElement.style.transitionDuration = slideDuration + "ms";
+      }
+    });
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+// ===== annual partners carousel =====
 
 let counter = 1; // for seamless infinite sliding
 
 let numberOfItemsToSlide = 2; // must be <= number of items in carousel
 let slideDuration = 1500; // in miliseconds
-let pauseDuration = 2500; // must be >= slideDuration, in miliseconds
+let pauseDuration = 3500; // must be >= slideDuration, in miliseconds
 
 if (window.matchMedia("(max-width: 450px)").matches) {
   numberOfItemsToSlide = 1; // must be <= number of items in carousel
   slideDuration = 750; // in miliseconds
-  pauseDuration = 1500; // must be >= slideDuration, in miliseconds
+  pauseDuration = 2500; // must be >= slideDuration, in miliseconds
 }
 
-slideElement.style.transition = "all " + slideDuration + "ms" + " ease-out";
-
-setInterval(() => {
-  slideElement.style.marginLeft =
-    "-" +
-    numberOfItemsToSlide * counter * slideImg[0].getBoundingClientRect().width +
-    "px";
-
-  counter++;
-}, pauseDuration + 50);
-
-slideElement.addEventListener("transitionend", () => {
-  // needs to be bigger or equal (not just equal) because of some bug
-  if (counter >= slideImg.length / 2 / numberOfItemsToSlide + 1) {
-    // set slide to start
-    slideElement.style.transitionDuration = "1ms";
-    slideElement.style.marginLeft = "0px";
-
-    counter = 1; // reset counter
-  } else {
-    slideElement.style.transitionDuration = slideDuration + "ms";
-  }
-});
-
 // ===== contact sections cards tilt =====
+
 function isTouchDevice() {
   return (
     "ontouchstart" in window ||
