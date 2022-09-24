@@ -65,13 +65,12 @@
 
   padding-inline: min(2rem, 2vw);
 
-  -webkit-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
 }
 
 .godisnji-partneri-sec__slide > a > img:hover,
 .godisnji-partneri-sec__slide > a > img:focus {
-  transform: scale(1.1);
+  filter: opacity(0.3);
 }
 
 @media screen and (max-width: 1440px) {

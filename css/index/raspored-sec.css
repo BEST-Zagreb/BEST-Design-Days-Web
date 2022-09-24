@@ -16,6 +16,8 @@
 
 .raspored-sec__table td,
 .raspored-sec__table th {
+  padding: min(0.5vw, 0.75rem);
+
   border: 2px solid;
 }
 
