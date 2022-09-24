@@ -56,7 +56,7 @@ nav[data-scrolled] {
 
 .nav__links > li > a {
   font-weight: 700;
-  font-size: min(1.5rem, 2vw);
+  font-size: min(1.75rem, 4.375vw);
 
   color: var(--blue-clr);
   text-decoration: none;
