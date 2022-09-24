@@ -1,0 +1,72 @@
+[
+  {
+    "datum": "17.10.2022.",
+    "vrijeme": "16:00",
+    "predavac": "",
+    "predavacImgUrl": "",
+    "tema": "Službeno otvaranje"
+  },
+  {
+    "datum": "17.10.2022.",
+    "vrijeme": "18:00",
+    "predavac": "Five agency",
+    "predavacImgUrl": "",
+    "tema": "Tips and tricks za uspješan start projekta"
+  },
+  {
+    "datum": "18.10.2022.",
+    "vrijeme": "17:00",
+    "predavac": "Jasenka Bibernik",
+    "predavacImgUrl": "",
+    "tema": "Life centered design"
+  },
+  {
+    "datum": "18.10.2022.",
+    "vrijeme": "18:00",
+    "predavac": "Atlantis Digital (Ljubiša Kukulj)",
+    "predavacImgUrl": "",
+    "tema": "Introduction to UX"
+  },
+  {
+    "datum": "19.10.2022.",
+    "vrijeme": "15:00",
+    "predavac": "Holofiction (Filip Šarić)",
+    "predavacImgUrl": "",
+    "tema": "Multimedija budućnosti"
+  },
+  {
+    "datum": "19.10.2022.",
+    "vrijeme": "16:00",
+    "predavac": "Tomislav Stipančić",
+    "predavacImgUrl": "",
+    "tema": "Cognitive robotics meets design"
+  },
+  {
+    "datum": "19.10.2022.",
+    "vrijeme": "18:00",
+    "predavac": "Dizajnerica.hr (Ivana Ivanušec)",
+    "predavacImgUrl": "",
+    "tema": "Moćno oružje u rukama (ne)odgovornog pojedinca"
+  },
+  {
+    "datum": "21.10.2022.",
+    "vrijeme": "16:00",
+    "predavac": "",
+    "predavacImgUrl": "",
+    "tema": "Case Study Prezentacije rješenja"
+  },
+  {
+    "datum": "21.10.2022.",
+    "vrijeme": "18:00",
+    "predavac": "",
+    "predavacImgUrl": "",
+    "tema": "Case Study Ocjenjivanje"
+  },
+  {
+    "datum": "21.10.2022.",
+    "vrijeme": "19:00",
+    "predavac": "",
+    "predavacImgUrl": "",
+    "tema": "Službeno zatvaranje"
+  }
+]
