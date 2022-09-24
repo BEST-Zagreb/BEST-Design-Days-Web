@@ -75,7 +75,7 @@ h1 {
 
 /* subtitle */
 h2 {
-  margin: 0.75rem;
+  margin: min(1.5vw, 0.75rem);
 
   font-size: min(10rem, 12vw);
 
@@ -87,7 +87,7 @@ h2 {
 
 /* names of sections */
 h3 {
-  margin-block: 1rem;
+  margin-block: min(2vw, 1rem);
 
   font-size: min(3rem, 5vw);
 
@@ -98,18 +98,17 @@ h3 {
   border-bottom: 2px solid var(--blue-clr);
 }
 
-/* names of subsections */
 h4 {
-  padding-block: 1.25rem 0.5rem;
+  padding: min(1vw, 1.25rem) min(0.75vw, 0.75rem);
 
   font-size: min(1.75rem, 4.375vw);
 
-  color: var(--blue-clr);
+  color: var(--whitesmoke);
 }
 
 p,
 li {
-  padding-block: 0.25rem;
+  padding-block: min(0.5vw, 0.25rem);
 
   font-size: min(1.375rem, 3.75vw);
 

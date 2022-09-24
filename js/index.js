@@ -1,4 +1,4 @@
-// ===== nav intersection observers =====
+// ===== nav sections intersection observers =====
 
 const navIntersectionUl = document.querySelectorAll(".nav__links > li");
 let currentListItem = null;
@@ -17,7 +17,6 @@ const sectionObserver = new IntersectionObserver(
             listItem.firstChild.getAttribute("href") ===
             "#" + currentSection
           ) {
-            console.log(listItem.firstChild.getAttribute("href"));
             // remove current-site attribute from last current nav item
             if (currentListItem)
               currentListItem.removeAttribute("data-current-site");
@@ -54,6 +53,69 @@ flipdown.start();
 flipdown.ifEnded(() => {
   console.log("Event ended!");
 });
+
+// ===== raspored json data import =====
+
+const rasporedTrTemplate = document.querySelector("[data-raspored-template]");
+const rasporedTable = document.querySelector(".raspored-sec__table");
+
+const daniUTjednu = [
+  "Nedjelja",
+  "Ponedjeljak",
+  "Utorak",
+  "Srijeda",
+  "Četvrtak",
+  "Petak",
+  "Subota",
+];
+function parseDateFormat(dateHrv) {
+  // formatira datum iz DD.MM.YYYY. u YYYY, MM, DD za new Date() funkciju
+  const dan = dateHrv.split(".")[0];
+  const mjesec = dateHrv.split(".")[1];
+  const godina = dateHrv.split(".")[2];
+
+  return godina + ", " + mjesec + ", " + dan;
+}
+
+fetch("../data/aktivnosti.json")
+  .then((res) => res.json())
+  .then((data) => {
+    data.map((aktivnost) => {
+      const rasporedTrElement =
+        rasporedTrTemplate.content.cloneNode(true).children[0];
+
+      const rasporedDatumElement = rasporedTrElement.querySelector(
+        ".raspored-sec__datum"
+      );
+      const rasporedVrijemeElement = rasporedTrElement.querySelector(
+        ".raspored-sec__vrijeme"
+      );
+      const rasporedAktivnostElement = rasporedTrElement.querySelector(
+        ".raspored-sec__aktivnost"
+      );
+
+      rasporedDatumElement.firstChild.textContent =
+        daniUTjednu[new Date(parseDateFormat(aktivnost.datum)).getDay()] +
+        " " +
+        aktivnost.datum;
+      rasporedVrijemeElement.firstChild.textContent = aktivnost.vrijeme;
+      rasporedAktivnostElement.firstChild.textContent = aktivnost.predavac
+        ? aktivnost.predavac + " - " + aktivnost.tema
+        : aktivnost.tema;
+
+      rasporedTable.append(rasporedTrElement);
+    });
+  })
+  .then(() => {
+    // if url with specified contact section (#raspored)
+    if (window.location.hash.split("#")[1] === "raspored")
+      document
+        .querySelector('[id="' + window.location.hash.split("#")[1] + '"]')
+        .scrollIntoView(true);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
 // ===== annual partners carousel =====
 

@@ -50,7 +50,7 @@
     <link href="css/index/bdd-sec.css" rel="stylesheet" />
     <link href="css/index/info-icons-sec.css" rel="stylesheet" />
     <link href="css/index/zasto-bdd-sec.css" rel="stylesheet" />
-    <!-- <link href="css/index/raspored-sec.css" rel="stylesheet" /> -->
+    <link href="css/index/raspored-sec.css" rel="stylesheet" />
     <!-- <link href="css/index/predavaci-sec.css" rel="stylesheet" /> -->
     <!-- <link href="css/index/faq-sec.css" rel="stylesheet" /> -->
     <!-- <link href="css/index/galerija-sec.css" rel="stylesheet" /> -->
@@ -122,6 +122,8 @@
         <li tabindex="0"><a href="#home" tabindex="-1">Prijava</a></li>
         <hr />
         <li tabindex="0"><a href="#BDD" tabindex="-1">O projektu</a></li>
+        <hr />
+        <li tabindex="0"><a href="#raspored" tabindex="-1">Raspored</a></li>
         <hr />
         <li tabindex="0"><a href="#kontakt" tabindex="-1">Kontakt</a></li>
       </ul>
@@ -532,98 +534,52 @@
       </div>
     </section>
 
-    <!-- <section class="raspored-sec box-content" id="raspored">
-      <div class="text-container">
-        <h3>Raspored</h3>
-        <hr class="line-header" />
-        <table class="schedule">
-          <tr class="schedule-column">
-            <th class="small-col">DATUM</th>
-            <th class="small-col">VRIJEME</th>
-            <th class="big-col">EVENT</th>
+    <svg
+      class="section-divider"
+      viewBox="0 0 740 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-23.1638"
+        width="804"
+        height="37"
+        transform="rotate(2.84461 -23.1638 0)"
+        fill="#BA67AE"
+        fill-opacity="0.2"
+      />
+      <rect
+        opacity="0.5"
+        x="-31.7477"
+        y="23.9795"
+        width="804"
+        height="38.4828"
+        transform="rotate(-0.711186 -31.7477 23.9795)"
+        fill="#BA67AE"
+      />
+    </svg>
+
+    <section class="raspored-sec box-content" id="raspored">
+      <h3>Raspored</h3>
+
+      <div class="raspored-sec__table-wrapper">
+        <table class="raspored-sec__table">
+          <tr class="raspored-sec__th-row">
+            <th><h4>Datum</h4></th>
+            <th><h4>Vrijeme</h4></th>
+            <th><h4>Aktivnost</h4></th>
           </tr>
-          <tr class="column">
-            <td>29. 6. 2022. ponedjeljak</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>
-              Koncert Mladen GrdovićKoncert Mladen GrdovićKoncert Mladen
-              GrdovićKoncert Mladen GrdovićKoncert Mladen GrdovićKoncert Mladen
-              Grdović
-            </td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
-          <tr class="column">
-            <td>29. 6. 2022.</td>
-            <td>12 : 30</td>
-            <td>Koncert Mladen Grdović</td>
-          </tr>
+
+          <template data-raspored-template>
+            <tr>
+              <td class="raspored-sec__datum"><p></p></td>
+              <td class="raspored-sec__vrijeme"><p></p></td>
+              <td class="raspored-sec__aktivnost"><p></p></td>
+            </tr>
+          </template>
         </table>
       </div>
-    </section> -->
+    </section>
 
     <!-- <svg
       class="section-divider"
@@ -648,9 +604,9 @@
         transform="rotate(-0.711186 -31.7477 23.9795)"
         fill="#BA67AE"
       />
-    </svg> -->
+    </svg>
 
-    <!-- <template id="predavaci-template">
+   <template id="predavaci-template">
           <div id="predavaci-div">
             <img class="predavaci-img" src=""></img> 
             <div id="predavaci-name"></div>
