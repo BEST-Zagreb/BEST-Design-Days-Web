@@ -155,13 +155,6 @@ fetch("./data/aktivnosti.json")
 
     movePredavaciCarousel();
   })
-  .then(() => {
-    // if url with specified section (#something)
-    if (sectionsIds.includes(window.location.hash.split("#")[1]))
-      document
-        .querySelector('[id="' + window.location.hash.split("#")[1] + '"]')
-        .scrollIntoView(true);
-  })
   .catch((err) => {
     console.error(err);
   });

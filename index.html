@@ -81,7 +81,7 @@
     </svg>
 
     <nav data-expanded="false">
-      <a class="nav__logo" href="index.html#home">
+      <a class="nav__logo" href="index.html">
         <img src="img/logos/bdd_logo.png" alt="BEST_Design_Days_logo" />
       </a>
 
@@ -113,10 +113,17 @@
         <li tabindex="0"><a href="#BDD" tabindex="-1">O projektu</a></li>
         <hr />
         <li tabindex="0"><a href="#raspored" tabindex="-1">Raspored</a></li>
-        <hr />
-        <li tabindex="0"><a href="#predavaci" tabindex="-1">Predavači</a></li>
+        <!-- <hr />
+        <li tabindex="0">
+          <a href="#predavaci" tabindex="-1">Predavači</a>
+        </li> -->
         <hr />
         <li tabindex="0"><a href="#kontakt" tabindex="-1">Kontakt</a></li>
+
+        <!-- <hr />
+        <li tabindex="0">
+          <a href="galerija.html" tabindex="-1">Galerija</a>
+        </li> -->
       </ul>
     </nav>
 
@@ -572,23 +579,6 @@
       </div>
     </section>
 
-    <template data-predavac-template>
-      <div class="predavaci-sec__card">
-        <div class="predavaci-sec__img-container">
-          <img
-            src="./img/questionmark-icon.svg"
-            alt=""
-            loading="lazy"
-            title=""
-          />
-        </div>
-        <div class="predavaci-sec__text-container">
-          <h4></h4>
-          <h5></h5>
-        </div>
-      </div>
-    </template>
-
     <section class="predavaci-sec box-content hidden" id="predavaci">
       <h3>Predavači</h3>
 
@@ -609,7 +599,24 @@
         </button>
 
         <div class="predavaci-sec__cards-container">
-          <div class="predavaci-sec__cards"></div>
+          <div class="predavaci-sec__cards">
+            <template data-predavac-template>
+              <div class="predavaci-sec__card">
+                <div class="predavaci-sec__img-container">
+                  <img
+                    src="./img/questionmark-icon.svg"
+                    alt=""
+                    loading="lazy"
+                    title=""
+                  />
+                </div>
+                <div class="predavaci-sec__text-container">
+                  <h4></h4>
+                  <h5></h5>
+                </div>
+              </div>
+            </template>
+          </div>
         </div>
       </div>
     </section>
