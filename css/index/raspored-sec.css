@@ -29,3 +29,7 @@
 .raspored-sec__table td {
   border-color: var(--pink-clr);
 }
+
+.raspored-sec__th-row > th > h4 {
+  color: var(--whitesmoke);
+}
