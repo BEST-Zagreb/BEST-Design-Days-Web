@@ -384,7 +384,7 @@ fetch("./data/organizacijskiTim.json")
         );
 
         let kontaktImageGradient = null;
-        if (window.matchMedia("(max-width: 768px)").matches) {
+        if (window.matchMedia("(max-width: 960px)").matches) {
           kontaktImageGradient =
             "linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%)";
         } else {

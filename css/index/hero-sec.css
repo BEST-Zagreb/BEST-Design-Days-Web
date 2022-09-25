@@ -88,13 +88,13 @@
     transform: scaleX(1);
   }
   45% {
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale(1.1);
   }
   50% {
     transform: scaleX(1);
   }
   55% {
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale(1.1);
   }
   60% {
     transform: scaleX(1);

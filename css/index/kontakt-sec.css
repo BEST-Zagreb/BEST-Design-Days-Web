@@ -99,7 +99,7 @@
 .kontakt-sec__card-text-container {
   grid-area: text;
 
-  margin: clamp(1rem, 2vw, 3rem);
+  margin: min(3vw, 1.5rem);
   transform: translateZ(1rem);
 }
 
@@ -147,6 +147,8 @@
   }
 
   .kontakt-sec__card-image {
+    background-position: center;
+
     float: left;
     width: 40%;
 
@@ -158,9 +160,7 @@
 
 @media screen and (max-width: 450px) {
   .kontakt-sec__card {
-    width: 80%;
-
-    display: flex;
+    width: 75%;
   }
 
   .kontakt-sec__card-image {
