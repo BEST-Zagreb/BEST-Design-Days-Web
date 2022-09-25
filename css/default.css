@@ -77,7 +77,7 @@ h1 {
 h2 {
   margin: min(1.5vw, 0.75rem);
 
-  font-size: min(10rem, 12vw);
+  font-size: min(8vw, 8rem);
 
   text-align: center;
   text-transform: uppercase;
@@ -93,9 +93,6 @@ h3 {
 
   text-transform: uppercase;
   color: var(--blue-clr);
-
-  width: max-content;
-  border-bottom: 2px solid var(--blue-clr);
 }
 
 h4 {
@@ -103,7 +100,7 @@ h4 {
 
   font-size: min(1.75rem, 4.375vw);
 
-  color: var(--whitesmoke);
+  color: var(--text-clr);
 }
 
 p,

@@ -3,33 +3,33 @@
     "zlatni": [
       {
         "naziv": "BRACOPONE",
-        "imgUrl": "img/partners/BDD/BRACOPONE-logo.png",
+        "imgUrl": "./img/partners/BDD/BRACOPONE-logo.png",
         "linkUrl": "https://bracopone.com/"
       }
     ],
     "srebrni": [
       {
         "naziv": "Netgen",
-        "imgUrl": "img/Partners/BDD/Netgen-logo.svg",
+        "imgUrl": "./img/Partners/BDD/Netgen-logo.svg",
         "linkUrl": "https://netgen.io/"
       },
       {
         "naziv": "Bruketa&Žinić&Grey",
-        "imgUrl": "img/Partners/BDD/BZG/BZG-logo-3-rgb.png",
+        "imgUrl": "./img/Partners/BDD/BZG/BZG-logo-3-rgb.png",
         "linkUrl": "https://bruketa-zinic.com/hr/"
       }
     ],
     "broncani": [
       {
         "naziv": "Macan",
-        "imgUrl": "img/Partners/BDD/Macan-logo.png",
+        "imgUrl": "./img/Partners/BDD/Macan-logo.png",
         "linkUrl": "https://macan.hr/"
       }
     ],
     "akademski": [
       {
         "naziv": "FIVE",
-        "imgUrl": "img/partners/BDD/FIVE/FIVE-logo-black-highres.png",
+        "imgUrl": "./img/partners/BDD/FIVE/FIVE-logo-black-highres.png",
         "linkUrl": "https://five.agency/"
       }
     ]
@@ -38,32 +38,32 @@
   "godisnji": [
     {
       "naziv": "VERTIV",
-      "imgUrl": "img/partners/annual/Vertiv-logo.png",
+      "imgUrl": "./img/partners/annual/Vertiv-logo.png",
       "linkUrl": "https://best.hr/partneri/vertiv/"
     },
     {
       "naziv": "deegloo",
-      "imgUrl": "img/partners/annual/Deegloo-logo.png",
+      "imgUrl": "./img/partners/annual/Deegloo-logo.png",
       "linkUrl": "https://best.hr/partneri/deegloo/"
     },
     {
       "naziv": "Microblink",
-      "imgUrl": "img/partners/annual/Microblink-logo.gif",
+      "imgUrl": "./img/partners/annual/Microblink-logo.gif",
       "linkUrl": "https://best.hr/partneri/microblink/"
     },
     {
       "naziv": "OptimoRoute",
-      "imgUrl": "img/partners/annual/OptimoRoute-logo.png",
+      "imgUrl": "./img/partners/annual/OptimoRoute-logo.png",
       "linkUrl": "https://best.hr/partneri/optimoroute/"
     },
     {
       "naziv": "BRACOPONE",
-      "imgUrl": "img/partners/annual/BRACOPONE-logo.png",
+      "imgUrl": "./img/partners/annual/BRACOPONE-logo.png",
       "linkUrl": "https://best.hr/partneri/bracopone/"
     },
     {
       "naziv": "ReversingLabs",
-      "imgUrl": "img/partners/annual/ReversingLabs-logo.png",
+      "imgUrl": "./img/partners/annual/ReversingLabs-logo.png",
       "linkUrl": "https://best.hr/partneri/reversinglabs/"
     }
   ]

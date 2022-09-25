@@ -83,7 +83,7 @@ nav[data-scrolled] {
   border-left: dashed 1px var(--blue-clr);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   nav {
     padding-inline: 5vw;
 

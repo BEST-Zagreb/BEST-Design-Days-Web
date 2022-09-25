@@ -51,24 +51,13 @@
     <link href="css/index/info-icons-sec.css" rel="stylesheet" />
     <link href="css/index/zasto-bdd-sec.css" rel="stylesheet" />
     <link href="css/index/raspored-sec.css" rel="stylesheet" />
-    <!-- <link href="css/index/predavaci-sec.css" rel="stylesheet" /> -->
-    <link href="css/index/faq-sec.css" rel="stylesheet" />
-    <!-- <link href="css/index/galerija-sec.css" rel="stylesheet" /> -->
+    <link href="css/index/predavaci-sec.css" rel="stylesheet" />
+    <!-- <link href="css/index/faq-sec.css" rel="stylesheet" /> -->
     <!-- <link href="css/index/organizatori-sec.css" rel="stylesheet" /> -->
     <link href="css/index/partneri-sec.css" rel="stylesheet" />
     <link href="css/index/god-partneri-sec.css" rel="stylesheet" />
     <link href="css/index/kontakt-sec.css" rel="stylesheet" />
     <link href="css/index/best-zg-sec.css" rel="stylesheet" />
-
-    <!-- <link
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
-      defer
-    ></script> -->
-    <!-- <script type="text/javascript" src="js/predavaci.js" defer></script> -->
 
     <link rel="stylesheet" type="text/css" href="css/libraries/flipdown.css" />
     <script type="text/javascript" src="js/libraries/flipdown.js"></script>
@@ -92,7 +81,7 @@
     </svg>
 
     <nav data-expanded="false">
-      <a class="nav__logo" href="index.html#home">
+      <a class="nav__logo" href="index.html">
         <img src="img/logos/bdd_logo.png" alt="BEST_Design_Days_logo" />
       </a>
 
@@ -124,8 +113,17 @@
         <li tabindex="0"><a href="#BDD" tabindex="-1">O projektu</a></li>
         <hr />
         <li tabindex="0"><a href="#raspored" tabindex="-1">Raspored</a></li>
+        <!-- <hr />
+        <li tabindex="0">
+          <a href="#predavaci" tabindex="-1">Predavači</a>
+        </li> -->
         <hr />
         <li tabindex="0"><a href="#kontakt" tabindex="-1">Kontakt</a></li>
+
+        <!-- <hr />
+        <li tabindex="0">
+          <a href="galerija.html" tabindex="-1">Galerija</a>
+        </li> -->
       </ul>
     </nav>
 
@@ -581,88 +579,49 @@
       </div>
     </section>
 
-    <!-- <svg
-      class="section-divider"
-      viewBox="0 0 740 77"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="-23.1638"
-        width="804"
-        height="37"
-        transform="rotate(2.84461 -23.1638 0)"
-        fill="#BA67AE"
-        fill-opacity="0.2"
-      />
-      <rect
-        opacity="0.5"
-        x="-31.7477"
-        y="23.9795"
-        width="804"
-        height="38.4828"
-        transform="rotate(-0.711186 -31.7477 23.9795)"
-        fill="#BA67AE"
-      />
-    </svg>
+    <section class="predavaci-sec box-content hidden" id="predavaci">
+      <h3>Predavači</h3>
 
-   <template id="predavaci-template">
-          <div id="predavaci-div">
-            <img class="predavaci-img" src=""></img> 
-            <div id="predavaci-name"></div>
-            <div id="predavaci-tema"></div>
-            <div id="predavaci-termin"></div>
-        </div>
-        </template>  -->
-    <!-- <section class="predavaci-sec  box-content" id="predavaci">
-      <h3 id="predavaci-header">Predavači</h3>
-      <hr class="predavaci-s__hr" />
-      <div
-        class="gallery js-flickity"
-        data-flickity-options='{ "wrapAround": true, "draggable":false, "pageDots": true}'
-      >
-        <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
-          <p id="predavaci-name">Marko Perić</p>
-          <p id="predavaci-tema">Tema: 1</p>
-          <p id="predavaci-termin">Termin:</p>
-        </div>
-        <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
-          <p id="predavaci-name">Marko Perić</p>
-          <p id="predavaci-tema">Tema: 2</p>
-          <p id="predavaci-termin">Termin:</p>
-        </div>
-        <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
-          <p id="predavaci-name">Marko Perić</p>
-          <p id="predavaci-tema">Tema: 3</p>
-          <p id="predavaci-termin">Termin:</p>
-        </div>
-        <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
-          <p id="predavaci-name">Marko Perić</p>
-          <p id="predavaci-tema">Tema: 4</p>
-          <p id="predavaci-termin">Termin:</p>
-        </div>
-        <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
-          <p id="predavaci-name">Marko Perić</p>
-          <p id="predavaci-tema">Tema: 5</p>
-          <p id="predavaci-termin">Termin:</p>
-        </div>
-        <div id="predavaci-div">
-          <img class="predavaci-img" src="img/logos/BEST_shuriken_white.png" />
-          <p id="predavaci-name">Marko Perić</p>
-          <p id="predavaci-tema">Tema: 6</p>
-          <p id="predavaci-termin">Termin:</p>
+      <div>
+        <button class="predavaci-sec__btn predavaci-sec__btn-left">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
+            />
+          </svg>
+        </button>
+        <button class="predavaci-sec__btn predavaci-sec__btn-right">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+            />
+          </svg>
+        </button>
+
+        <div class="predavaci-sec__cards-container">
+          <div class="predavaci-sec__cards">
+            <template data-predavac-template>
+              <div class="predavaci-sec__card">
+                <div class="predavaci-sec__img-container">
+                  <img
+                    src="./img/questionmark-icon.svg"
+                    alt=""
+                    loading="lazy"
+                    title=""
+                  />
+                </div>
+                <div class="predavaci-sec__text-container">
+                  <h4></h4>
+                  <h5></h5>
+                </div>
+              </div>
+            </template>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- <section class="faq-sec box-content" id="faq"></section> -->
-
-    <!-- <section class="galerija-sec box-content" id="galerija"></section> -->
 
     <!-- <svg
       class="section-divider"
@@ -716,6 +675,12 @@
       />
     </svg>
 
+    <template data-partner-template>
+      <a href="" target="_blank">
+        <img src="" alt="" loading="lazy" title="" />
+      </a>
+    </template>
+
     <section class="partneri-sec box-content" id="partneri">
       <h3>Partneri projekta</h3>
 
@@ -731,41 +696,10 @@
             transform="translate(100 100)"
           />
         </svg>
-
-        <template data-partner-template>
-          <a href="" target="_blank">
-            <img src="" alt="" loading="lazy" />
-          </a>
-        </template>
       </div>
     </section>
 
-    <svg
-      class="section-divider"
-      viewBox="0 0 740 77"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="-23.1638"
-        width="804"
-        height="37"
-        transform="rotate(2.84461 -23.1638 0)"
-        fill="#BA67AE"
-        fill-opacity="0.2"
-      />
-      <rect
-        opacity="0.5"
-        x="-31.7477"
-        y="23.9795"
-        width="804"
-        height="38.4828"
-        transform="rotate(-0.711186 -31.7477 23.9795)"
-        fill="#BA67AE"
-      />
-    </svg>
-
-    <section class="godisnji-partneri-sec box-content">
+    <section class="godisnji-partneri-sec box-content" id="godisnji-partneri">
       <h3>Godišnji partneri</h3>
 
       <div class="godisnji-partneri-sec__slider-wrapper">
@@ -801,71 +735,28 @@
     <section class="kontakt-sec box-content" id="kontakt">
       <h3>Kontakt</h3>
 
-      <p>U slučaju bilo kakvih pitanja, slobodno nam se javite:</p>
+      <p>
+        U slučaju bilo kakvih pitanja, slobodno nam se javite na
+        <a href="mailto:bdd@best.hr">bdd@best.hr</a> ili osobno na:
+      </p>
 
       <div class="kontakt-sec__cards">
-        <div class="kontakt-sec__card rgb kontakt-sec__card-1">
-          <div class="kontakt-sec__card-image"></div>
-          <div class="kontakt-sec__card-text-container">
-            <p class="kontakt-sec__card-function">Main organiser</p>
-            <h4 class="kontakt-sec__card-name">Alen Komadina</h4>
-            <p class="kontakt-sec__card-info">
-              E-mail:
-              <a
-                class="kontakt-sec__card-link"
-                href="mailto:alen.komadina@best.hr"
-                >alen.komadina@best.hr</a
-              >
-              <br />
-              Tel:
-              <a class="kontakt-sec__card-link" href="tel:+385989145659"
-                >+385 98 914 5659</a
-              >
-            </p>
+        <template data-kontakt-template>
+          <div class="kontakt-sec__card rgb">
+            <div class="kontakt-sec__card-image"></div>
+            <div class="kontakt-sec__card-text-container">
+              <p class="kontakt-sec__card-function"></p>
+              <h4 class="kontakt-sec__card-name"></h4>
+              <p class="kontakt-sec__card-info">
+                E-mail:
+                <a class="kontakt-sec__card-link">/</a>
+                <br />
+                Tel:
+                <a class="kontakt-sec__card-link">/</a>
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div class="kontakt-sec__card rgb kontakt-sec__card-2">
-          <div class="kontakt-sec__card-image"></div>
-          <div class="kontakt-sec__card-text-container">
-            <p class="kontakt-sec__card-function">FR responsible</p>
-            <h4 class="kontakt-sec__card-name">Kristina Vukušić</h4>
-            <p class="kontakt-sec__card-info">
-              E-mail:
-              <a
-                class="kontakt-sec__card-link"
-                href="mailto:kristina.vukusic@best.hr"
-                >kristina.vukusic@best.hr</a
-              >
-              <br />
-              Tel:
-              <a class="kontakt-sec__card-link" href="tel:+385989341835"
-                >+385 98 934 1835</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="kontakt-sec__card rgb kontakt-sec__card-3">
-          <div class="kontakt-sec__card-image"></div>
-          <div class="kontakt-sec__card-text-container">
-            <p class="kontakt-sec__card-function">Participants responsible</p>
-            <h4 class="kontakt-sec__card-name">Jakov Jakovac</h4>
-            <p class="kontakt-sec__card-info">
-              E-mail:
-              <a
-                class="kontakt-sec__card-link"
-                href="mailto:jakov.jakovac@best.hr"
-                >jakov.jakovac@best.hr</a
-              >
-              <br />
-              Tel:
-              <a class="kontakt-sec__card-link" href="tel:+385995903943"
-                >+385 99 590 3943</a
-              >
-            </p>
-          </div>
-        </div>
+        </template>
       </div>
     </section>
 

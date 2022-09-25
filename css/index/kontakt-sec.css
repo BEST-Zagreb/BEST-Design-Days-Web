@@ -15,9 +15,9 @@
   margin: min(2rem, 2vw);
 
   display: grid;
-  grid-template-columns: clamp(18rem, 25vw, 30rem);
+  grid-template-columns: min(25vw, 30rem);
 
-  grid-template-rows: min(25rem, 20vw) 15rem;
+  grid-template-rows: min(25rem, 20vw) auto;
   grid-template-areas: "image" "text";
 
   border-radius: 1.5rem;
@@ -54,20 +54,17 @@
 
   transform: translateZ(-1px); /*or z-index */
 
-  /* background-xyz on mobile devices also loses performace */
   animation: rgb 6s linear infinite;
+  filter: blur(8px);
 }
 
-@media (prefers-reduced-motion) {
-  .rgb::after {
-    animation: none;
-  }
-}
-
-@media only screen and (min-width: 450px) {
+@media (prefers-reduced-motion) or (max-width: 450px) {
   .rgb::after {
     /* blur on mobile devices tanks performace */
-    filter: blur(8px);
+    filter: none;
+
+    /* background-xyz on mobile devices also loses performace */
+    animation: none;
   }
 }
 
@@ -86,23 +83,29 @@
 .kontakt-sec__card-image {
   grid-area: image;
 
-  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  background-image: linear-gradient(
+      to right,
+      #fff0 0%,
+      #fff0 70%,
+      whitesmoke 100%
+    ),
     url("../../img/hero-background-temp.jpeg");
   background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
 .kontakt-sec__card-text-container {
   grid-area: text;
 
-  margin: clamp(1rem, 2vw, 3rem);
+  margin: min(3vw, 1.5rem);
   transform: translateZ(1rem);
 }
 
 .kontakt-sec__card-function {
   color: var(--brown-clr);
-  font-size: min(1rem, 3vw);
+  font-size: min(2vw, 1.25rem);
 }
 
 .kontakt-sec__card-name {
@@ -118,46 +121,25 @@
   color: var(--text-clr);
 }
 
-/*card1*/
-.kontakt-sec__card-1 > .kontakt-sec__card-image {
-  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
-    url("../../img/people/Alen.jpg");
-  background-size: cover;
-}
-
-.kontakt-sec__card-1 .kontakt-sec__card-function,
-.kontakt-sec__card-1 .kontakt-sec__card-link:hover,
-.kontakt-sec__card-1 .kontakt-sec__card-link:focus {
+.kontakt-sec__card:nth-of-type(3n -2) .kontakt-sec__card-function,
+.kontakt-sec__card:nth-of-type(3n -2) .kontakt-sec__card-link:hover,
+.kontakt-sec__card:nth-of-type(3n -2) .kontakt-sec__card-link:focus {
   color: var(--brown-clr);
 }
 
-/*card2*/
-.kontakt-sec__card-2 > .kontakt-sec__card-image {
-  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
-    url("../../img/people/Kristina.jpg");
-  background-size: cover;
-}
-
-.kontakt-sec__card-2 .kontakt-sec__card-function,
-.kontakt-sec__card-2 .kontakt-sec__card-link:hover,
-.kontakt-sec__card-2 .kontakt-sec__card-link:focus {
+.kontakt-sec__card:nth-of-type(3n - 1) .kontakt-sec__card-function,
+.kontakt-sec__card:nth-of-type(3n - 1) .kontakt-sec__card-link:hover,
+.kontakt-sec__card:nth-of-type(3n - 1) .kontakt-sec__card-link:focus {
   color: var(--blue-clr-light);
 }
 
-/*card3*/
-.kontakt-sec__card-3 > .kontakt-sec__card-image {
-  background: linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%),
-    url("../../img/people/JJ.jpg");
-  background-size: cover;
-}
-
-.kontakt-sec__card-3 .kontakt-sec__card-function,
-.kontakt-sec__card-3 .kontakt-sec__card-link:hover,
-.kontakt-sec__card-3 .kontakt-sec__card-link:focus {
+.kontakt-sec__card:nth-of-type(3n) .kontakt-sec__card-function,
+.kontakt-sec__card:nth-of-type(3n) .kontakt-sec__card-link:hover,
+.kontakt-sec__card:nth-of-type(3n) .kontakt-sec__card-link:focus {
   color: var(--pink-clr-light);
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .kontakt-sec__card {
     width: 80vw;
 
@@ -165,6 +147,8 @@
   }
 
   .kontakt-sec__card-image {
+    background-position: center;
+
     float: left;
     width: 40%;
 
@@ -172,30 +156,13 @@
     border-bottom-left-radius: 1.5rem;
     border-top-right-radius: 0;
   }
-
-  /*card1*/
-  .kontakt-sec__card-1 > .kontakt-sec__card-image {
-    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
-      url("../../img/people/Alen.jpg");
-    background-size: cover;
-  }
-
-  /*card2*/
-  .kontakt-sec__card-2 > .kontakt-sec__card-image {
-    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
-      url("../../img/people/Kristina.jpg");
-    background-size: cover;
-  }
-
-  /*card3*/
-  .kontakt-sec__card-3 > .kontakt-sec__card-image {
-    background: linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%),
-      url("../../img/people/JJ.jpg");
-    background-size: cover;
-  }
 }
 
-@media only screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
+  .kontakt-sec__card {
+    width: 75%;
+  }
+
   .kontakt-sec__card-image {
     display: none;
   }

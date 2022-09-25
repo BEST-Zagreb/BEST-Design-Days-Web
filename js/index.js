@@ -36,6 +36,12 @@ document.querySelectorAll("section").forEach((section) => {
   sectionObserver.observe(section);
 });
 
+// ===== json nav sections (#) =====
+
+const sections = document.querySelectorAll("section");
+const sectionsIds = [];
+sections.forEach((section) => sectionsIds.push(section.getAttribute("id")));
+
 // ===== hero sections flipdown =====
 
 // Unix timestamp (in seconds) to count down to
@@ -54,10 +60,13 @@ flipdown.ifEnded(() => {
   console.log("Event ended!");
 });
 
-// ===== raspored json data import =====
+// ===== raspored & predavaci json data import =====
 
 const rasporedTrTemplate = document.querySelector("[data-raspored-template]");
 const rasporedTable = document.querySelector(".raspored-sec__table");
+
+const predavacCardTemplate = document.querySelector("[data-predavac-template]");
+const predavaciCarousel = document.querySelector(".predavaci-sec__cards");
 
 const daniUTjednu = [
   "Nedjelja",
@@ -68,6 +77,7 @@ const daniUTjednu = [
   "Petak",
   "Subota",
 ];
+
 function parseDateFormat(dateHrv) {
   // formatira datum iz DD.MM.YYYY. u YYYY, MM, DD za new Date() funkciju
   const dan = dateHrv.split(".")[0];
@@ -77,7 +87,7 @@ function parseDateFormat(dateHrv) {
   return godina + ", " + mjesec + ", " + dan;
 }
 
-fetch("../data/aktivnosti.json")
+fetch("./data/aktivnosti.json")
   .then((res) => res.json())
   .then((data) => {
     data.map((aktivnost) => {
@@ -105,17 +115,94 @@ fetch("../data/aktivnosti.json")
 
       rasporedTable.append(rasporedTrElement);
     });
+
+    return data;
+  })
+  .then((data) => {
+    data.map((aktivnost) => {
+      if (aktivnost.predavac) {
+        const predavacCardElement =
+          predavacCardTemplate.content.cloneNode(true).children[0];
+
+        const predavacImgElement = predavacCardElement.querySelector(
+          ".predavaci-sec__img-container > img"
+        );
+        const predavacImeElement = predavacCardElement.querySelector(
+          ".predavaci-sec__text-container > h4"
+        );
+        const predavacAktivnostElement = predavacCardElement.querySelector(
+          ".predavaci-sec__text-container > h5"
+        );
+
+        if (aktivnost.predavacImgUrl) {
+          predavacImgElement.setAttribute("src", aktivnost.predavacImgUrl);
+        }
+        predavacImgElement.setAttribute(
+          "alt",
+          "Predavač " + aktivnost.predavac
+        );
+        predavacImgElement.setAttribute("title", aktivnost.predavac);
+        predavacImeElement.textContent = aktivnost.predavac;
+        predavacAktivnostElement.textContent = aktivnost.tema;
+
+        predavaciCarousel.append(predavacCardElement);
+      }
+    });
   })
   .then(() => {
-    // if url with specified contact section (#raspored)
-    if (window.location.hash.split("#")[1] === "raspored")
-      document
-        .querySelector('[id="' + window.location.hash.split("#")[1] + '"]')
-        .scrollIntoView(true);
+    // predavaci carousel functionality
+    predavaciCards = document.querySelectorAll(".predavaci-sec__card");
+
+    movePredavaciCarousel();
   })
   .catch((err) => {
     console.error(err);
   });
+
+// ===== predavaci section carousel functionality =====
+
+let predavaciCards;
+const predavaciCarouselBtnLeft = document.querySelector(
+  ".predavaci-sec__btn-left"
+);
+const predavaciCarouselBtnRight = document.querySelector(
+  ".predavaci-sec__btn-right"
+);
+
+let predavacSlideCounter = 0;
+
+function movePredavaciCarousel() {
+  predavaciCarouselBtnLeft.removeAttribute("disabled");
+  predavaciCarouselBtnRight.removeAttribute("disabled");
+
+  predavaciCarousel.style.marginLeft =
+    predavacSlideCounter * predavaciCards[0].getBoundingClientRect().width +
+    "px";
+
+  if (predavacSlideCounter === 0) {
+    predavaciCarouselBtnLeft.setAttribute("disabled", "");
+  }
+  if (
+    predavaciCards.length + predavacSlideCounter <=
+    Math.floor(
+      predavaciCarousel.getBoundingClientRect().width /
+        predavaciCards[0].getBoundingClientRect().width
+    )
+  ) {
+    predavaciCarouselBtnRight.setAttribute("disabled", "");
+  }
+}
+
+predavaciCarouselBtnLeft.addEventListener("click", () => {
+  predavacSlideCounter++;
+
+  movePredavaciCarousel();
+});
+predavaciCarouselBtnRight.addEventListener("click", () => {
+  predavacSlideCounter--;
+
+  movePredavaciCarousel();
+});
 
 // ===== BDD partners json data import =====
 
@@ -128,7 +215,7 @@ const annualPartnersCarousel = document.querySelector(
   ".godisnji-partneri-sec__slider"
 );
 
-fetch("../data/partneri.json")
+fetch("./data/partneri.json")
   .then((res) => res.json())
   .then((data) => {
     // add project partners
@@ -144,11 +231,18 @@ fetch("../data/partneri.json")
           "alt",
           partner.naziv + " partner logo"
         );
+        partnerElement.firstElementChild.setAttribute(
+          "title",
+          partner.naziv + ""
+        );
         partnerRow.append(partnerElement);
       });
       partnerImgsContainer.append(partnerRow);
     });
 
+    return data;
+  })
+  .then((data) => {
     // add annual partners
     const partnersSlide = document.createElement("div");
     partnersSlide.classList.add("godisnji-partneri-sec__slide");
@@ -162,6 +256,7 @@ fetch("../data/partneri.json")
           "alt",
           partner.naziv + " partner logo"
         );
+        partnerElement.firstElementChild.setAttribute("title", partner.naziv);
         partnersSlide.append(partnerElement);
       })
     );
@@ -175,33 +270,59 @@ fetch("../data/partneri.json")
     const slideElement = document.querySelector(
       ".godisnji-partneri-sec__slide"
     );
-    const slideImg = document.querySelectorAll(
+    const slideImgs = document.querySelectorAll(
       ".godisnji-partneri-sec__slide > a > img"
     );
 
-    slideElement.style.transition = "all " + slideDuration + "ms" + " ease-out";
-
-    setInterval(() => {
+    function slidePartnersSlider(numberOfItemsToSlide) {
       slideElement.style.marginLeft =
         "-" +
         numberOfItemsToSlide *
-          counter *
-          slideImg[0].getBoundingClientRect().width +
+          annualPartnersCounter *
+          slideImgs[0].getBoundingClientRect().width +
         "px";
 
-      counter++;
+      annualPartnersCounter++;
+    }
+
+    // initial slide for setting height = max height of all images
+    annualPartnersCounter = slideImgs.length / 2 / numberOfItemsToSlide;
+    slidePartnersSlider(numberOfItemsToSlide);
+
+    slideElement.style.transition =
+      "margin-left " + slideDuration + "ms" + " ease-out";
+
+    let sliderIsPaused = false;
+    setInterval(() => {
+      if (!sliderIsPaused) {
+        slidePartnersSlider(numberOfItemsToSlide);
+      }
     }, pauseDuration + 50);
 
-    slideElement.addEventListener("transitionend", () => {
-      // needs to be bigger or equal (not just equal) because of some bug
-      if (counter >= slideImg.length / 2 / numberOfItemsToSlide + 1) {
-        // set slide to start
-        slideElement.style.transitionDuration = "1ms";
-        slideElement.style.marginLeft = "0px";
+    // pause slider when hovering over
+    slideElement.addEventListener("mouseenter", () => {
+      sliderIsPaused = true;
+    });
+    slideElement.addEventListener("mouseleave", () => {
+      sliderIsPaused = false;
+    });
 
-        counter = 1; // reset counter
-      } else {
-        slideElement.style.transitionDuration = slideDuration + "ms";
+    slideElement.addEventListener("transitionend", (el) => {
+      // check if transition is margin-left
+      if (el.propertyName === "margin-left") {
+        // needs to be bigger or equal (not just equal) because of some bug
+        if (
+          annualPartnersCounter >=
+          slideImgs.length / 2 / numberOfItemsToSlide + 1
+        ) {
+          // set slide to start
+          slideElement.style.transitionDuration = "1ms";
+          slideElement.style.marginLeft = "0px";
+
+          annualPartnersCounter = 1; // reset annualPartnersCounter
+        } else {
+          slideElement.style.transitionDuration = slideDuration + "ms";
+        }
       }
     });
   })
@@ -211,9 +332,9 @@ fetch("../data/partneri.json")
 
 // ===== annual partners carousel =====
 
-let counter = 1; // for seamless infinite sliding
+let annualPartnersCounter = 1; // counter for seamless infinite sliding
 
-let numberOfItemsToSlide = 2; // must be <= number of items in carousel
+let numberOfItemsToSlide = 2; // must be <= number of items in carousel (slideImgs.length / 2)
 let slideDuration = 1500; // in miliseconds
 let pauseDuration = 3500; // must be >= slideDuration, in miliseconds
 
@@ -223,7 +344,92 @@ if (window.matchMedia("(max-width: 450px)").matches) {
   pauseDuration = 2500; // must be >= slideDuration, in miliseconds
 }
 
-// ===== contact sections cards tilt =====
+// ===== kontakt sections  =====
+
+const kontaktTemplate = document.querySelector("[data-kontakt-template]");
+const kontaktCards = document.querySelector(".kontakt-sec__cards");
+
+// kontakt json data import
+fetch("./data/organizacijskiTim.json")
+  .then((res) => res.json())
+  .then((data) => {
+    // add organizacijski tim
+
+    return data;
+  })
+  .then((data) => {
+    data.map((organizator) => {
+      if (organizator.kontakt === "da") {
+        const kontaktCardElement =
+          kontaktTemplate.content.cloneNode(true).children[0];
+
+        const kontaktImgDivElement = kontaktCardElement.querySelector(
+          ".kontakt-sec__card-image"
+        );
+        const kontaktFunkcijaElement = kontaktCardElement.querySelector(
+          ".kontakt-sec__card-function"
+        );
+        const kontaktImeElement = kontaktCardElement.querySelector(
+          ".kontakt-sec__card-name"
+        );
+        const kontaktLinkElements = kontaktCardElement.querySelectorAll(
+          ".kontakt-sec__card-link"
+        );
+
+        let kontaktImageGradient = null;
+        if (window.matchMedia("(max-width: 960px)").matches) {
+          kontaktImageGradient =
+            "linear-gradient(to right, #fff0 0%, #fff0 70%, whitesmoke 100%)";
+        } else {
+          kontaktImageGradient =
+            "linear-gradient(#fff0 0%, #fff0 70%, whitesmoke 100%)";
+        }
+        if (!organizator.imgUrl) {
+          organizator.imgUrl = "./img/questionmark-icon.svg";
+          kontaktImgDivElement.style.backgroundSize = "33%";
+        }
+        kontaktImgDivElement.style.backgroundImage =
+          kontaktImageGradient + ", url(" + organizator.imgUrl + ")";
+        kontaktImgDivElement.setAttribute(
+          "title",
+          organizator.funkcija + " " + organizator.ime
+        );
+
+        kontaktFunkcijaElement.textContent = organizator.funkcija;
+
+        kontaktImeElement.textContent = organizator.ime;
+
+        if (organizator.email) {
+          kontaktLinkElements[0].setAttribute(
+            "href",
+            "mailto:" + organizator.email
+          );
+          kontaktLinkElements[0].textContent = organizator.email;
+        }
+        if (organizator.tel) {
+          kontaktLinkElements[1].setAttribute(
+            "href",
+            "tel:" + organizator.tel.replace(/\s/g, "")
+          );
+          kontaktLinkElements[1].textContent = organizator.tel;
+        }
+
+        kontaktCards.append(kontaktCardElement);
+      }
+    });
+  })
+  .then(() => {
+    // if url with specified section (#something)
+    if (sectionsIds.includes(window.location.hash.split("#")[1]))
+      document
+        .querySelector('[id="' + window.location.hash.split("#")[1] + '"]')
+        .scrollIntoView(true);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+// cards tilt
 
 function isTouchDevice() {
   return (
