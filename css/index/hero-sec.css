@@ -16,9 +16,6 @@
 
 .hero-sec__content {
   margin-right: 6vw;
-
-  /* padding-top: ; */
-  /* padding-bottom: min(3.5rem, 12vw, 12vh); */
 }
 
 .hero-sec__bdd-heading {
@@ -30,7 +27,6 @@
     "Trebuchet MS", sans-serif;
   font-weight: 500;
   text-align: left;
-  /* text-shadow: 0 0 70px var(--text-clr); */
 }
 
 .hero-sec__bdd-pink {
@@ -51,14 +47,14 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  transition: box-shadow 250ms;
+  transition: box-shadow 300ms;
 }
 
 .hero-sec__prijava-btn > a {
   text-decoration: none;
 }
 
-.hero-sec__prijava-btn:enabled {
+.hero-sec__prijava-btn:enabled:not(:hover) {
   animation: pulse 5s infinite;
 }
 

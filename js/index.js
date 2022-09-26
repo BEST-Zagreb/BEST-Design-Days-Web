@@ -60,6 +60,52 @@ flipdown.ifEnded(() => {
   console.log("Event ended!");
 });
 
+// ===== faqs json data import =====
+
+const faqTemplate = document.querySelector("[data-faq-template]");
+const faqsContainer = document.querySelector(".faq-sec__accordions-container");
+
+fetch("./data/faqs.json")
+  .then((res) => res.json())
+  .then((data) => {
+    data.map((faq) => {
+      const faqElement = faqTemplate.content.cloneNode(true).children[0];
+
+      const faqQuestionElement = faqElement.querySelector(".faq-sec__question");
+      const faqAnswerElement = faqElement.querySelector(".faq-sec__answer");
+
+      faqQuestionElement.textContent = faq.question;
+      faqAnswerElement.textContent = faq.answer;
+
+      faqsContainer.append(faqElement);
+    });
+  })
+  .then(() => {
+    // automatically close all other accordions when one is opened
+    const accordions = document.querySelectorAll(".faq-sec__accordion");
+
+    accordions.forEach((accordion) => {
+      accordion.addEventListener("click", (event) => {
+        accordions.forEach((accordionOther) => {
+          if (
+            accordion != accordionOther &&
+            accordionOther.hasAttribute("open")
+          ) {
+            accordionOther.removeAttribute("open");
+
+            // when clicking on question, open attribute gets auto added and breaks in case not if
+            if (event.target === accordion) {
+              accordion.setAttribute("open", "");
+            }
+          }
+        });
+      });
+    });
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
 // ===== raspored & predavaci json data import =====
 
 const rasporedTrTemplate = document.querySelector("[data-raspored-template]");

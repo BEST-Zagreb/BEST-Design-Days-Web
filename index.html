@@ -50,9 +50,9 @@
     <link href="css/index/bdd-sec.css" rel="stylesheet" />
     <link href="css/index/info-icons-sec.css" rel="stylesheet" />
     <link href="css/index/zasto-bdd-sec.css" rel="stylesheet" />
+    <link href="css/index/faq-sec.css" rel="stylesheet" />
     <link href="css/index/raspored-sec.css" rel="stylesheet" />
     <link href="css/index/predavaci-sec.css" rel="stylesheet" />
-    <!-- <link href="css/index/faq-sec.css" rel="stylesheet" /> -->
     <!-- <link href="css/index/organizatori-sec.css" rel="stylesheet" /> -->
     <link href="css/index/partneri-sec.css" rel="stylesheet" />
     <link href="css/index/god-partneri-sec.css" rel="stylesheet" />
@@ -557,6 +557,44 @@
       />
     </svg>
 
+    <section class="faq-sec box-content" id="faq">
+      <h3>Često postavljena pitanja</h3>
+
+      <div class="faq-sec__accordions-container">
+        <template data-faq-template>
+          <details class="faq-sec__accordion">
+            <summary class="faq-sec__question"></summary>
+            <p class="faq-sec__answer"></p>
+          </details>
+        </template>
+      </div>
+    </section>
+
+    <svg
+      class="section-divider"
+      viewBox="0 0 740 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-23.1638"
+        width="804"
+        height="37"
+        transform="rotate(2.84461 -23.1638 0)"
+        fill="#BA67AE"
+        fill-opacity="0.2"
+      />
+      <rect
+        opacity="0.5"
+        x="-31.7477"
+        y="23.9795"
+        width="804"
+        height="38.4828"
+        transform="rotate(-0.711186 -31.7477 23.9795)"
+        fill="#BA67AE"
+      />
+    </svg>
+
     <section class="raspored-sec box-content" id="raspored">
       <h3>Raspored</h3>
 
@@ -620,8 +658,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="faq-sec box-content" id="faq"></section> -->
 
     <!-- <svg
       class="section-divider"

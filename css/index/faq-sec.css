@@ -1,10 +1,98 @@
-/* use BEM in class names
-example:
+.faq-sec__accordions-container {
+  margin-top: min(4vw, 2rem);
 
-.section-name-sec {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.section-name-s__element {
+.faq-sec__accordion {
+  flex-basis: 50%;
 
-} */
+  background-color: var(--whitesmoke);
+  border: solid 1px #ddd;
+  box-shadow: #ddd 5px 5px 10px;
+
+  transition: background-color 300ms;
+}
+
+.faq-sec__accordion:first-of-type {
+  border-top-left-radius: min(2vw, 1rem);
+}
+
+.faq-sec__accordion:nth-of-type(2) {
+  border-top-right-radius: min(2vw, 1rem);
+}
+
+.faq-sec__accordion:nth-last-of-type(2) {
+  border-bottom-left-radius: min(2vw, 1rem);
+}
+
+.faq-sec__accordion:last-of-type {
+  border-bottom-right-radius: min(2vw, 1rem);
+}
+
+.faq-sec__accordion:not([open]):hover {
+  background-color: var(--text-clr-dark);
+
+  cursor: pointer;
+}
+
+.faq-sec__accordion:not([open]):hover > .faq-sec__question {
+  color: var(--white);
+}
+
+.faq-sec__accordion:not([open]):hover > .faq-sec__answer {
+  color: var(--whitesmoke);
+}
+
+.faq-sec__question {
+  padding: min(2vw, 0.75rem);
+
+  font-size: min(3.75vw, 1.375rem);
+  list-style: none;
+  color: var(--text-clr-dark);
+
+  font-style: italic;
+}
+
+.faq-sec__question::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1;
+
+  margin-right: min(2vw, 0.5rem);
+
+  background-image: url(../../img/questionmark-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 140%;
+}
+
+.faq-sec__answer {
+  padding-inline: min(2vw, 0.75rem);
+
+  font-size: min(3.5vw, 1.25rem);
+}
+
+@media screen and (max-width: 768px) {
+  .faq-sec__accordion {
+    flex-basis: 100%;
+  }
+
+  .faq-sec__accordion:first-of-type {
+    border-top-right-radius: min(2vw, 1rem);
+  }
+
+  .faq-sec__accordion:nth-of-type(2) {
+    border-top-right-radius: 0;
+  }
+
+  .faq-sec__accordion:nth-last-of-type(2) {
+    border-bottom-left-radius: 0;
+  }
+
+  .faq-sec__accordion:last-of-type {
+    border-bottom-left-radius: min(2vw, 1rem);
+  }
+}
