@@ -95,14 +95,6 @@ h3 {
   color: var(--blue-clr);
 }
 
-h4 {
-  padding-block: min(0.75vw, 1.25rem) min(1vw, 0.5rem);
-
-  font-size: min(1.75rem, 4.375vw);
-
-  color: var(--text-clr);
-}
-
 p,
 li {
   padding-block: min(0.5vw, 0.25rem);

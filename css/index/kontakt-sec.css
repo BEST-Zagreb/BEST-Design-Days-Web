@@ -105,10 +105,14 @@
 
 .kontakt-sec__card-function {
   color: var(--brown-clr);
-  font-size: min(2vw, 1.25rem);
+  font-size: min(2.75vw, 1.25rem);
 }
 
 .kontakt-sec__card-name {
+  padding-block: min(0.5vw, 0.5rem);
+
+  font-size: min(1.625rem, 4vw);
+
   color: var(--text-clr-dark);
 }
 

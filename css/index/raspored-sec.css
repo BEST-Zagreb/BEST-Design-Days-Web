@@ -1,7 +1,7 @@
 .raspored-sec__table-wrapper {
   margin-top: min(4vw, 2rem);
 
-  border-radius: min(5vw, 2.5rem) min(6vw, 3rem) min(4vw, 2rem) min(8vw, 4rem);
+  border-radius: min(4vw, 2rem);
   overflow: hidden;
 }
 
@@ -22,6 +22,8 @@
 }
 
 .raspored-sec__th-row > th {
+  font-size: min(4.25vw, 1.75rem);
+
   background-color: var(--brown-clr);
   border-color: var(--whitesmoke);
 }

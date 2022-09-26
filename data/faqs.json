@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Kako se prijaviti?",
+    "answer": "Jednostavno! Sve što trebaš jest ispuniti formu za prijavu (gumb na vrhu stranice)."
+  },
+  {
+    "question": "Postoji li ograničenje na broj aktivnosti koje mogu prijaviti?",
+    "answer": "Ne postoji! Prijavi sve aktivnosti na koje želiš i možeš doći."
+  },
+  {
+    "question": "Prijavio/la sam pogrešnu aktivnosti, kako mogu promijeniti odabir?",
+    "answer": "Možeš poslati mail na bdd@best.hr ili ponovo ispuniti formu."
+  },
+  {
+    "question": "Mogu li sudjelovati u aktivnosti ako se nisam prijavio/la na nju?",
+    "answer": "Ne, na aktivnosti mogu sudjelovati samo oni studenti koji su se na nju prijavili!"
+  },
+  {
+    "question": "Što napraviti ako se ne mogu pojaviti na aktivnosti za koju sam se prijavio/la?",
+    "answer": "Obavezno se javi mailom na bdd@best.hr najkasnije 2 dana prije kako bi tvoje mjesto ustupili drugima."
+  },
+  {
+    "question": "Na koliko aktivnosti moram sudjelovati da bih dobio certifikat o sudjelovanju?",
+    "answer": "Barem na 50% svih aktivnosti."
+  },
+  {
+    "question": "Treba li mi računalo na aktivnostima?",
+    "answer": "U pravilu ne. Ako će ti zatrebati, biti ćeš na vrijeme obaviješten/a."
+  },
+  {
+    "question": "Kako se biraju sudionici za aktivnosti?",
+    "answer": "Za Case Study natjecatelji se biraju prema odgovorima na motivacijska pitanja u formi, dok se sudionici predavanja i radionica biraju principom 'first come, first serve'. Stoga požuri s prijavom!"
+  },
+  {
+    "question": "Od koliko studenata se smije sastojati tim za Case Study?",
+    "answer": "Tim za Case Study se sastoji od jednog do pet studenata."
+  },
+  {
+    "question": "Koje su nagrade za Case Study?",
+    "answer": "1. mjesto osvaja X kuna, 2. mjesto Y kuna, a 3. mjesto Z kuna."
+  },
+  {
+    "question": "Koliko traje prezentacija rješenja Case Study zadatka?",
+    "answer": "Prezentacija rješenja traje 15 minuta po timu, dok 7 od tih 15 minuta tim predstavlja svoje rješenje, a ostatak vremena žiri može postaviti pitanja timu vezano uz predstavljeno rješenje."
+  },
+  {
+    "question": "Mogu li se pridružiti BEST-u Zagreb nakon BEST Design Days-a u organizaciji ovakvih projekata?",
+    "answer": "Naravno! Sve što trebaš jest javiti se na board@best.hr ili ispuniti formu na web stranici udruge best.hr/o-nama/uclani-se/."
+  }
+]
