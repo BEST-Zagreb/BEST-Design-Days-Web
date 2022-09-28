@@ -109,7 +109,7 @@ fetch("./data/faqs.json")
 // ===== raspored & predavaci json data import =====
 
 const rasporedTrTemplate = document.querySelector("[data-raspored-template]");
-const rasporedTable = document.querySelector(".raspored-sec__table");
+const rasporedTable = document.querySelector(".raspored-sec__table > tbody");
 
 const predavacCardTemplate = document.querySelector("[data-predavac-template]");
 const predavaciCarousel = document.querySelector(".predavaci-sec__cards");
