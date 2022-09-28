@@ -598,14 +598,16 @@
     <section class="raspored-sec box-content" id="raspored">
       <h3>Raspored</h3>
 
-      <div class="raspored-sec__table-wrapper">
-        <table class="raspored-sec__table">
+      <table class="raspored-sec__table">
+        <thead>
           <tr class="raspored-sec__th-row">
             <th><h4>Datum</h4></th>
             <th><h4>Vrijeme</h4></th>
             <th><h4>Aktivnost</h4></th>
           </tr>
+        </thead>
 
+        <tbody>
           <template data-raspored-template>
             <tr>
               <td class="raspored-sec__datum"><p></p></td>
@@ -613,8 +615,8 @@
               <td class="raspored-sec__aktivnost"><p></p></td>
             </tr>
           </template>
-        </table>
-      </div>
+        </tbody>
+      </table>
     </section>
 
     <section class="predavaci-sec box-content hidden" id="predavaci">
