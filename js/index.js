@@ -45,7 +45,7 @@ sections.forEach((section) => sectionsIds.push(section.getAttribute("id")));
 // ===== hero sections flipdown =====
 
 // Unix timestamp (in seconds) to count down to
-const eventStart = Math.round(new Date(2022, 09, 14, 16) / 1000); // 17th October 2022 at 4 pm in seconds
+const eventStart = Math.round(new Date(2022, 09, 17, 16) / 1000); // 17th October 2022 at 4 pm in seconds
 
 // Set up FlipDown
 const flipdown = new FlipDown(eventStart, {
