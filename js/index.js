@@ -465,6 +465,9 @@ fetch("./data/organizacijskiTim.json")
     });
   })
   .then(() => {
+    addVanillaTitlToKontaktCard();
+  })
+  .then(() => {
     // if url with specified section (#something)
     if (sectionsIds.includes(window.location.hash.split("#")[1]))
       document
@@ -485,10 +488,12 @@ function isTouchDevice() {
   );
 }
 
-if (!isTouchDevice()) {
-  VanillaTilt.init(document.querySelectorAll(".kontakt-sec__card"), {
-    glare: true,
-    reverse: true,
-    "max-glare": 0.75,
-  });
+function addVanillaTitlToKontaktCard() {
+  if (!isTouchDevice()) {
+    VanillaTilt.init(document.querySelectorAll(".kontakt-sec__card"), {
+      glare: true,
+      reverse: true,
+      "max-glare": 0.75,
+    });
+  }
 }
