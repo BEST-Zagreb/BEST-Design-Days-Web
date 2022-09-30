@@ -17,14 +17,14 @@
     "datum": "18.10.2022.",
     "vrijeme": "17:00",
     "predavac": "Jasenka Pibernik",
-    "predavacImgUrl": "",
+    "predavacImgUrl": "./img/people/lecturers/Jasenka_Pibernik.jpg",
     "tema": "Life centered design"
   },
   {
     "datum": "18.10.2022.",
     "vrijeme": "18:00",
     "predavac": "Atlantis Digital (Ljubiša Kukulj)",
-    "predavacImgUrl": "",
+    "predavacImgUrl": "./img/people/lecturers/Ljubisa_Kukulj.jpeg",
     "tema": "Introduction to UX"
   },
   {
@@ -38,7 +38,7 @@
     "datum": "19.10.2022.",
     "vrijeme": "16:00",
     "predavac": "Tomislav Stipančić",
-    "predavacImgUrl": "",
+    "predavacImgUrl": "./img/people/lecturers/Tomislav_Stipancic.jpg",
     "tema": "Cognitive robotics meets design"
   },
   {
