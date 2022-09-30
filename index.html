@@ -557,17 +557,28 @@
       />
     </svg>
 
-    <section class="faq-sec box-content" id="faq">
-      <h3>Često postavljena pitanja</h3>
+    <section class="raspored-sec box-content" id="raspored">
+      <h3>Raspored</h3>
 
-      <div class="faq-sec__accordions-container">
-        <template data-faq-template>
-          <details class="faq-sec__accordion">
-            <summary class="faq-sec__question"></summary>
-            <p class="faq-sec__answer"></p>
-          </details>
-        </template>
-      </div>
+      <table class="raspored-sec__table">
+        <thead>
+          <tr class="raspored-sec__th-row">
+            <th><h4>Datum</h4></th>
+            <th><h4>Vrijeme</h4></th>
+            <th><h4>Aktivnost</h4></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <template data-raspored-template>
+            <tr>
+              <td class="raspored-sec__datum"><p></p></td>
+              <td class="raspored-sec__vrijeme"><p></p></td>
+              <td class="raspored-sec__aktivnost"><p></p></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
     </section>
 
     <svg
@@ -595,29 +606,43 @@
       />
     </svg>
 
-    <section class="raspored-sec box-content" id="raspored">
-      <h3>Raspored</h3>
+    <section class="faq-sec box-content" id="faq">
+      <h3>Često postavljena pitanja</h3>
 
-      <table class="raspored-sec__table">
-        <thead>
-          <tr class="raspored-sec__th-row">
-            <th><h4>Datum</h4></th>
-            <th><h4>Vrijeme</h4></th>
-            <th><h4>Aktivnost</h4></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <template data-raspored-template>
-            <tr>
-              <td class="raspored-sec__datum"><p></p></td>
-              <td class="raspored-sec__vrijeme"><p></p></td>
-              <td class="raspored-sec__aktivnost"><p></p></td>
-            </tr>
-          </template>
-        </tbody>
-      </table>
+      <div class="faq-sec__accordions-container">
+        <template data-faq-template>
+          <details class="faq-sec__accordion">
+            <summary class="faq-sec__question"></summary>
+            <p class="faq-sec__answer"></p>
+          </details>
+        </template>
+      </div>
     </section>
+
+    <svg
+      class="section-divider hidden"
+      viewBox="0 0 740 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-23.1638"
+        width="804"
+        height="37"
+        transform="rotate(2.84461 -23.1638 0)"
+        fill="#BA67AE"
+        fill-opacity="0.2"
+      />
+      <rect
+        opacity="0.5"
+        x="-31.7477"
+        y="23.9795"
+        width="804"
+        height="38.4828"
+        transform="rotate(-0.711186 -31.7477 23.9795)"
+        fill="#BA67AE"
+      />
+    </svg>
 
     <section class="predavaci-sec box-content hidden" id="predavaci">
       <h3>Predavači</h3>
