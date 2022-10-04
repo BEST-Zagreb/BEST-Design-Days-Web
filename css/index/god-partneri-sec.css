@@ -1,9 +1,9 @@
 /* ===== godisnji partneri section ===== */
 
 .godisnji-partneri-sec__slider {
-  margin: min(2rem, 4vw) auto;
+  margin: min(4vw, 2rem) auto;
 
-  border-radius: min(1rem, 2vw);
+  border-radius: min(2vw, 1rem);
 
   display: flex;
 
@@ -21,7 +21,7 @@
   content: "";
 
   height: 100%;
-  width: min(10rem, 20vw);
+  width: 10%;
 
   position: absolute;
   top: 0;
@@ -62,7 +62,7 @@
   max-height: 10rem;
   object-fit: contain;
 
-  padding-inline: min(2rem, 2vw);
+  padding-inline: 5%;
 
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -79,7 +79,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .godisnji-partneri-sec__slide > a > img {
     width: 45vw;
   }

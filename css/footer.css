@@ -1,14 +1,20 @@
 footer {
+  font-size: min(2vw, 0.75rem);
+
   margin-top: auto;
 
-  padding: 1rem 2rem;
+  padding: 1em 2em;
 
   display: flex;
-  gap: 0.75rem;
+  gap: 1em;
   align-items: center;
   justify-content: right;
 
   background-color: var(--blue-clr);
+}
+
+footer > p {
+  font-size: 1.5em;
 }
 
 footer > p,
@@ -28,5 +34,5 @@ footer > p,
 }
 
 .footer__logo {
-  width: 2rem;
+  width: 1.5em;
 }

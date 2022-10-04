@@ -15,6 +15,13 @@
   },
   {
     "datum": "18.10.2022.",
+    "vrijeme": "16:00",
+    "predavac": "Netgen (Igor Gotal-Lukša)",
+    "predavacImgUrl": "",
+    "tema": "UX Research - Pretpostavka je majka svih… propalih projekata"
+  },
+  {
+    "datum": "18.10.2022.",
     "vrijeme": "17:00",
     "predavac": "Jasenka Pibernik",
     "predavacImgUrl": "./img/people/lecturers/Jasenka_Pibernik.jpg",
@@ -23,7 +30,7 @@
   {
     "datum": "18.10.2022.",
     "vrijeme": "18:00",
-    "predavac": "Atlantis Digital (Ljubiša Kukulj)",
+    "predavac": "Ljubiša Kukulj",
     "predavacImgUrl": "./img/people/lecturers/Ljubisa_Kukulj.jpeg",
     "tema": "Introduction to UX"
   },
@@ -54,6 +61,20 @@
     "predavac": "Filip Peraić",
     "predavacImgUrl": "",
     "tema": "How to build a personal project"
+  },
+  {
+    "datum": "20.10.2022.",
+    "vrijeme": "17:00",
+    "predavac": "Bruketa&Žinic&Grey (Davor Bruketa)",
+    "predavacImgUrl": "",
+    "tema": "Što smo to, dovraga, napravili?!"
+  },
+  {
+    "datum": "20.10.2022.",
+    "vrijeme": "18:00",
+    "predavac": "Macan",
+    "predavacImgUrl": "",
+    "tema": "Primjena digitalnih tehnologija"
   },
   {
     "datum": "21.10.2022.",

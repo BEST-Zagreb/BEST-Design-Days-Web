@@ -1,7 +1,7 @@
 /* ===== info icons section ===== */
 
 .info-icons-sec {
-  padding-block: min(14rem, 28vw);
+  padding-block: min(28vw, 14rem);
 
   position: relative;
   overflow: hidden;
@@ -66,7 +66,7 @@
     swell 9s ease -1.25s infinite;
 }
 
-@media (prefers-reduced-motion) or (max-width: 450px) {
+@media (prefers-reduced-motion) or (max-width: 480px) {
   .wave {
     animation: none;
   }
@@ -96,44 +96,45 @@
 }
 
 .info-icons-sec__files-cards {
+  font-size: 2vw;
+
   display: flex;
   flex-wrap: wrap;
-  gap: min(1rem, 2vw);
+  gap: 4%;
   align-items: top;
   justify-content: space-around;
 }
 
 .info-icons-sec__file-card {
-  width: clamp(4rem, 30vw, 30rem);
+  flex-basis: clamp(8rem, 30%, 25rem);
 
   display: grid;
   place-items: center;
-  grid-template-rows: 3 auto;
-  gap: min(1.5rem, 3vw);
+  gap: min(1.5em, 1rem);
 
   text-align: center;
 }
 
 .info-icons-sec__file-card svg {
-  height: min(16rem, 24vw);
+  width: min(6em, 15rem);
+  aspect-ratio: 1;
 }
 
 .info-icons-sec__doc-name {
-  font-size: min(2rem, 4.5vw);
+  font-size: min(2.5em, 2rem);
   letter-spacing: min(2px, 0.25vw);
 
   text-transform: uppercase;
-  color: var(--white);
-}
-
-.info-icons-sec__doc-text {
-  max-width: 30vw;
 
   color: var(--whitesmoke);
 }
 
-.info-icons-sec__doc-text > a {
+.info-icons-sec__doc-text {
   color: var(--white);
+}
+
+.info-icons-sec__doc-text > a {
+  color: inherit;
 }
 
 .info-icons-sec__doc-text > a:hover,

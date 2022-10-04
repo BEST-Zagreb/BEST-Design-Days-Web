@@ -5,7 +5,7 @@
 }
 
 .best-zg-sec__content {
-  padding-block: min(1rem, 2vw);
+  padding-block: min(2vw, 1rem) 0;
 
   display: flex;
   flex-wrap: wrap;
@@ -21,9 +21,15 @@
 }
 
 .best-zg-sec__container > h4 {
-  padding-block: min(0.5vw, 0.5rem);
+  font-size: min(4.25vw, 1.25rem);
 
-  font-size: min(1.75rem, 4.375vw);
+  padding-block: min(0.5vw, 0.5rem);
+}
+
+@media screen and (min-width: 1600px) {
+  .best-zg-sec__container > h4 {
+    font-size: min(4.25vw, 1.5rem);
+  }
 }
 
 .best-zg-sec__container > h4,
@@ -61,14 +67,18 @@
   gap: 5%;
 }
 
-.best-zg-sec__social-svg {
-  height: min(15vw, 15rem);
+.best-zg-sec__social-icons > a {
+  flex-basis: 20%;
+}
 
-  transition: color 500ms ease-in-out;
-  fill: whitesmoke;
+.best-zg-sec__social-svg {
+  width: 100%;
+
+  /* transition: fill 300ms ease-in-out; */
+  fill: var(--whitesmoke);
 }
 
 .best-zg-sec__social-svg:hover,
-.best-zg-sec__social-icons > a:focus > svg {
+.best-zg-sec__social-icons > a:focus > .best-zg-sec__social-svg {
   fill: url("#svg-gradient");
 }

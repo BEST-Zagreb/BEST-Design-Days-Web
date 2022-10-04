@@ -213,6 +213,13 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+/* custom added for big screens */
+@media screen and (min-width: 1600px) {
+  .flipdown {
+    transform: scale(1.5);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .flipdown {
     /* width: 312px; */
@@ -285,7 +292,7 @@
 }
 
 /* custom added for 3 digit days */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   .flipdown .rotor,
   .flipdown .rotor-leaf,
   .flipdown .rotor-leaf-front,
@@ -298,7 +305,7 @@
 }
 
 /* custom for screens that are too small */
-@media screen and (max-width: 255px) {
+@media screen and (max-width: 280px) {
   .flipdown,
   .flipdown * {
     display: none;

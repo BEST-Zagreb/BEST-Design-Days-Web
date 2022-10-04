@@ -12,8 +12,8 @@ nav {
   align-items: center;
   justify-content: space-between;
 
-  padding-inline: 5vw;
-  padding-block: max(0.75vw, 0.75rem);
+  padding-inline: 5%;
+  padding-block: calc(var(--progress-bar-height) * 1.5);
 
   background-color: transparent;
   backdrop-filter: blur(3rem);
@@ -28,7 +28,7 @@ nav[data-scrolled] {
 }
 
 .nav__logo > img {
-  height: max(calc(var(--nav-height) - 2rem), 1.25rem);
+  height: calc(var(--nav-height) - var(--progress-bar-height) * 3);
 }
 
 .nav__mobile-menu-btn {
@@ -36,10 +36,11 @@ nav[data-scrolled] {
 }
 
 .nav__links {
+  padding: 0;
+
   display: flex;
   align-items: center;
   gap: 2vw;
-  padding: 0;
 }
 
 .nav__links > li {
@@ -56,7 +57,7 @@ nav[data-scrolled] {
 
 .nav__links > li > a {
   font-weight: 700;
-  font-size: min(1.75rem, 4.375vw);
+  font-size: min(1.25rem, 4.375vw);
 
   color: var(--blue-clr);
   text-decoration: none;
@@ -66,6 +67,12 @@ nav[data-scrolled] {
 
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+@media screen and (min-width: 1600px) {
+  .nav__links > li > a {
+    font-size: min(4.375vw, 1.75rem);
+  }
 }
 
 .nav__links > li[data-current-site] > a {
@@ -85,8 +92,6 @@ nav[data-scrolled] {
 
 @media screen and (max-width: 960px) {
   nav {
-    padding-inline: 5vw;
-
     border-radius: 0 0 5vw 3vw/ 0 0 3vw 2vw;
   }
 
@@ -120,7 +125,7 @@ nav[data-scrolled] {
 
   .nav__links > li {
     width: 100%;
-    margin-left: 3vw;
+    margin-left: 2%;
 
     transition: margin-left 200ms ease-in-out;
   }
@@ -130,7 +135,7 @@ nav[data-scrolled] {
   .nav__links > li[data-current-site] {
     transform: none;
 
-    margin-left: 4vw;
+    margin-left: 5%;
   }
 
   .nav__links > hr {

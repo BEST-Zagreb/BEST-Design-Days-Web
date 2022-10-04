@@ -6,6 +6,8 @@
 }
 
 .faq-sec__accordion {
+  padding: 1%;
+
   flex-basis: 50%;
 
   background-color: var(--whitesmoke);
@@ -37,7 +39,7 @@
   cursor: pointer;
 }
 
-.faq-sec__accordion:not([open]):hover > .faq-sec__question {
+.faq-sec__accordion:not([open]):hover > .faq-sec__question > p {
   color: var(--white);
 }
 
@@ -46,9 +48,6 @@
 }
 
 .faq-sec__question {
-  padding: min(2vw, 0.75rem);
-
-  font-size: min(3.75vw, 1.375rem);
   list-style: none;
   color: var(--text-clr-dark);
 
@@ -58,10 +57,10 @@
 .faq-sec__question::before {
   content: "";
   display: inline-block;
-  width: 1em;
+  width: 2ch;
   aspect-ratio: 1;
 
-  margin-right: min(2vw, 0.5rem);
+  margin-right: 2%;
 
   background-image: url(../../img/questionmark-icon.svg);
   background-position: center;
@@ -69,10 +68,11 @@
   background-size: 140%;
 }
 
-.faq-sec__answer {
-  padding-inline: min(2vw, 0.75rem);
+.faq-sec__question > p {
+  display: inline;
+  color: var(--text-clr-dark);
 
-  font-size: min(3.5vw, 1.25rem);
+  font-style: italic;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,5 +94,15 @@
 
   .faq-sec__accordion:last-of-type {
     border-bottom-left-radius: min(2vw, 1rem);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .faq-sec__question {
+    font-size: min(3.75vw, 1.375rem);
+  }
+
+  .faq-sec__answer {
+    font-size: min(3.5vw, 1.25rem);
   }
 }

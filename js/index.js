@@ -71,11 +71,13 @@ fetch("./data/faqs.json")
     data.map((faq) => {
       const faqElement = faqTemplate.content.cloneNode(true).children[0];
 
-      const faqQuestionElement = faqElement.querySelector(".faq-sec__question");
+      const faqQuestionElement = faqElement.querySelector(
+        ".faq-sec__question > p"
+      );
       const faqAnswerElement = faqElement.querySelector(".faq-sec__answer");
 
-      faqQuestionElement.textContent = faq.question;
-      faqAnswerElement.textContent = faq.answer;
+      faqQuestionElement.innerText = faq.question;
+      faqAnswerElement.innerText = faq.answer;
 
       faqsContainer.append(faqElement);
     });
@@ -150,12 +152,12 @@ fetch("./data/aktivnosti.json")
         ".raspored-sec__aktivnost"
       );
 
-      rasporedDatumElement.firstChild.textContent =
+      rasporedDatumElement.firstChild.innerText =
         daniUTjednu[new Date(parseDateFormat(aktivnost.datum)).getDay()] +
         " " +
         aktivnost.datum;
-      rasporedVrijemeElement.firstChild.textContent = aktivnost.vrijeme;
-      rasporedAktivnostElement.firstChild.textContent = aktivnost.predavac
+      rasporedVrijemeElement.firstChild.innerText = aktivnost.vrijeme;
+      rasporedAktivnostElement.firstChild.innerText = aktivnost.predavac
         ? aktivnost.predavac + " - " + aktivnost.tema
         : aktivnost.tema;
 
@@ -188,8 +190,8 @@ fetch("./data/aktivnosti.json")
           "Predavač " + aktivnost.predavac
         );
         predavacImgElement.setAttribute("title", aktivnost.predavac);
-        predavacImeElement.textContent = aktivnost.predavac;
-        predavacAktivnostElement.textContent = aktivnost.tema;
+        predavacImeElement.innerText = aktivnost.predavac;
+        predavacAktivnostElement.innerText = aktivnost.tema;
 
         predavaciCarousel.append(predavacCardElement);
       }
@@ -384,7 +386,7 @@ let numberOfItemsToSlide = 2; // must be <= number of items in carousel (slideIm
 let slideDuration = 1500; // in miliseconds
 let pauseDuration = 3500; // must be >= slideDuration, in miliseconds
 
-if (window.matchMedia("(max-width: 450px)").matches) {
+if (window.matchMedia("(max-width: 480px)").matches) {
   numberOfItemsToSlide = 1; // must be <= number of items in carousel
   slideDuration = 750; // in miliseconds
   pauseDuration = 2500; // must be >= slideDuration, in miliseconds
@@ -441,23 +443,23 @@ fetch("./data/organizacijskiTim.json")
           organizator.funkcija + " " + organizator.ime
         );
 
-        kontaktFunkcijaElement.textContent = organizator.funkcija;
+        kontaktFunkcijaElement.innerText = organizator.funkcija;
 
-        kontaktImeElement.textContent = organizator.ime;
+        kontaktImeElement.innerText = organizator.ime;
 
         if (organizator.email) {
           kontaktLinkElements[0].setAttribute(
             "href",
             "mailto:" + organizator.email
           );
-          kontaktLinkElements[0].textContent = organizator.email;
+          kontaktLinkElements[0].innerText = organizator.email;
         }
         if (organizator.tel) {
           kontaktLinkElements[1].setAttribute(
             "href",
             "tel:" + organizator.tel.replace(/\s/g, "")
           );
-          kontaktLinkElements[1].textContent = organizator.tel;
+          kontaktLinkElements[1].innerText = organizator.tel;
         }
 
         kontaktCards.append(kontaktCardElement);

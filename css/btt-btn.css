@@ -1,9 +1,11 @@
 .backToTopBtn {
-  position: fixed;
-  right: min(3rem, 5vw);
-  bottom: min(3rem, 5vw);
+  font-size: clamp(1.75rem, 2.5vw, 3rem);
 
-  width: min(5rem, calc(10vw + 0.5rem));
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+
+  width: 1.5em;
   aspect-ratio: 1;
 
   backdrop-filter: blur(1px);
