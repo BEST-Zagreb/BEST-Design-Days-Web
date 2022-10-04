@@ -20,7 +20,7 @@
 }
 
 .raspored-sec__th-row > th {
-  font-size: min(4.25vw, 1.75rem);
+  font-size: min(4.25vw, 1.25rem);
 
   background-color: var(--brown-clr);
   border-color: var(--whitesmoke);
@@ -32,4 +32,10 @@
 
 .raspored-sec__th-row > th > h4 {
   color: var(--whitesmoke);
+}
+
+@media screen and (min-width: 1600px) {
+  .raspored-sec__th-row > th {
+    font-size: min(4.25vw, 1.5rem);
+  }
 }

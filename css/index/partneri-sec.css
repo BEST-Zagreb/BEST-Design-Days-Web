@@ -55,7 +55,7 @@
 
 .partneri-sec__imgs-container > div > a > img {
   max-width: 100%;
-  max-height: 15vh;
+  max-height: min(6vw, 10rem);
 
   transition: transform 0.3s ease-in-out;
 }
@@ -68,5 +68,9 @@
 @media screen and (max-width: 450px) {
   .partneri-sec__imgs-container > div {
     width: 100%;
+  }
+
+  .partneri-sec__imgs-container > div > a > img {
+    max-height: 10vw;
   }
 }

@@ -12,7 +12,7 @@
   stroke: var(--text-clr-dark);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .zasto-bdd-sec__animated-svg {
     display: none;
   }

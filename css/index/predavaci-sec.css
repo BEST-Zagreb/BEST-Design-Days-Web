@@ -6,7 +6,8 @@
   border: none;
   background-color: transparent;
 
-  width: min(8vw, 4rem);
+  width: 5%;
+  min-width: 1.5rem;
 
   position: absolute;
   top: 50%;
@@ -46,7 +47,7 @@
 
   overflow: hidden;
 
-  width: 85%;
+  width: 80%;
   margin-inline: auto;
 }
 
@@ -65,7 +66,7 @@
 
   flex-basis: 25%;
 
-  padding-inline: min(4vw, 2rem);
+  padding-inline: 4%;
 }
 
 @media screen and (max-width: 1368px) {
@@ -81,6 +82,8 @@
 }
 
 .predavaci-sec__img-container {
+  margin-inline: 15%;
+
   background-color: var(--whitesmoke);
   overflow: hidden;
   aspect-ratio: 1;
@@ -97,7 +100,7 @@
 }
 
 .predavaci-sec__text-container {
-  padding: min(2vw, 1rem);
+  padding: 2%;
 }
 
 .predavaci-sec__text-container > h4,
@@ -109,11 +112,21 @@
 }
 
 .predavaci-sec__text-container > h4 {
-  font-size: 1.5em;
+  font-size: 1.125em;
   font-weight: 700;
 }
 
 .predavaci-sec__text-container > h5 {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 400;
+}
+
+@media screen and (min-width: 1600px) {
+  .predavaci-sec__text-container > h4 {
+    font-size: 1.5em;
+  }
+
+  .predavaci-sec__text-container > h5 {
+    font-size: 1.25em;
+  }
 }

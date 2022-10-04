@@ -12,7 +12,7 @@
 
 .box-content {
   margin: 0 auto;
-  padding-inline: min(2vw, 4rem);
+  padding-inline: min(5%, 5rem);
 
   width: 100%;
   max-width: 120rem;
@@ -25,6 +25,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .box-content {
+    padding-inline: 2%;
+  }
+
   .section-divider {
     transform: none;
   }

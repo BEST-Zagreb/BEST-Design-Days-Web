@@ -10,19 +10,19 @@
     "srebrni": [
       {
         "naziv": "Netgen",
-        "imgUrl": "./img/Partners/BDD/Netgen-logo.svg",
+        "imgUrl": "./img/partners/BDD/Netgen-logo.svg",
         "linkUrl": "https://netgen.io/"
       },
       {
         "naziv": "Bruketa&Žinić&Grey",
-        "imgUrl": "./img/Partners/BDD/BZG/BZG-logo-3-rgb.png",
+        "imgUrl": "./img/partners/BDD/BZG/BZG-logo-3-rgb.png",
         "linkUrl": "https://bruketa-zinic.com/hr/"
       }
     ],
     "broncani": [
       {
         "naziv": "Macan",
-        "imgUrl": "./img/Partners/BDD/Macan-logo.png",
+        "imgUrl": "./img/partners/BDD/Macan-logo.png",
         "linkUrl": "https://macan.hr/"
       }
     ],
