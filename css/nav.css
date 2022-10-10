@@ -71,7 +71,7 @@ nav[data-scrolled] {
 
 @media screen and (min-width: 1600px) {
   .nav__links > li > a {
-    font-size: min(4.375vw, 1.75rem);
+    font-size: 1.75rem;
   }
 }
 

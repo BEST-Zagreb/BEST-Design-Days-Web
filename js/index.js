@@ -157,9 +157,37 @@ fetch("./data/aktivnosti.json")
         " " +
         aktivnost.datum;
       rasporedVrijemeElement.firstChild.innerText = aktivnost.vrijeme;
-      rasporedAktivnostElement.firstChild.innerText = aktivnost.predavac
-        ? aktivnost.predavac + " - " + aktivnost.tema
-        : aktivnost.tema;
+
+      let aktivnostNaziv = aktivnost.tema;
+      // ako postoji predavac za tu aktivnost
+      if (aktivnost.predavaci[0].ime) {
+        // ako postoji tvrtka iza te aktivnosti
+        if (aktivnost.tvrtka) {
+          aktivnostNaziv = ") - " + aktivnostNaziv;
+
+          for (let index = 0; index < aktivnost.predavaci.length; index++) {
+            if (index === 0) {
+              aktivnostNaziv = aktivnost.predavaci[index].ime + aktivnostNaziv;
+            } else {
+              aktivnostNaziv =
+                aktivnost.predavaci[index].ime + " & " + aktivnostNaziv;
+            }
+          }
+
+          aktivnostNaziv = aktivnost.tvrtka + " (" + aktivnostNaziv;
+        } else {
+          for (let index = 0; index < aktivnost.predavaci.length; index++) {
+            if (index === 0) {
+              aktivnostNaziv =
+                aktivnost.predavaci[index].ime + " - " + aktivnostNaziv;
+            } else {
+              aktivnostNaziv =
+                aktivnost.predavaci[index].ime + " & " + aktivnostNaziv;
+            }
+          }
+        }
+      }
+      rasporedAktivnostElement.firstChild.innerText = aktivnostNaziv;
 
       rasporedTable.append(rasporedTrElement);
     });
@@ -168,32 +196,34 @@ fetch("./data/aktivnosti.json")
   })
   .then((data) => {
     data.map((aktivnost) => {
-      if (aktivnost.predavac) {
-        const predavacCardElement =
-          predavacCardTemplate.content.cloneNode(true).children[0];
+      // ako je predavanje/radionica
+      if (aktivnost.predavaci[0].ime) {
+        aktivnost.predavaci.forEach((predavac) => {
+          const predavacCardElement =
+            predavacCardTemplate.content.cloneNode(true).children[0];
 
-        const predavacImgElement = predavacCardElement.querySelector(
-          ".predavaci-sec__img-container > img"
-        );
-        const predavacImeElement = predavacCardElement.querySelector(
-          ".predavaci-sec__text-container > h4"
-        );
-        const predavacAktivnostElement = predavacCardElement.querySelector(
-          ".predavaci-sec__text-container > h5"
-        );
+          const predavacImgElement = predavacCardElement.querySelector(
+            ".predavaci-sec__img-container > img"
+          );
+          const predavacImeElement = predavacCardElement.querySelector(
+            ".predavaci-sec__text-container > h4"
+          );
+          const predavacAktivnostElement = predavacCardElement.querySelector(
+            ".predavaci-sec__text-container > h5"
+          );
 
-        if (aktivnost.predavacImgUrl) {
-          predavacImgElement.setAttribute("src", aktivnost.predavacImgUrl);
-        }
-        predavacImgElement.setAttribute(
-          "alt",
-          "Predavač " + aktivnost.predavac
-        );
-        predavacImgElement.setAttribute("title", aktivnost.predavac);
-        predavacImeElement.innerText = aktivnost.predavac;
-        predavacAktivnostElement.innerText = aktivnost.tema;
+          if (predavac.imgUrl) {
+            predavacImgElement.setAttribute("src", predavac.imgUrl);
+          }
+          predavacImgElement.setAttribute("alt", "Predavač " + predavac.ime);
+          predavacImgElement.setAttribute("title", predavac.ime);
+          predavacImeElement.innerText = aktivnost.tvrtka
+            ? aktivnost.tvrtka + " (" + predavac.ime + ")"
+            : predavac.ime;
+          predavacAktivnostElement.innerText = aktivnost.tema;
 
-        predavaciCarousel.append(predavacCardElement);
+          predavaciCarousel.append(predavacCardElement);
+        });
       }
     });
   })

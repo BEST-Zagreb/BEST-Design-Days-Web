@@ -51,10 +51,10 @@
 
 @media screen and (min-width: 1600px) {
   .bdd-sec__heading {
-    font-size: min(8vw, 8rem);
+    font-size: 8rem;
   }
 
   .bdd-sec__heading-logo {
-    height: min(7vw, 6.5rem);
+    height: 6.5rem;
   }
 }
