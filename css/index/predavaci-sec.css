@@ -7,7 +7,7 @@
   background-color: transparent;
 
   width: 5%;
-  min-width: 1.5rem;
+  min-width: 2.5rem;
 
   position: absolute;
   top: 50%;
@@ -122,6 +122,10 @@
 }
 
 @media screen and (min-width: 1600px) {
+  .predavaci-sec__img-container {
+    margin-inline: 5%;
+  }
+
   .predavaci-sec__text-container > h4 {
     font-size: 1.5em;
   }

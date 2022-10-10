@@ -89,12 +89,12 @@ li {
 
   /* names of sections */
   h3 {
-    font-size: min(5vw, 3rem);
+    font-size: 3rem;
   }
 
   p,
   li {
-    font-size: min(3.75vw, 1.375rem);
+    font-size: 1.375rem;
   }
 }
 

@@ -292,7 +292,7 @@
 }
 
 /* custom added for 3 digit days */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 350px) {
   .flipdown .rotor,
   .flipdown .rotor-leaf,
   .flipdown .rotor-leaf-front,
@@ -305,7 +305,7 @@
 }
 
 /* custom for screens that are too small */
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 260px) {
   .flipdown,
   .flipdown * {
     display: none;

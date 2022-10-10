@@ -6,7 +6,7 @@
 }
 
 .faq-sec__accordion {
-  padding: 1%;
+  padding: 0.75%;
 
   flex-basis: 50%;
 
@@ -98,11 +98,15 @@
 }
 
 @media screen and (min-width: 1600px) {
+  .faq-sec__accordion {
+    padding: 1%;
+  }
+
   .faq-sec__question {
-    font-size: min(3.75vw, 1.375rem);
+    font-size: 1.375rem;
   }
 
   .faq-sec__answer {
-    font-size: min(3.5vw, 1.25rem);
+    font-size: 1.25rem;
   }
 }

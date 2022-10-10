@@ -36,6 +36,6 @@
 
 @media screen and (min-width: 1600px) {
   .raspored-sec__th-row > th {
-    font-size: min(4.25vw, 1.5rem);
+    font-size: 1.5rem;
   }
 }

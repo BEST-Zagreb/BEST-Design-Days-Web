@@ -608,45 +608,7 @@
       />
     </svg>
 
-    <section class="faq-sec box-content" id="faq">
-      <h3>Često postavljena pitanja</h3>
-
-      <div class="faq-sec__accordions-container">
-        <template data-faq-template>
-          <details class="faq-sec__accordion">
-            <summary class="faq-sec__question"><p></p></summary>
-            <p class="faq-sec__answer"></p>
-          </details>
-        </template>
-      </div>
-    </section>
-
-    <svg
-      class="section-divider hidden"
-      viewBox="0 0 740 77"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="-23.1638"
-        width="804"
-        height="37"
-        transform="rotate(2.84461 -23.1638 0)"
-        fill="#BA67AE"
-        fill-opacity="0.2"
-      />
-      <rect
-        opacity="0.5"
-        x="-31.7477"
-        y="23.9795"
-        width="804"
-        height="38.4828"
-        transform="rotate(-0.711186 -31.7477 23.9795)"
-        fill="#BA67AE"
-      />
-    </svg>
-
-    <section class="hidden predavaci-sec box-content" id="predavaci">
+    <section class="predavaci-sec box-content" id="predavaci">
       <h3>Predavači</h3>
 
       <div>
@@ -685,6 +647,44 @@
             </template>
           </div>
         </div>
+      </div>
+    </section>
+
+    <svg
+      class="section-divider"
+      viewBox="0 0 740 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-23.1638"
+        width="804"
+        height="37"
+        transform="rotate(2.84461 -23.1638 0)"
+        fill="#BA67AE"
+        fill-opacity="0.2"
+      />
+      <rect
+        opacity="0.5"
+        x="-31.7477"
+        y="23.9795"
+        width="804"
+        height="38.4828"
+        transform="rotate(-0.711186 -31.7477 23.9795)"
+        fill="#BA67AE"
+      />
+    </svg>
+
+    <section class="faq-sec box-content" id="faq">
+      <h3>Često postavljena pitanja</h3>
+
+      <div class="faq-sec__accordions-container">
+        <template data-faq-template>
+          <details class="faq-sec__accordion">
+            <summary class="faq-sec__question"><p></p></summary>
+            <p class="faq-sec__answer"></p>
+          </details>
+        </template>
       </div>
     </section>
 
@@ -894,12 +894,14 @@
     </section>
 
     <footer>
-      <img class="footer__logo" src="img/logos/BEST_shuriken_white.png" />
-      <p>
-        &copy
-        <a class="footer__link" href="https://best.hr">BEST Zagreb</a>
-        | Brought to you with 💖 by IT Working Group
-      </p>
+      <div class="box-content">
+        <img class="footer__logo" src="img/logos/BEST_shuriken_white.png" />
+        <p>
+          &copy
+          <a class="footer__link" href="https://best.hr">BEST Zagreb</a>
+          | Brought to you with 💖 by IT Working Group
+        </p>
+      </div>
     </footer>
   </body>
 </html>

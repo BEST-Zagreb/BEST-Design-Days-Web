@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 1600px) {
   .best-zg-sec__container > h4 {
-    font-size: min(4.25vw, 1.5rem);
+    font-size: 1.5rem;
   }
 }
 

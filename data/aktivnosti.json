@@ -2,99 +2,133 @@
   {
     "datum": "17.10.2022.",
     "vrijeme": "16:00",
-    "predavac": "",
-    "predavacImgUrl": "",
-    "tema": "Službeno otvaranje"
+    "tema": "Službeno otvaranje",
+    "tvrtka": "",
+    "predavaci": [{ "ime": "", "imgUrl": "" }]
   },
   {
     "datum": "17.10.2022.",
     "vrijeme": "18:00",
-    "predavac": "Five agency",
-    "predavacImgUrl": "./img/people/lecturers/FIVE-logo-black-highres.png",
-    "tema": "Tips and tricks za uspješan start projekta"
+    "tema": "Tips and tricks za uspješan start projekta",
+    "tvrtka": "FIVE",
+    "predavaci": [
+      {
+        "ime": "Tajana Barac",
+        "imgUrl": "./img/people/lecturers/Tajana_Barac.webp"
+      },
+      {
+        "ime": "Marina Mijatović",
+        "imgUrl": "./img/people/lecturers/Marina_Mijatovic.webp"
+      }
+    ]
   },
   {
     "datum": "18.10.2022.",
     "vrijeme": "16:00",
-    "predavac": "Netgen (Igor Gotal-Lukša)",
-    "predavacImgUrl": "",
-    "tema": "UX Research - Pretpostavka je majka svih… propalih projekata"
+    "tema": "UX Research - Pretpostavka je majka svih… propalih projekata",
+    "tvrtka": "Netgen",
+    "predavaci": [
+      {
+        "ime": "Igor Gotal-Lukša",
+        "imgUrl": "./img/people/lecturers/Igor_Gotal_Luksa.jpg"
+      }
+    ]
   },
   {
     "datum": "18.10.2022.",
     "vrijeme": "17:00",
-    "predavac": "Jasenka Pibernik",
-    "predavacImgUrl": "./img/people/lecturers/Jasenka_Pibernik.jpg",
-    "tema": "Life centered design"
+    "tema": "Life centered design",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "Jasenka Pibernik",
+        "imgUrl": "./img/people/lecturers/Jasenka_Pibernik.jpg"
+      }
+    ]
   },
   {
     "datum": "18.10.2022.",
     "vrijeme": "18:00",
-    "predavac": "Ljubiša Kukulj",
-    "predavacImgUrl": "./img/people/lecturers/Ljubisa_Kukulj.jpeg",
-    "tema": "Introduction to UX"
+    "tema": "Introduction to UX",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "Ljubiša Kukulj",
+        "imgUrl": "./img/people/lecturers/Ljubisa_Kukulj.jpeg"
+      }
+    ]
   },
   {
     "datum": "19.10.2022.",
     "vrijeme": "15:00",
-    "predavac": "Holofiction (Filip Šarić)",
-    "predavacImgUrl": "",
-    "tema": "Multimedija budućnosti"
+    "tema": "Multimedija budućnosti",
+    "tvrtka": "Holofiction",
+    "predavaci": [{ "ime": "Filip Šarić", "imgUrl": "" }]
   },
   {
     "datum": "19.10.2022.",
     "vrijeme": "16:00",
-    "predavac": "Tomislav Stipančić",
-    "predavacImgUrl": "./img/people/lecturers/Tomislav_Stipancic.jpg",
-    "tema": "Cognitive robotics meets design"
+    "tema": "Cognitive robotics meets design",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "Tomislav Stipančić",
+        "imgUrl": "./img/people/lecturers/Tomislav_Stipancic.jpg"
+      }
+    ]
   },
   {
     "datum": "19.10.2022.",
     "vrijeme": "18:00",
-    "predavac": "Dizajnerica.hr (Ivana Ivanušec)",
-    "predavacImgUrl": "",
-    "tema": "Moćno oružje u rukama (ne)odgovornog pojedinca"
+    "tema": "Moćno oružje u rukama (ne)odgovornog pojedinca",
+    "tvrtka": "Dizajnerica.hr",
+    "predavaci": [{ "ime": "Ivana Ivanušec", "imgUrl": "" }]
   },
   {
     "datum": "20.10.2022.",
     "vrijeme": "15:00",
-    "predavac": "Filip Peraić",
-    "predavacImgUrl": "",
-    "tema": "How to build a personal project"
+    "tema": "How to build a personal project",
+    "tvrtka": "",
+    "predavaci": [{ "ime": "Filip Peraić", "imgUrl": "" }]
   },
   {
     "datum": "20.10.2022.",
     "vrijeme": "17:00",
-    "predavac": "Bruketa&Žinic&Grey (Davor Bruketa)",
-    "predavacImgUrl": "",
-    "tema": "Što smo to, dovraga, napravili?!"
+    "tema": "Što smo to, dovraga, napravili?!",
+    "tvrtka": "Bruketa&Žinic&Grey",
+    "predavaci": [
+      {
+        "ime": "Davor Bruketa",
+        "imgUrl": "./img/people/lecturers/Davor_Bruketa.webp"
+      }
+    ]
   },
   {
     "datum": "20.10.2022.",
     "vrijeme": "18:00",
-    "predavac": "Macan",
-    "predavacImgUrl": "",
-    "tema": "Primjena digitalnih tehnologija"
+    "tema": "Primjena digitalnih tehnologija",
+    "tvrtka": "",
+    "predavaci": [{ "ime": "Macan", "imgUrl": "" }]
   },
   {
     "datum": "21.10.2022.",
     "vrijeme": "16:00",
-    "predavac": "",
-    "predavacImgUrl": "",
-    "tema": "Case Study Prezentacije rješenja"
+    "tema": "Case Study Prezentacije rješenja",
+    "tvrtka": "",
+    "predavaci": [{ "ime": "", "imgUrl": "" }]
   },
   {
     "datum": "21.10.2022.",
     "vrijeme": "18:00",
-    "predavac": "",
-    "predavacImgUrl": "",
-    "tema": "Case Study Ocjenjivanje"
+    "tema": "Case Study Ocjenjivanje",
+    "tvrtka": "",
+    "predavaci": [{ "ime": "", "imgUrl": "" }]
   },
   {
     "datum": "21.10.2022.",
     "vrijeme": "19:00",
-    "predavac": "",
-    "predavacImgUrl": "",
-    "tema": "Službeno zatvaranje"
+    "tema": "Službeno zatvaranje",
+    "tvrtka": "",
+    "predavaci": [{ "ime": "", "imgUrl": "" }]
   }
 ]
