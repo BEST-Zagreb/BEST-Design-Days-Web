@@ -53,6 +53,7 @@
     <link href="css/index/faq-sec.css" rel="stylesheet" />
     <link href="css/index/raspored-sec.css" rel="stylesheet" />
     <link href="css/index/predavaci-sec.css" rel="stylesheet" />
+    <!-- TODO: implement organizatore code -->
     <!-- <link href="css/index/organizatori-sec.css" rel="stylesheet" /> -->
     <link href="css/index/partneri-sec.css" rel="stylesheet" />
     <link href="css/index/god-partneri-sec.css" rel="stylesheet" />
@@ -67,6 +68,7 @@
     <script type="text/javascript" src="js/default.js" defer></script>
 
     <script type="text/javascript" src="js/index.js" defer></script>
+    <!-- <script type="text/javascript" src="js/organizatori.js" defer></script> -->
   </head>
   <body>
     <!-- #svg-gradient color -->
@@ -711,9 +713,37 @@
         transform="rotate(-0.711186 -31.7477 23.9795)"
         fill="#BA67AE"
       />
-    </svg> -->
+    </svg>
 
-    <!-- <section class="organizatori-sec box-content" id="organizatori"></section> -->
+    <section class="organizatori-sec box-content" id="organizatori">
+      <h3>Organizatori</h3>
+
+      <div class="organizatori">
+        <div class="org1 swapAnim side-org">
+          <img class="side-img left__img" src="" />
+          <h4 class="left__name"></h4>
+          <p class="left__title"></p>
+        </div>
+        <div class="org2 swapAnim main-org">
+          <img class="main-img middle__img" src="" />
+          <h4 class="middle__name"></h4>
+          <p class="middle__title1"></p>
+          <p class="middle__title2"></p>
+        </div>
+        <div class="org3 swapAnim side-org">
+          <img class="side-img right__img" src="" />
+          <h4 class="right__name"></h4>
+          <p class="right__title"></p>
+        </div>
+      </div>
+
+      <div class="org-btn-div">
+        <button class="org-button" onclick="clickOrg(1)"></button>
+        <button class="org-button" onclick="clickOrg(2)"></button>
+        <button class="org-button" onclick="clickOrg(3)"></button>
+        <button class="org-button" onclick="clickOrg(4)"></button>
+      </div>
+    </section> -->
 
     <svg
       class="section-divider"
