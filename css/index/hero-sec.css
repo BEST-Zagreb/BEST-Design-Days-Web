@@ -75,8 +75,8 @@
     inset 6em 3.5em 0 0 var(--blue-clr-light);
 }
 
-.hero-sec__prijava-btn:enabled:hover > a,
-.hero-sec__prijava-btn:enabled:focus > a {
+.hero-sec__content > a > .hero-sec__prijava-btn:enabled:hover,
+.hero-sec__content > a > .hero-sec__prijava-btn:enabled:hover {
   color: whitesmoke;
 }
 

@@ -30,7 +30,7 @@
     "predavaci": [
       {
         "ime": "Igor Gotal-Lukša",
-        "imgUrl": "./img/people/lecturers/Igor_Gotal_Luksa.jpg"
+        "imgUrl": "./img/people/lecturers/Igor_Gotal_Luksa.webp"
       }
     ]
   },
@@ -41,8 +41,8 @@
     "tvrtka": "",
     "predavaci": [
       {
-        "ime": "Jasenka Pibernik",
-        "imgUrl": "./img/people/lecturers/Jasenka_Pibernik.jpg"
+        "ime": "Jesenka Pibernik",
+        "imgUrl": "./img/people/lecturers/Jasenka_Pibernik.webp"
       }
     ]
   },
@@ -54,7 +54,7 @@
     "predavaci": [
       {
         "ime": "Ljubiša Kukulj",
-        "imgUrl": "./img/people/lecturers/Ljubisa_Kukulj.jpeg"
+        "imgUrl": "./img/people/lecturers/Ljubisa_Kukulj.webp"
       }
     ]
   },
@@ -73,7 +73,7 @@
     "predavaci": [
       {
         "ime": "Tomislav Stipančić",
-        "imgUrl": "./img/people/lecturers/Tomislav_Stipancic.jpg"
+        "imgUrl": "./img/people/lecturers/Tomislav_Stipancic.webp"
       }
     ]
   },
@@ -82,14 +82,24 @@
     "vrijeme": "18:00",
     "tema": "Moćno oružje u rukama (ne)odgovornog pojedinca",
     "tvrtka": "Dizajnerica.hr",
-    "predavaci": [{ "ime": "Ivana Ivanušec", "imgUrl": "" }]
+    "predavaci": [
+      {
+        "ime": "Ivana Ivanušec",
+        "imgUrl": "./img/people/lecturers/Ivana_Ivanusec.webp"
+      }
+    ]
   },
   {
     "datum": "20.10.2022.",
     "vrijeme": "15:00",
     "tema": "How to build a personal project",
     "tvrtka": "",
-    "predavaci": [{ "ime": "Filip Peraić", "imgUrl": "" }]
+    "predavaci": [
+      {
+        "ime": "Filip Peraić",
+        "imgUrl": "./img/people/lecturers/filip_peraic.webp"
+      }
+    ]
   },
   {
     "datum": "20.10.2022.",
@@ -108,7 +118,9 @@
     "vrijeme": "18:00",
     "tema": "Primjena digitalnih tehnologija",
     "tvrtka": "",
-    "predavaci": [{ "ime": "Macan", "imgUrl": "" }]
+    "predavaci": [
+      { "ime": "Macan", "imgUrl": "./img/people/lecturers/Filip_Macan.webp" }
+    ]
   },
   {
     "datum": "21.10.2022.",
