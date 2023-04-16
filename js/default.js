@@ -46,8 +46,6 @@ const menuCloseSvg = document.querySelector(".nav__close-svg");
 
 const navLinks = document.querySelectorAll(".nav__links > li > a");
 
-// TODO: change data-current-site when scrolling with intersection observers
-
 function toggleNav() {
   const navExpanded = nav.getAttribute("data-expanded");
   if (navExpanded === "false") {

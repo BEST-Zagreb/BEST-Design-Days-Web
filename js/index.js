@@ -60,54 +60,6 @@ flipdown.ifEnded(() => {
   console.log("Event ended!");
 });
 
-// ===== faqs json data import =====
-
-const faqTemplate = document.querySelector("[data-faq-template]");
-const faqsContainer = document.querySelector(".faq-sec__accordions-container");
-
-fetch("./data/faqs.json")
-  .then((res) => res.json())
-  .then((data) => {
-    data.map((faq) => {
-      const faqElement = faqTemplate.content.cloneNode(true).children[0];
-
-      const faqQuestionElement = faqElement.querySelector(
-        ".faq-sec__question > p"
-      );
-      const faqAnswerElement = faqElement.querySelector(".faq-sec__answer");
-
-      faqQuestionElement.innerText = faq.question;
-      faqAnswerElement.innerText = faq.answer;
-
-      faqsContainer.append(faqElement);
-    });
-  })
-  .then(() => {
-    // automatically close all other accordions when one is opened
-    const accordions = document.querySelectorAll(".faq-sec__accordion");
-
-    accordions.forEach((accordion) => {
-      accordion.addEventListener("click", (event) => {
-        accordions.forEach((accordionOther) => {
-          if (
-            accordion != accordionOther &&
-            accordionOther.hasAttribute("open")
-          ) {
-            accordionOther.removeAttribute("open");
-
-            // when clicking on question, open attribute gets auto added and breaks in case not if
-            if (event.target === accordion) {
-              accordion.setAttribute("open", "");
-            }
-          }
-        });
-      });
-    });
-  })
-  .catch((err) => {
-    console.error(err);
-  });
-
 // ===== raspored & predavaci json data import =====
 
 const rasporedTrTemplate = document.querySelector("[data-raspored-template]");
@@ -281,6 +233,170 @@ predavaciCarouselBtnRight.addEventListener("click", () => {
 
   movePredavaciCarousel();
 });
+
+// ===== faqs json data import =====
+
+const faqTemplate = document.querySelector("[data-faq-template]");
+const faqsContainer = document.querySelector(".faq-sec__accordions-container");
+
+fetch("./data/faqs.json")
+  .then((res) => res.json())
+  .then((data) => {
+    data.map((faq) => {
+      const faqElement = faqTemplate.content.cloneNode(true).children[0];
+
+      const faqQuestionElement = faqElement.querySelector(
+        ".faq-sec__question > p"
+      );
+      const faqAnswerElement = faqElement.querySelector(".faq-sec__answer");
+
+      faqQuestionElement.innerText = faq.question;
+      faqAnswerElement.innerText = faq.answer;
+
+      faqsContainer.append(faqElement);
+    });
+  })
+  .then(() => {
+    // automatically close all other accordions when one is opened
+    const accordions = document.querySelectorAll(".faq-sec__accordion");
+
+    accordions.forEach((accordion) => {
+      accordion.addEventListener("click", (event) => {
+        accordions.forEach((accordionOther) => {
+          if (
+            accordion != accordionOther &&
+            accordionOther.hasAttribute("open")
+          ) {
+            accordionOther.removeAttribute("open");
+
+            // when clicking on question, open attribute gets auto added and breaks in case not if
+            if (event.target === accordion) {
+              accordion.setAttribute("open", "");
+            }
+          }
+        });
+      });
+    });
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+// ===== organisers json data import and carousel logic =====
+
+const orgsElement = document.querySelector(".organizatori");
+const btnsElements = document.querySelectorAll(".org-btns-container > button");
+
+// Set objects with references to the leftOrg, midOrg, and rightOrg elements
+const leftOrg = {
+  img: document.querySelectorAll(".org__img")[0],
+  name: document.querySelectorAll(".org__name")[0],
+  function: document.querySelectorAll(".org__function")[0],
+};
+const midOrg = {
+  img: document.querySelectorAll(".org__img")[1],
+  name: document.querySelectorAll(".org__name")[1],
+  function1: document.querySelectorAll(".org__function")[1],
+  function2: document.querySelector(".org__function2"),
+};
+const rightOrg = {
+  img: document.querySelectorAll(".org__img")[2],
+  name: document.querySelectorAll(".org__name")[2],
+  function: document.querySelectorAll(".org__function")[2],
+};
+
+// Set duration of opacity transition
+const transitionDuration = 0.5;
+orgsElement.style.transition =
+  orgsElement.style.transition + transitionDuration + "s";
+
+let count = 0;
+let orgData = null;
+let timeoutId = null;
+
+// Fetch data and start loop
+async function getData() {
+  const response = await fetch("data/organizacijskiTim.json");
+  orgData = await response.json();
+
+  // Update elements with data
+  swapOrg();
+
+  // Start loop that updates elements every 5 seconds
+  timeoutId = setInterval(() => {
+    count++;
+
+    orgsElement.style.opacity = 0;
+    setTimeout(() => {
+      swapOrg();
+
+      orgsElement.style.opacity = 1;
+    }, 500);
+  }, 5000);
+}
+
+// Update elements with data
+function swapOrg() {
+  // Get index of current
+  let id = count % orgData.length;
+
+  // Update elements for the leftOrg
+  leftOrg.img.src = orgData[id].imgUrl;
+  leftOrg.img.alt = orgData[id].ime;
+  leftOrg.name.textContent = orgData[id].ime;
+  leftOrg.function.textContent = orgData[id].funkcija;
+
+  // Update elements for the midOrg
+  id = (count + 1) % orgData.length;
+  btnsElements.forEach((btnElement) => {
+    btnElement.removeAttribute("active");
+  });
+  btnsElements[id].setAttribute("active", "true");
+  midOrg.img.src = orgData[id].imgUrl;
+  midOrg.img.alt = orgData[id].ime;
+  midOrg.name.textContent = orgData[id].ime;
+  midOrg.function1.textContent = orgData[id].funkcija;
+  midOrg.function2.textContent = orgData[id].funkcija2;
+
+  // Update elements for the rightOrg
+  id = (count + 2) % orgData.length;
+  rightOrg.img.src = orgData[id].imgUrl;
+  rightOrg.img.alt = orgData[id].ime;
+  rightOrg.name.textContent = orgData[id].ime;
+  rightOrg.function.textContent = orgData[id].funkcija;
+}
+
+// Handle button click
+btnsElements.forEach((btnElement, index) => {
+  btnElement.addEventListener("click", () => {
+    const newCount = (index + 3) % orgData.length;
+    if (count !== newCount) {
+      count = newCount;
+
+      // Disable all buttons because of spam
+      btnsElements.forEach((btn) => {
+        btn.disabled = true;
+      });
+
+      orgsElement.style.opacity = 0;
+      setTimeout(() => {
+        // Update elements with data and fade in
+        swapOrg();
+        orgsElement.style.opacity = 1;
+
+        // Enable all buttons
+        setTimeout(() => {
+          btnsElements.forEach((btn) => {
+            btn.disabled = false;
+          });
+        }, 100);
+      }, 500);
+    }
+  });
+});
+
+// Call initial function to fetch data
+getData();
 
 // ===== BDD partners json data import =====
 

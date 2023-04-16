@@ -53,8 +53,7 @@
     <link href="css/index/faq-sec.css" rel="stylesheet" />
     <link href="css/index/raspored-sec.css" rel="stylesheet" />
     <link href="css/index/predavaci-sec.css" rel="stylesheet" />
-    <!-- TODO: implement organizatore code -->
-    <!-- <link href="css/index/organizatori-sec.css" rel="stylesheet" /> -->
+    <link href="css/index/organizatori-sec.css" rel="stylesheet" />
     <link href="css/index/partneri-sec.css" rel="stylesheet" />
     <link href="css/index/god-partneri-sec.css" rel="stylesheet" />
     <link href="css/index/kontakt-sec.css" rel="stylesheet" />
@@ -68,7 +67,7 @@
     <script type="text/javascript" src="js/default.js" defer></script>
 
     <script type="text/javascript" src="js/index.js" defer></script>
-    <!-- <script type="text/javascript" src="js/organizatori.js" defer></script> -->
+    <script type="text/javascript" src="js/organizatori.js" defer></script>
   </head>
   <body>
     <!-- #svg-gradient color -->
@@ -115,10 +114,10 @@
         <li tabindex="0"><a href="#BDD" tabindex="-1">O projektu</a></li>
         <hr />
         <li tabindex="0"><a href="#raspored" tabindex="-1">Raspored</a></li>
-        <!-- <hr />
+        <hr />
         <li tabindex="0">
           <a href="#predavaci" tabindex="-1">Predavači</a>
-        </li> -->
+        </li>
         <hr />
         <li tabindex="0"><a href="#kontakt" tabindex="-1">Kontakt</a></li>
 
@@ -690,7 +689,7 @@
       </div>
     </section>
 
-    <!-- <svg
+    <svg
       class="section-divider"
       viewBox="0 0 740 77"
       fill="none"
@@ -719,31 +718,37 @@
       <h3>Organizatori</h3>
 
       <div class="organizatori">
-        <div class="org1 swapAnim side-org">
-          <img class="side-img left__img" src="" />
-          <h4 class="left__name"></h4>
-          <p class="left__title"></p>
+        <div class="org side-org">
+          <img class="org__img" />
+          <div class="org__text-container">
+            <h4 class="org__name"></h4>
+            <p class="org__function"></p>
+          </div>
         </div>
-        <div class="org2 swapAnim main-org">
-          <img class="main-img middle__img" src="" />
-          <h4 class="middle__name"></h4>
-          <p class="middle__title1"></p>
-          <p class="middle__title2"></p>
+        <div class="org main-org">
+          <img class="org__img" />
+          <div class="org__text-container">
+            <h4 class="org__name"></h4>
+            <p class="org__function"></p>
+            <p class="org__function2"></p>
+          </div>
         </div>
-        <div class="org3 swapAnim side-org">
-          <img class="side-img right__img" src="" />
-          <h4 class="right__name"></h4>
-          <p class="right__title"></p>
+        <div class="org side-org">
+          <img class="org__img" />
+          <div class="org__text-container">
+            <h4 class="org__name"></h4>
+            <p class="org__function"></p>
+          </div>
         </div>
       </div>
 
-      <div class="org-btn-div">
-        <button class="org-button" onclick="clickOrg(1)"></button>
-        <button class="org-button" onclick="clickOrg(2)"></button>
-        <button class="org-button" onclick="clickOrg(3)"></button>
-        <button class="org-button" onclick="clickOrg(4)"></button>
+      <div class="org-btns-container">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
       </div>
-    </section> -->
+    </section>
 
     <svg
       class="section-divider"
