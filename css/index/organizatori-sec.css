@@ -49,7 +49,7 @@
 }
 
 .main-org {
-  width: 30%;
+  width: 25%;
 
   background: linear-gradient(
     var(--blue-clr-light),
@@ -59,7 +59,7 @@
 }
 
 .side-org {
-  width: 25%;
+  width: 20%;
 
   background: linear-gradient(
     var(--pink-clr),
@@ -100,9 +100,9 @@
   background-color: var(--pink-clr-light);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .main-org {
-    width: 80%;
+    width: 60%;
   }
 
   .side-org {

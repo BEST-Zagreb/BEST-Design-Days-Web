@@ -32,6 +32,13 @@
         "imgUrl": "./img/partners/BDD/FIVE/FIVE-logo-black-highres.png",
         "linkUrl": "https://five.agency/"
       }
+    ],
+    "materijalni": [
+      {
+        "naziv": "Nescafe",
+        "imgUrl": "./img/partners/BDD/Nestle/Nescafe-logo-black-RGB.gif",
+        "linkUrl": "https://www.nescafe.com/"
+      }
     ]
   },
 
