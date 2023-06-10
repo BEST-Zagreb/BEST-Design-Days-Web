@@ -1,0 +1,46 @@
+[
+  {
+    "ime": "Alen Komadina",
+    "funkcija": "Glavni organizator",
+    "funkcija2": "Odgovoran za odnose s javnošću",
+    "funkcijaEng": "Main organiser",
+    "funkcija2Eng": "PR responsible",
+    "email": "alen.komadina@best.hr",
+    "tel": "+385 98 914 5659",
+    "imgUrl": "./img/people/orgs/2022/alen.jpg",
+    "kontakt": "da"
+  },
+  {
+    "ime": "Kristina Vukušić",
+    "funkcija": "Odgovorna za odnose s tvrtkama",
+    "funkcija2": "",
+    "funkcijaEng": "FR responsible",
+    "funkcija2Eng": "",
+    "email": "kristina.vukusic@best.hr",
+    "tel": "+385 98 934 1835",
+    "imgUrl": "./img/people/orgs/2022/kristina.jpg",
+    "kontakt": "da"
+  },
+  {
+    "ime": "Jakov Jakovac",
+    "funkcija": "Odgovoran za sudionike",
+    "funkcija2": "Odgovoran za logistiku",
+    "funkcijaEng": "Participants responsible",
+    "funkcija2Eng": "Logistics responsible",
+    "email": "jakov.jakovac@best.hr",
+    "tel": "+385 99 590 3943",
+    "imgUrl": "./img/people/orgs/2022/jj.jpg",
+    "kontakt": "da"
+  },
+  {
+    "ime": "Laura Zebec",
+    "funkcija": "Akademik",
+    "funkcija2": "",
+    "funkcijaEng": "Responsible for lecturers",
+    "funkcija2Eng": "",
+    "email": "laura.zebec@best-eu.org",
+    "tel": "+385 99 509 1730",
+    "imgUrl": "./img/people/orgs/2022/laura.jpg",
+    "kontakt": "ne"
+  }
+]
