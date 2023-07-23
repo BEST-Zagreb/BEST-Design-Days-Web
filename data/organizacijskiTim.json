@@ -8,7 +8,7 @@
     "email": "lucija.curlin@best.hr",
     "tel": "+385 91 2331 010",
     "imgUrl": "./img/people/orgs/2023/lc.jpg",
-    "kontakt": "da"
+    "kontakt": true
   },
   {
     "ime": "Jelena Penava",
@@ -19,7 +19,7 @@
     "email": "jelena.penava@best.hr",
     "tel": "+385 92 131 8600",
     "imgUrl": "./img/people/orgs/2023/jp.jpg",
-    "kontakt": "da"
+    "kontakt": true
   },
   {
     "ime": "Sara Rivić Carević",
@@ -30,7 +30,7 @@
     "email": "sara.carevic@best.hr",
     "tel": "+385 98 196 2994",
     "imgUrl": "./img/people/orgs/2023/src.jpg",
-    "kontakt": "da"
+    "kontakt": true
   },
   {
     "ime": "Tea Madžarac",
@@ -39,9 +39,9 @@
     "funkcijaEng": "Responsible for lecturers",
     "funkcija2Eng": null,
     "email": "tea.madzarac@best-eu.org",
-    "tel": "+385 91 244 4514",
+    "tel": null,
     "imgUrl": "./img/people/orgs/2023/tm.jpg",
-    "kontakt": "ne"
+    "kontakt": false
   },
   {
     "ime": "Antun Matijašec",
@@ -50,8 +50,19 @@
     "funkcijaEng": "Design responsible",
     "funkcija2Eng": null,
     "email": "antun.matijasec@best-eu.org",
-    "tel": "+385 99 638 2838",
+    "tel": null,
     "imgUrl": "./img/people/orgs/2023/am.jpg",
-    "kontakt": "ne"
+    "kontakt": false
+  },
+  {
+    "ime": "Laura Zebec",
+    "funkcija": "Odgovorna za odnose s javnošću",
+    "funkcija2": null,
+    "funkcijaEng": "Public relations responsible",
+    "funkcija2Eng": null,
+    "email": "laura.zebec@best.hr",
+    "tel": null,
+    "imgUrl": "./img/people/orgs/2023/lz.jpeg",
+    "kontakt": false
   }
 ]

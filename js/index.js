@@ -43,7 +43,7 @@
 // ===== hero sections flipdown =====
 {
   // Unix timestamp (in seconds) to count down to
-  const eventStart = Math.round(new Date(2023, 09, 30, 16) / 1000); // 30th October 2023 at 4 pm in seconds
+  const eventStart = Math.round(new Date(2023, 9, 23, 16) / 1000); // 30th October 2023 at 4 pm in seconds
 
   // Set up FlipDown
   const flipdown = new FlipDown(eventStart, {
@@ -346,6 +346,7 @@
     // Update elements for the leftOrg
     leftOrg.img.src = orgData[id].imgUrl;
     leftOrg.img.alt = orgData[id].ime;
+    leftOrg.img.title = orgData[id].ime + " - " + orgData[id].funkcija;
     leftOrg.name.textContent = orgData[id].ime;
     leftOrg.function.textContent = orgData[id].funkcija;
 
@@ -357,6 +358,7 @@
     btnsElements[id].setAttribute("active", "true");
     midOrg.img.src = orgData[id].imgUrl;
     midOrg.img.alt = orgData[id].ime;
+    midOrg.img.title = orgData[id].ime + " - " + orgData[id].funkcija;
     midOrg.name.textContent = orgData[id].ime;
     midOrg.function1.textContent = orgData[id].funkcija;
     midOrg.function2.textContent = orgData[id].funkcija2;
@@ -365,6 +367,7 @@
     id = (count + 2) % orgData.length;
     rightOrg.img.src = orgData[id].imgUrl;
     rightOrg.img.alt = orgData[id].ime;
+    rightOrg.img.title = orgData[id].ime + " - " + orgData[id].funkcija;
     rightOrg.name.textContent = orgData[id].ime;
     rightOrg.function.textContent = orgData[id].funkcija;
   }
@@ -628,7 +631,7 @@
       kontaktImageGradient + ", url(" + organizator.imgUrl + ")";
     kontaktImgDivElement.setAttribute(
       "title",
-      organizator.funkcija + " " + organizator.ime
+      organizator.ime + " - " + organizator.funkcija
     );
 
     kontaktFunkcijaElement.innerText = organizator.funkcija;
@@ -674,7 +677,7 @@
     try {
       const data = await fetchOrganizacijskiTimData();
       data.forEach((organizator) => {
-        if (organizator.kontakt === "da") {
+        if (organizator.kontakt) {
           const kontaktCardElement = createKontaktCardElement(organizator);
           kontaktCards.append(kontaktCardElement);
         }
