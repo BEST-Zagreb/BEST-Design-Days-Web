@@ -62,7 +62,7 @@
 
 .best-zg-sec__social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 5%;
 }
