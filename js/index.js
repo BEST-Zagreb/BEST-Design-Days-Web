@@ -108,7 +108,7 @@
     let aktivnostNaziv = aktivnost.tema;
     if (aktivnost.predavaci[0].ime) {
       if (aktivnost.tvrtka) {
-        aktivnostNaziv = `) - ${aktivnostNaziv}`;
+        aktivnostNaziv = ` (${aktivnost.tvrtka}) - ${aktivnostNaziv}`;
         for (let index = 0; index < aktivnost.predavaci.length; index++) {
           if (index === 0) {
             aktivnostNaziv = `${aktivnost.predavaci[index].ime}${aktivnostNaziv}`;
@@ -116,11 +116,14 @@
             aktivnostNaziv = `${aktivnost.predavaci[index].ime} & ${aktivnostNaziv}`;
           }
         }
-        aktivnostNaziv = `${aktivnost.tvrtka} (${aktivnostNaziv}`;
       } else {
         for (let index = 0; index < aktivnost.predavaci.length; index++) {
           if (index === 0) {
-            aktivnostNaziv = `${aktivnost.predavaci[index].ime} - ${aktivnostNaziv}`;
+            if(aktivnost.tema === "" || aktivnost.tema === null) {
+              aktivnostNaziv = `${aktivnost.predavaci[index].ime}`
+            } else {
+              aktivnostNaziv = `${aktivnost.predavaci[index].ime} - ${aktivnostNaziv}`;
+            }
           } else {
             aktivnostNaziv = `${aktivnost.predavaci[index].ime} & ${aktivnostNaziv}`;
           }
@@ -159,7 +162,7 @@
     predavacImgElement.setAttribute("alt", `Predavač ${predavac.ime}`);
     predavacImgElement.setAttribute("title", predavac.ime);
     predavacImeElement.innerText = aktivnost.tvrtka
-      ? `${aktivnost.tvrtka} (${predavac.ime})`
+      ? `${predavac.ime} (${aktivnost.tvrtka})`
       : predavac.ime;
     predavacAktivnostElement.innerText = aktivnost.tema;
 
@@ -210,10 +213,11 @@
       predavaciCarouselBtnRight.setAttribute("disabled", "");
     }
   }
+  
 
   async function initializeRasporedAndPredavaciSection() {
     try {
-      const response = await fetch("./data/aktivnosti.json");
+      const response = await fetch("./data/2023/aktivnosti.json");
       const data = await response.json();
 
       addAktivnostiToRaspored(data);
@@ -225,6 +229,8 @@
       const predavaciCarouselBtnRight = document.querySelector(
         ".predavaci-sec__btn-right"
       );
+      
+      predavaciCarouselBtnLeft.setAttribute("disabled", "");
 
       predavaciCarouselBtnLeft.addEventListener("click", () => {
         predavacSlideCounter++;
@@ -235,12 +241,14 @@
         predavacSlideCounter--;
         movePredavaciCarousel();
       });
+
+      console.log(predavacSlideCounter)
     } catch (error) {
       console.error(error);
     }
   }
 
-  // initializeRasporedAndPredavaciSection();
+  initializeRasporedAndPredavaciSection();
 }
 
 // ===== faqs =====
@@ -374,7 +382,7 @@
 
   // Fetch data and start loop
   async function initializeOrgTim() {
-    const response = await fetch("data/organizacijskiTim.json");
+    const response = await fetch("data/2023/organizacijskiTim.json");
     orgData = await response.json();
 
     // Add the correct number of buttons
@@ -572,7 +580,7 @@
 
   async function initializeProjectPartners() {
     try {
-      const response = await fetch("./data/partneri.json");
+      const response = await fetch("./data/2023/partneri.json");
       const data = await response.json();
 
       addProjectPartners(data);
@@ -590,7 +598,7 @@
 
   async function fetchOrganizacijskiTimData() {
     try {
-      const response = await fetch("./data/organizacijskiTim.json");
+      const response = await fetch("./data/2023/organizacijskiTim.json");
       const data = await response.json();
       return data;
     } catch (error) {

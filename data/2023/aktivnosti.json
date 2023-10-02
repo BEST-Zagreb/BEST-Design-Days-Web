@@ -1,0 +1,186 @@
+[
+  {
+    "datum": "23.10.2022.",
+    "vrijeme": "16:00-18:00",
+    "tema": "Službeno otvaranje i predstavljanje",
+    "tvrtka": "",
+    "predavaci": [{ "ime": "", "imgUrl": "" }]
+  },
+  {
+    "datum": "24.10.2022.",
+    "vrijeme": "15:00-16:00",
+    "tema": "Vizualni identitet",
+    "tvrtka": "GRF",
+    "predavaci": [
+      {
+        "ime": "Maja Brozović",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "24.10.2022.",
+    "vrijeme": "16:15-17:15",
+    "tema": "Piktogrami u vizualnoj komunikaciji",
+    "tvrtka": "GRF",
+    "predavaci": [
+      {
+        "ime": "Dorotea Kovačević",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "24.10.2022.",
+    "vrijeme": "17:30-20:00",
+    "tema": "Nevidljiva sila koja oblikuje svijet",
+    "tvrtka": "TVZ",
+    "predavaci": [
+      {
+        "ime": "Vesna Uglješić",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "25.10.2022.",
+    "vrijeme": "15:00-15:45",
+    "tema": "Afektivni interaktivni virtualni agenti koji mogu boraviti u različitim okruženjima",
+    "tvrtka": "FSB",
+    "predavaci": [
+      {
+        "ime": "Tomislav Stipančić",
+        "imgUrl": "./img/people/lecturers/2023/Tomislav_Stipancic.webp"
+      }
+    ]
+  },
+  {
+    "datum": "25.10.2022.",
+    "vrijeme": "16:00-18:00",
+    "tema": "Nevidljiva sila koja oblikuje svijet",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "Netgen",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "25.10.2022.",
+    "vrijeme": "18:00-19:00",
+    "tema": "Gdje prestaje ME, a započinje AI",
+    "tvrtka": "Atlantis Digital",
+    "predavaci": [
+      {
+        "ime": "Ivana Ivanušec",
+        "imgUrl": "./img/people/lecturers/2023/Ivana_Ivanusec.webp"
+      }
+    ]
+  },
+  {
+    "datum": "25.10.2022.",
+    "vrijeme": "19:15-20:00",
+    "tema": "",
+    "tvrtka": "GRF",
+    "predavaci": [
+      {
+        "ime": "Ante Poljicak",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "26.10.2022.",
+    "vrijeme": "15:00-16:00",
+    "tema": "Personal Project Cheat Sheet",
+    "tvrtka": "Peraic",
+    "predavaci": [
+      {
+        "ime": "Filip Peraic",
+        "imgUrl": "./img/people/lecturers/2023/Filip_Peraic.webp"
+      }
+    ]
+  },
+  {
+    "datum": "26.10.2022.",
+    "vrijeme": "16:15-17:00",
+    "tema": "",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "Jurica Dolić",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "26.10.2022.",
+    "vrijeme": "18:15-20:00",
+    "tema": "Dizajn u interaktivnim medijima",
+    "tvrtka": "ARHITEK",
+    "predavaci": [
+      {
+        "ime": "Emil Flatz",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "27.10.2022.",
+    "vrijeme": "16:00-17:00",
+    "tema": "Što sve utječe na našu vizualnu percepciju i kako nam to može pomoći u dizajnu",
+    "tvrtka": "Hrv. stud.",
+    "predavaci": [
+      {
+        "ime": "Vanesa Varga",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "27.10.2022.",
+    "vrijeme": "18:15-20:00",
+    "tema": "",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "Macan",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "6.11.2022.",
+    "vrijeme": "14:00-18:00",
+    "tema": "Case study Prezentacije rješenja",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "","imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "6.11.2022.",
+    "vrijeme": "18:00-19:00",
+    "tema": "Case study ocjenjivanje",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "","imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "6.11.2022.",
+    "vrijeme": "19:00-20:00",
+    "tema": "Službeno zatvaranje",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "","imgUrl": ""
+      }
+    ]
+  }
+]
