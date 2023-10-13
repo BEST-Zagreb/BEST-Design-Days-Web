@@ -1,37 +1,61 @@
 [
   {
-    "datum": "23.10.2022.",
+    "datum": "23.10.2023.",
     "vrijeme": "16:00-18:00",
     "tema": "Službeno otvaranje i predstavljanje",
     "tvrtka": "",
     "predavaci": [{ "ime": "", "imgUrl": "" }]
   },
   {
-    "datum": "24.10.2022.",
+    "datum": "23.10.2023.",
+    "vrijeme": "18:00-18:30",
+    "tema": "What makes a brand",
+    "tvrtka": "Sawraft Studio",
+    "predavaci": [
+      {
+        "ime": "Lex Koen",
+        "imgUrl": "./img/people/lecturers/2023/Lex_Koen.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "23.10.2023.",
+    "vrijeme": "19:00-20:00",
+    "tema": "Bez ___________ se i vrhunski proizvod teško proda",
+    "tvrtka": "GRF",
+    "predavaci": [
+      {
+        "ime": "Josip Bota",
+        "imgUrl": "./img/people/lecturers/2023/Josip_Bota.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "24.10.2023.",
     "vrijeme": "15:00-16:00",
     "tema": "Vizualni identitet",
     "tvrtka": "GRF",
     "predavaci": [
       {
         "ime": "Maja Brozović",
-        "imgUrl": ""
+        "imgUrl": "./img/people/lecturers/2023/Maja_Brozovic.webp"
       }
     ]
   },
   {
-    "datum": "24.10.2022.",
+    "datum": "24.10.2023.",
     "vrijeme": "16:15-17:15",
     "tema": "Piktogrami u vizualnoj komunikaciji",
     "tvrtka": "GRF",
     "predavaci": [
       {
         "ime": "Dorotea Kovačević",
-        "imgUrl": ""
+        "imgUrl": "./img/people/lecturers/2023/Dorotea_Kovacevic.webp"
       }
     ]
   },
   {
-    "datum": "24.10.2022.",
+    "datum": "24.10.2023.",
     "vrijeme": "17:30-20:00",
     "tema": "Nevidljiva sila koja oblikuje svijet",
     "tvrtka": "TVZ",
@@ -43,7 +67,7 @@
     ]
   },
   {
-    "datum": "25.10.2022.",
+    "datum": "25.10.2023.",
     "vrijeme": "15:00-15:45",
     "tema": "Afektivni interaktivni virtualni agenti koji mogu boraviti u različitim okruženjima",
     "tvrtka": "FSB",
@@ -55,19 +79,19 @@
     ]
   },
   {
-    "datum": "25.10.2022.",
+    "datum": "25.10.2023.",
     "vrijeme": "16:00-18:00",
-    "tema": "Nevidljiva sila koja oblikuje svijet",
-    "tvrtka": "",
+    "tema": "Figma osnove",
+    "tvrtka": "Netgen",
     "predavaci": [
       {
-        "ime": "Netgen",
-        "imgUrl": ""
+        "ime": "Božidar Grgošić",
+        "imgUrl": "./img/people/lecturers/2023/Bozidar_Grgosic.webp"
       }
     ]
   },
   {
-    "datum": "25.10.2022.",
+    "datum": "25.10.2023.",
     "vrijeme": "18:00-19:00",
     "tema": "Gdje prestaje ME, a započinje AI",
     "tvrtka": "Atlantis Digital",
@@ -79,19 +103,19 @@
     ]
   },
   {
-    "datum": "25.10.2022.",
+    "datum": "25.10.2023.",
     "vrijeme": "19:15-20:00",
-    "tema": "",
-    "tvrtka": "GRF",
+    "tema": "Kreativno korištenje generativne AI tehnologije pri izradi moodboarda",
+    "tvrtka": "RIT",
     "predavaci": [
       {
         "ime": "Ante Poljicak",
-        "imgUrl": ""
+        "imgUrl": "./img/people/lecturers/2023/Ante_Poljicak.webp"
       }
     ]
   },
   {
-    "datum": "26.10.2022.",
+    "datum": "26.10.2023.",
     "vrijeme": "15:00-16:00",
     "tema": "Personal Project Cheat Sheet",
     "tvrtka": "Peraic",
@@ -103,10 +127,10 @@
     ]
   },
   {
-    "datum": "26.10.2022.",
+    "datum": "26.10.2023.",
     "vrijeme": "16:15-17:00",
-    "tema": "",
-    "tvrtka": "",
+    "tema": "Dizajn za doživljaj - uloga korisničkog iskustva u dizajnu proizvoda",
+    "tvrtka": "RIT",
     "predavaci": [
       {
         "ime": "Jurica Dolić",
@@ -115,43 +139,55 @@
     ]
   },
   {
-    "datum": "26.10.2022.",
+    "datum": "26.10.2023.",
+    "vrijeme": "17:15-18:00",
+    "tema": "Dizajn interakcija u stalnim i privremenim izložbenim postavima.",
+    "tvrtka": "ARHITEK",
+    "predavaci": [
+      {
+        "ime": "Vedran Kasap i Ozana Uršić",
+        "imgUrl": "./img/people/lecturers/2023/Vedran_Kasap_i_Ozana_Ursic.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "26.10.2023.",
     "vrijeme": "18:15-20:00",
     "tema": "Dizajn u interaktivnim medijima",
     "tvrtka": "ARHITEK",
     "predavaci": [
       {
         "ime": "Emil Flatz",
-        "imgUrl": ""
+        "imgUrl": "./img/people/lecturers/2023/Emil_Flatz.jpg"
       }
     ]
   },
   {
-    "datum": "27.10.2022.",
+    "datum": "27.10.2023.",
     "vrijeme": "16:00-17:00",
     "tema": "Što sve utječe na našu vizualnu percepciju i kako nam to može pomoći u dizajnu",
     "tvrtka": "Hrv. stud.",
     "predavaci": [
       {
         "ime": "Vanesa Varga",
-        "imgUrl": ""
+        "imgUrl": "./img/people/lecturers/2023/Vanesa_Varga.jpg"
       }
     ]
   },
   {
-    "datum": "27.10.2022.",
+    "datum": "27.10.2023.",
     "vrijeme": "18:15-20:00",
-    "tema": "",
-    "tvrtka": "",
+    "tema": "Dizajn i grafička tehnologija - Kako slušati klijenta",
+    "tvrtka": "Macan",
     "predavaci": [
       {
-        "ime": "Macan",
-        "imgUrl": ""
+        "ime": "Filip Macan",
+        "imgUrl": "./img/people/lecturers/2023/Filip_Macan.jpg"
       }
     ]
   },
   {
-    "datum": "6.11.2022.",
+    "datum": "6.11.2023.",
     "vrijeme": "14:00-18:00",
     "tema": "Case study Prezentacije rješenja",
     "tvrtka": "",
@@ -162,7 +198,7 @@
     ]
   },
   {
-    "datum": "6.11.2022.",
+    "datum": "6.11.2023.",
     "vrijeme": "18:00-19:00",
     "tema": "Case study ocjenjivanje",
     "tvrtka": "",
@@ -173,7 +209,7 @@
     ]
   },
   {
-    "datum": "6.11.2022.",
+    "datum": "6.11.2023.",
     "vrijeme": "19:00-20:00",
     "tema": "Službeno zatvaranje",
     "tvrtka": "",

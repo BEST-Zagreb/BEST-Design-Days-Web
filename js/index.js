@@ -241,8 +241,6 @@
         predavacSlideCounter--;
         movePredavaciCarousel();
       });
-
-      console.log(predavacSlideCounter)
     } catch (error) {
       console.error(error);
     }
@@ -588,7 +586,7 @@
       console.error(error);
     }
   }
-  // initializeProjectPartners();
+  initializeProjectPartners();
 }
 
 // ===== kontakt section  =====

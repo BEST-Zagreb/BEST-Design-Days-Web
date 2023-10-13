@@ -33,7 +33,7 @@
   },
   {
     "question": "Od koliko studenata se smije sastojati tim za Case Study?",
-    "answer": "Tim za Case Study se sastoji od jednog do pet studenata."
+    "answer": "Tim za Case Study se sastoji od jednog do četiri studenata."
   },
   {
     "question": "Koje su nagrade za Case Study?",
@@ -41,10 +41,14 @@
   },
   {
     "question": "Koliko traje prezentacija rješenja Case Study zadatka?",
-    "answer": "Prezentacija rješenja traje 15 minuta po timu, dok 7 od tih 15 minuta tim predstavlja svoje rješenje, a ostatak vremena žiri može postaviti pitanja timu vezano uz predstavljeno rješenje."
+    "answer": "Prezentacija rješenja traje 20 minuta po timu, dok 10 od tih 20 minuta tim predstavlja svoje rješenje, a ostatak vremena žiri može postaviti pitanja timu vezano uz predstavljeno rješenje."
   },
   {
     "question": "Mogu li se pridružiti BEST-u Zagreb nakon BEST Design Days-a u organizaciji ovakvih projekata?",
     "answer": "Naravno! Sve što trebaš jest javiti se na board@best.hr ili ispuniti formu na web stranici udruge best.hr/o-nama/uclani-se/."
+  },
+  {
+    "question": "Na kojem jeziku se prezentiraju prezentacije?",
+    "answer": "Prezentacije se prezentiraju na engleskom jeziku."
   }
 ]
