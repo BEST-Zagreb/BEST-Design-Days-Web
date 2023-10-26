@@ -94,7 +94,7 @@
     "datum": "25.10.2023.",
     "vrijeme": "18:00-19:00",
     "tema": "Gdje prestaje ME, a započinje AI",
-    "tvrtka": "Atlantis Digital",
+    "tvrtka": "Dizajnerica",
     "predavaci": [
       {
         "ime": "Ivana Ivanušec",
@@ -188,23 +188,25 @@
   },
   {
     "datum": "6.11.2023.",
-    "vrijeme": "14:00-18:00",
-    "tema": "Case study Prezentacije rješenja",
+    "vrijeme": "12:00-18:00",
+    "tema": "Case study - Prezentacije rješenja",
     "tvrtka": "",
     "predavaci": [
       {
-        "ime": "","imgUrl": ""
+        "ime": "",
+        "imgUrl": ""
       }
     ]
   },
   {
     "datum": "6.11.2023.",
     "vrijeme": "18:00-19:00",
-    "tema": "Case study ocjenjivanje",
+    "tema": "Case study - Ocjenjivanje",
     "tvrtka": "",
     "predavaci": [
       {
-        "ime": "","imgUrl": ""
+        "ime": "",
+        "imgUrl": ""
       }
     ]
   },
@@ -215,7 +217,8 @@
     "tvrtka": "",
     "predavaci": [
       {
-        "ime": "","imgUrl": ""
+        "ime": "",
+        "imgUrl": ""
       }
     ]
   }
