@@ -55,8 +55,13 @@
 .godisnji-partneri-sec__slide {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 
   transition: margin-left 0;
+}
+
+.godisnji-partneri-sec__slide > a {
+  width: fit-content;
 }
 
 .godisnji-partneri-sec__slide > a > img {

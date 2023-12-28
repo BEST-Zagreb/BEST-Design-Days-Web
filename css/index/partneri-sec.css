@@ -52,11 +52,13 @@
 
 .partneri-sec__imgs-container > div > a {
   margin-inline: auto;
+  width: 100%;
 }
 
 .partneri-sec__imgs-container > div > a > img {
   width: 100%;
   height: min(8vw, 8rem);
+  object-fit: contain;
 
   transition: transform 0.3s ease-in-out;
 }

@@ -66,7 +66,34 @@
 
     <script type="text/javascript" src="js/default.js" defer></script>
 
-    <script type="text/javascript" src="js/index.js" defer></script>
+    <script type="text/javascript" src="js/index/hero-sec.js" defer></script>
+    <script type="text/javascript" src="js/index/faq-sec.js" defer></script>
+    <script
+      type="text/javascript"
+      src="js/index/raspored-sec.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/index/predavaci-sec.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/index/organizatori-sec.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/index/partneri-sec.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/index/god-partneri-sec.js"
+      defer
+    ></script>
+    <script type="text/javascript" src="js/index/kontakt-sec.js" defer></script>
   </head>
   <body>
     <!-- #svg-gradient color -->
@@ -144,6 +171,7 @@
           >
             <button disabled class="hero-sec__prijava-btn">
               Prijave zatvorene
+              <!-- Prijavi se / Prijave zatvorene -->
             </button>
           </a>
         </div>
@@ -679,16 +707,35 @@
       />
     </svg>
 
-    <section class="faq-sec box-content" id="faq">
-      <h3>Često postavljena pitanja</h3>
+    <template data-partner-template>
+      <a href="" target="_blank">
+        <img src="" alt="" loading="lazy" title="" />
+      </a>
+    </template>
 
-      <div class="faq-sec__accordions-container">
-        <template data-faq-template>
-          <details class="faq-sec__accordion">
-            <summary class="faq-sec__question"><p></p></summary>
-            <p class="faq-sec__answer"></p>
-          </details>
-        </template>
+    <section class="partneri-sec box-content" id="partneri">
+      <h3>Partneri projekta</h3>
+
+      <div class="partneri-sec__imgs-container">
+        <svg
+          class="partneri-sec__background-blob"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#000000"
+            d="M25.8,-41.5C37,-33.1,51.9,-31.8,57.3,-24.8C62.7,-17.8,58.5,-5,58.3,9.6C58.1,24.2,62,40.7,55.5,48C49,55.3,32.1,53.4,20.5,46C8.9,38.6,2.6,25.7,-11.4,27C-25.3,28.2,-46.8,43.7,-58.5,43.4C-70.2,43.1,-72.1,26.8,-67.2,14C-62.3,1.2,-50.6,-8.3,-47.1,-23.8C-43.6,-39.4,-48.4,-61,-41.9,-71.6C-35.4,-82.1,-17.7,-81.7,-5.2,-73.6C7.3,-65.6,14.7,-49.9,25.8,-41.5Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <section class="godisnji-partneri-sec box-content" id="godisnji-partneri">
+      <h3>Godišnji partneri</h3>
+
+      <div class="godisnji-partneri-sec__slider-wrapper">
+        <div class="godisnji-partneri-sec__slider"></div>
       </div>
     </section>
 
@@ -773,35 +820,16 @@
       />
     </svg>
 
-    <template data-partner-template>
-      <a href="" target="_blank">
-        <img src="" alt="" loading="lazy" title="" />
-      </a>
-    </template>
+    <section class="faq-sec box-content" id="faq">
+      <h3>Često postavljena pitanja</h3>
 
-    <section class="partneri-sec box-content" id="partneri">
-      <h3>Partneri projekta</h3>
-
-      <div class="partneri-sec__imgs-container">
-        <svg
-          class="partneri-sec__background-blob"
-          viewBox="0 0 200 200"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="#000000"
-            d="M25.8,-41.5C37,-33.1,51.9,-31.8,57.3,-24.8C62.7,-17.8,58.5,-5,58.3,9.6C58.1,24.2,62,40.7,55.5,48C49,55.3,32.1,53.4,20.5,46C8.9,38.6,2.6,25.7,-11.4,27C-25.3,28.2,-46.8,43.7,-58.5,43.4C-70.2,43.1,-72.1,26.8,-67.2,14C-62.3,1.2,-50.6,-8.3,-47.1,-23.8C-43.6,-39.4,-48.4,-61,-41.9,-71.6C-35.4,-82.1,-17.7,-81.7,-5.2,-73.6C7.3,-65.6,14.7,-49.9,25.8,-41.5Z"
-            transform="translate(100 100)"
-          />
-        </svg>
-      </div>
-    </section>
-
-    <section class="godisnji-partneri-sec box-content" id="godisnji-partneri">
-      <h3>Godišnji partneri</h3>
-
-      <div class="godisnji-partneri-sec__slider-wrapper">
-        <div class="godisnji-partneri-sec__slider"></div>
+      <div class="faq-sec__accordions-container">
+        <template data-faq-template>
+          <details class="faq-sec__accordion">
+            <summary class="faq-sec__question"><p></p></summary>
+            <p class="faq-sec__answer"></p>
+          </details>
+        </template>
       </div>
     </section>
 
@@ -930,7 +958,7 @@
       <div class="box-content">
         <img class="footer__logo" src="img/logos/BEST_shuriken_white.png" />
         <p>
-          &copy
+          &copy; <span class="footer__year">2023</span>
           <a class="footer__link" href="https://best.hr">BEST Zagreb</a>
           | Brought to you with 💖 by IT Working Group
         </p>

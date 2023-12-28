@@ -1,10 +1,10 @@
-// Progress bar
+// ===== progress bar =====
 const progressBarElement = document.createElement("div");
 progressBarElement.classList.add("progress-bar");
 document.querySelector("body").appendChild(progressBarElement);
 const progBarShowOnPx = 10; // amount of pixels before bar is shown
 
-// Back to top button
+// ===== back to top button =====
 const backToTopBtn = document.createElement("div");
 backToTopBtn.classList.add("backToTopBtn", "hidden");
 backToTopBtn.setAttribute("title", "Scroll to top"); // tooltip
@@ -25,7 +25,7 @@ document.querySelector("body").appendChild(backToTopBtn);
 
 const bttBtnShowOnPx = 100; // amount of pixels before button is shown
 
-// Background paralax
+// ===== background paralax =====
 const backgroundElement = document.createElement("div");
 backgroundElement.classList.add("background-image");
 document.querySelector("body").appendChild(backgroundElement);
@@ -38,7 +38,7 @@ backToTopBtn.addEventListener("click", () => {
   document.body.scrollIntoView();
 });
 
-// Nav
+// ===== nav =====
 const nav = document.querySelector("nav");
 const navToggle = document.querySelector(".nav__mobile-menu-btn");
 const menuHamburgerSvg = document.querySelector(".nav__hamburger-svg");
@@ -107,3 +107,44 @@ document.addEventListener("scroll", () => {
 
   nav.setAttribute("data-scrolled", "true");
 });
+
+// sections intersection observers
+const navIntersectionListItems = document.querySelectorAll(".nav__links > li");
+let currentListItem = null;
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // console.log(entry.target);
+
+        let currentSection = entry.target.getAttribute("id");
+
+        // go through all nav items
+        navIntersectionListItems.forEach((listItem) => {
+          if (
+            listItem.firstChild.getAttribute("href") ===
+            "#" + currentSection
+          ) {
+            // remove current-site attribute from last current nav item
+            if (currentListItem)
+              currentListItem.removeAttribute("data-current-site");
+
+            // add current-site attribute to current nav item
+            listItem.setAttribute("data-current-site", "");
+            currentListItem = listItem;
+          }
+        });
+      }
+    });
+  },
+  { threshold: 0.75 }
+);
+
+document.querySelectorAll("section").forEach((section) => {
+  sectionObserver.observe(section);
+});
+
+// ===== footer copyright year =====
+const footerYearEl = document.querySelector(".footer__year");
+footerYearEl.textContent = new Date().getFullYear();
