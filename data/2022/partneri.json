@@ -1,0 +1,42 @@
+{
+  "zlatni": [
+    {
+      "naziv": "BRACOPONE",
+      "imgUrl": "./img/partners/project/BRACOPONE-logo.png",
+      "linkUrl": "https://bracopone.com/"
+    }
+  ],
+  "srebrni": [
+    {
+      "naziv": "Netgen",
+      "imgUrl": "./img/partners/project/Netgen-logo.svg",
+      "linkUrl": "https://netgen.io/"
+    },
+    {
+      "naziv": "Bruketa&Žinić&Grey",
+      "imgUrl": "./img/partners/project/BZG/BZG-logo-3-rgb.png",
+      "linkUrl": "https://bruketa-zinic.com/hr/"
+    }
+  ],
+  "broncani": [
+    {
+      "naziv": "Macan",
+      "imgUrl": "./img/partners/project/Macan-logo.png",
+      "linkUrl": "https://macan.hr/"
+    }
+  ],
+  "akademski": [
+    {
+      "naziv": "FIVE",
+      "imgUrl": "./img/partners/project/FIVE/FIVE-logo-black-highres.png",
+      "linkUrl": "https://five.agency/"
+    }
+  ],
+  "materijalni": [
+    {
+      "naziv": "Nescafe",
+      "imgUrl": "./img/partners/project/Nestle/Nescafe-logo-black-RGB.gif",
+      "linkUrl": "https://www.nescafe.com/"
+    }
+  ]
+}

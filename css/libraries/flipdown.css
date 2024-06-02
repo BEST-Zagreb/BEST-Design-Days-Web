@@ -302,6 +302,11 @@
   .flipdown .rotor:after {
     width: 20px;
   }
+
+  .flipdown .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+  .flipdown .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+    left: 49px;
+  }
 }
 
 /* custom for screens that are too small */

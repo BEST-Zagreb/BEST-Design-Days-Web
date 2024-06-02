@@ -53,8 +53,7 @@
     <link href="css/index/faq-sec.css" rel="stylesheet" />
     <link href="css/index/raspored-sec.css" rel="stylesheet" />
     <link href="css/index/predavaci-sec.css" rel="stylesheet" />
-    <!-- TODO: implement organizatore code -->
-    <!-- <link href="css/index/organizatori-sec.css" rel="stylesheet" /> -->
+    <link href="css/index/organizatori-sec.css" rel="stylesheet" />
     <link href="css/index/partneri-sec.css" rel="stylesheet" />
     <link href="css/index/god-partneri-sec.css" rel="stylesheet" />
     <link href="css/index/kontakt-sec.css" rel="stylesheet" />
@@ -67,8 +66,34 @@
 
     <script type="text/javascript" src="js/default.js" defer></script>
 
-    <script type="text/javascript" src="js/index.js" defer></script>
-    <!-- <script type="text/javascript" src="js/organizatori.js" defer></script> -->
+    <script type="text/javascript" src="js/index/hero-sec.js" defer></script>
+    <script type="text/javascript" src="js/index/faq-sec.js" defer></script>
+    <script
+      type="text/javascript"
+      src="js/index/raspored-sec.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/index/predavaci-sec.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/index/organizatori-sec.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/index/partneri-sec.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/index/god-partneri-sec.js"
+      defer
+    ></script>
+    <script type="text/javascript" src="js/index/kontakt-sec.js" defer></script>
   </head>
   <body>
     <!-- #svg-gradient color -->
@@ -82,6 +107,12 @@
       </defs>
     </svg>
 
+    <!-- progress-bar, backToTopBtn, background and nav go on every site -->
+    <div class="progress-bar hidden"></div>
+    <div class="backToTopBtn hidden" title="Scroll to top">
+      <img src="img/chevron-up.svg" alt="Scroll to top" />
+    </div>
+    <div class="background"></div>
     <nav data-expanded="false">
       <a class="nav__logo" href="index.html">
         <img src="img/logos/bdd_logo.png" alt="BEST_Design_Days_logo" />
@@ -115,10 +146,8 @@
         <li tabindex="0"><a href="#BDD" tabindex="-1">O projektu</a></li>
         <hr />
         <li tabindex="0"><a href="#raspored" tabindex="-1">Raspored</a></li>
-        <!-- <hr />
-        <li tabindex="0">
-          <a href="#predavaci" tabindex="-1">Predavači</a>
-        </li> -->
+        <hr />
+        <li tabindex="0"><a href="#predavaci" tabindex="-1">Predavači</a></li>
         <hr />
         <li tabindex="0"><a href="#kontakt" tabindex="-1">Kontakt</a></li>
 
@@ -137,18 +166,20 @@
               <span class="hero-sec__bdd-pink">B</span>EST<br />
               <span class="hero-sec__bdd-pink">D</span>esign<br />
               <span class="hero-sec__bdd-pink">D</span>ays<br />
-              2022
+              2023
             </h1>
           </div>
 
           <a
-            href="https://forms.gle/Ffki5hZrpzjpcUuV7"
+            href="https://forms.gle/KNn2NVSa64eFEYSq6"
             target="_blank"
             tabindex="-1"
-            ><button class="hero-sec__prijava-btn" disabled>
-              Prijave zatvorene
-            </button></a
           >
+            <button disabled class="hero-sec__prijava-btn">
+              Prijave zatvorene
+              <!-- Prijavi se / Prijave zatvorene -->
+            </button>
+          </a>
         </div>
       </div>
 
@@ -273,7 +304,12 @@
 
           <h5 class="info-icons-sec__doc-name">Kada?</h5>
 
-          <p class="info-icons-sec__doc-text">17. do 22. listopada!</p>
+          <p class="info-icons-sec__doc-text">
+            Predavanja: Od 23. do 27. listopada!
+          </p>
+          <p class="info-icons-sec__doc-text">
+            Case study: Od 23. listopada do 6. studenog!
+          </p>
         </div>
 
         <div class="info-icons-sec__file-card">
@@ -300,7 +336,7 @@
           <h5 class="info-icons-sec__doc-name">Gdje?</h5>
 
           <p class="info-icons-sec__doc-text">
-            Fakultet elektrotehnike i računarstva!
+            Studentski centar - Stablo znanja
           </p>
         </div>
 
@@ -677,99 +713,6 @@
       />
     </svg>
 
-    <section class="faq-sec box-content" id="faq">
-      <h3>Često postavljena pitanja</h3>
-
-      <div class="faq-sec__accordions-container">
-        <template data-faq-template>
-          <details class="faq-sec__accordion">
-            <summary class="faq-sec__question"><p></p></summary>
-            <p class="faq-sec__answer"></p>
-          </details>
-        </template>
-      </div>
-    </section>
-
-    <!-- <svg
-      class="section-divider"
-      viewBox="0 0 740 77"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="-23.1638"
-        width="804"
-        height="37"
-        transform="rotate(2.84461 -23.1638 0)"
-        fill="#BA67AE"
-        fill-opacity="0.2"
-      />
-      <rect
-        opacity="0.5"
-        x="-31.7477"
-        y="23.9795"
-        width="804"
-        height="38.4828"
-        transform="rotate(-0.711186 -31.7477 23.9795)"
-        fill="#BA67AE"
-      />
-    </svg>
-
-    <section class="organizatori-sec box-content" id="organizatori">
-      <h3>Organizatori</h3>
-
-      <div class="organizatori">
-        <div class="org1 swapAnim side-org">
-          <img class="side-img left__img" src="" />
-          <h4 class="left__name"></h4>
-          <p class="left__title"></p>
-        </div>
-        <div class="org2 swapAnim main-org">
-          <img class="main-img middle__img" src="" />
-          <h4 class="middle__name"></h4>
-          <p class="middle__title1"></p>
-          <p class="middle__title2"></p>
-        </div>
-        <div class="org3 swapAnim side-org">
-          <img class="side-img right__img" src="" />
-          <h4 class="right__name"></h4>
-          <p class="right__title"></p>
-        </div>
-      </div>
-
-      <div class="org-btn-div">
-        <button class="org-button" onclick="clickOrg(1)"></button>
-        <button class="org-button" onclick="clickOrg(2)"></button>
-        <button class="org-button" onclick="clickOrg(3)"></button>
-        <button class="org-button" onclick="clickOrg(4)"></button>
-      </div>
-    </section> -->
-
-    <svg
-      class="section-divider"
-      viewBox="0 0 740 77"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="-23.1638"
-        width="804"
-        height="37"
-        transform="rotate(2.84461 -23.1638 0)"
-        fill="#BA67AE"
-        fill-opacity="0.2"
-      />
-      <rect
-        opacity="0.5"
-        x="-31.7477"
-        y="23.9795"
-        width="804"
-        height="38.4828"
-        transform="rotate(-0.711186 -31.7477 23.9795)"
-        fill="#BA67AE"
-      />
-    </svg>
-
     <template data-partner-template>
       <a href="" target="_blank">
         <img src="" alt="" loading="lazy" title="" />
@@ -827,12 +770,107 @@
       />
     </svg>
 
+    <section class="organizatori-sec box-content" id="organizatori">
+      <h3>Organizatori</h3>
+
+      <div class="organizatori">
+        <div class="org side-org">
+          <img class="org__img" />
+          <div class="org__text-container">
+            <h4 class="org__name"></h4>
+            <p class="org__function"></p>
+          </div>
+        </div>
+        <div class="org main-org">
+          <img class="org__img" />
+          <div class="org__text-container">
+            <h4 class="org__name"></h4>
+            <p class="org__function"></p>
+            <p class="org__function2"></p>
+          </div>
+        </div>
+        <div class="org side-org">
+          <img class="org__img" />
+          <div class="org__text-container">
+            <h4 class="org__name"></h4>
+            <p class="org__function"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="org-btns-container"></div>
+    </section>
+
+    <svg
+      class="section-divider"
+      viewBox="0 0 740 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-23.1638"
+        width="804"
+        height="37"
+        transform="rotate(2.84461 -23.1638 0)"
+        fill="#BA67AE"
+        fill-opacity="0.2"
+      />
+      <rect
+        opacity="0.5"
+        x="-31.7477"
+        y="23.9795"
+        width="804"
+        height="38.4828"
+        transform="rotate(-0.711186 -31.7477 23.9795)"
+        fill="#BA67AE"
+      />
+    </svg>
+
+    <section class="faq-sec box-content" id="faq">
+      <h3>Često postavljena pitanja</h3>
+
+      <div class="faq-sec__accordions-container">
+        <template data-faq-template>
+          <details class="faq-sec__accordion">
+            <summary class="faq-sec__question"><p></p></summary>
+            <p class="faq-sec__answer"></p>
+          </details>
+        </template>
+      </div>
+    </section>
+
+    <svg
+      class="section-divider"
+      viewBox="0 0 740 77"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-23.1638"
+        width="804"
+        height="37"
+        transform="rotate(2.84461 -23.1638 0)"
+        fill="#BA67AE"
+        fill-opacity="0.2"
+      />
+      <rect
+        opacity="0.5"
+        x="-31.7477"
+        y="23.9795"
+        width="804"
+        height="38.4828"
+        transform="rotate(-0.711186 -31.7477 23.9795)"
+        fill="#BA67AE"
+      />
+    </svg>
+
     <section class="kontakt-sec box-content" id="kontakt">
       <h3>Kontakt</h3>
 
       <p>
         U slučaju bilo kakvih pitanja, slobodno nam se javite na
-        <a href="mailto:bdd@best.hr">bdd@best.hr</a> ili osobno na:
+        <a href="mailto:designdays@best.hr">designdays@best.hr</a> ili osobno
+        na:
       </p>
 
       <div class="kontakt-sec__cards">
@@ -927,7 +965,7 @@
       <div class="box-content">
         <img class="footer__logo" src="img/logos/BEST_shuriken_white.png" />
         <p>
-          &copy
+          &copy; <span class="footer__year">2023</span>
           <a class="footer__link" href="https://best.hr">BEST Zagreb</a>
           | Brought to you with 💖 by IT Working Group
         </p>

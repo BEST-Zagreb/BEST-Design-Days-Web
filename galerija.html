@@ -43,6 +43,23 @@
     <script type="text/javascript" src="js/default.js" defer></script>
   </head>
   <body>
+    <!-- #svg-gradient color -->
+    <svg width="0" height="0">
+      <defs>
+        <linearGradient id="svg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="var(--brown-clr)" />
+          <stop offset="50%" stop-color="var(--blue-clr-light)" />
+          <stop offset="100%" stop-color="var(--pink-clr-light)" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <!-- progress-bar, backToTopBtn, background and nav go on every site -->
+    <div class="progress-bar hidden"></div>
+    <div class="backToTopBtn hidden" title="Scroll to top">
+      <img src="img/chevron-up.svg" alt="Scroll to top" />
+    </div>
+    <div class="background"></div>
     <nav data-expanded="false">
       <a class="nav__logo" href="index.html">
         <img src="img/logos/bdd_logo.png" alt="BEST_Design_Days_logo" />
@@ -71,30 +88,20 @@
       </button>
 
       <ul class="nav__links">
-        <li tabindex="0">
-          <a href="index.html#home" tabindex="-1">Prijava</a>
-        </li>
+        <li tabindex="0"><a href="#prijava" tabindex="-1">Prijava</a></li>
         <hr />
-        <li tabindex="0">
-          <a href="index.html#BDD" tabindex="-1">O projektu</a>
-        </li>
+        <li tabindex="0"><a href="#BDD" tabindex="-1">O projektu</a></li>
         <hr />
-        <li tabindex="0">
-          <a href="index.html#raspored" tabindex="-1">Raspored</a>
-        </li>
-        <!-- <hr />
-        <li tabindex="0">
-          <a href="index.html#predavaci" tabindex="-1">Predavači</a>
-        </li> -->
+        <li tabindex="0"><a href="#raspored" tabindex="-1">Raspored</a></li>
         <hr />
-        <li tabindex="0">
-          <a href="index.html#kontakt" tabindex="-1">Kontakt</a>
-        </li>
+        <li tabindex="0"><a href="#predavaci" tabindex="-1">Predavači</a></li>
+        <hr />
+        <li tabindex="0"><a href="#kontakt" tabindex="-1">Kontakt</a></li>
 
         <!-- <hr />
-        <li tabindex="0">
-          <a href="galerija.html" tabindex="-1">Galerija</a>
-        </li> -->
+      <li tabindex="0">
+        <a href="galerija.html" tabindex="-1">Galerija</a>
+      </li> -->
       </ul>
     </nav>
 

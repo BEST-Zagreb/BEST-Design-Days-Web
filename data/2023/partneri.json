@@ -1,0 +1,36 @@
+{
+  "zlatni": [
+    {
+      "naziv": "Netgen",
+      "imgUrl": "./img/partners/project/2023/Netgen-logo.svg",
+      "linkUrl": "https://netgen.io/"
+    }
+  ],
+  "srebrni": [
+    {
+      "naziv": "Macan",
+      "imgUrl": "./img/partners/project/2023/macan.png",
+      "linkUrl": "https://macan.hr/"
+    }
+  ],
+  "broncani": [
+    {
+      "naziv": "Stablo znanja",
+      "imgUrl": "./img/partners/project/2023/stablo_znanja.png",
+      "linkUrl": "https://stabloznanja.com/"
+    }
+  ],
+  "akademski": [],
+  "materijalni": [
+    {
+      "naziv": "Muzej iluzija",
+      "imgUrl": "./img/partners/project/2023/muzej_iluzija_2.png",
+      "linkUrl": "https://muzejiluzija.com/"
+    },
+    {
+      "naziv": "The old lock up escape room",
+      "imgUrl": "./img/partners/project/2023/the_old_lock_up_escape_room.png",
+      "linkUrl": "https://www.theoldlockup.com/"
+    }
+  ]
+}

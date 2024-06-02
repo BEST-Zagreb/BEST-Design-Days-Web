@@ -1,0 +1,68 @@
+[
+  {
+    "ime": "Lucija Čurlin",
+    "funkcija": "Glavni organizator",
+    "funkcija2": null,
+    "funkcijaEng": "Main organiser",
+    "funkcija2Eng": null,
+    "email": "lucija.curlin@best.hr",
+    "tel": "+385 91 2331 010",
+    "imgUrl": "./img/people/orgs/2023/lc.jpg",
+    "kontakt": true
+  },
+  {
+    "ime": "Jelena Penava",
+    "funkcija": "Odgovorna za odnose s tvrtkama",
+    "funkcija2": null,
+    "funkcijaEng": "FR responsible",
+    "funkcija2Eng": null,
+    "email": "jelena.penava@best.hr",
+    "tel": "+385 92 131 8600",
+    "imgUrl": "./img/people/orgs/2023/jp.jpg",
+    "kontakt": true
+  },
+  {
+    "ime": "Sara Rivić Carević",
+    "funkcija": "Odgovorna za sudionike",
+    "funkcija2": "Odgovorna za logistiku",
+    "funkcijaEng": "Participants responsible",
+    "funkcija2Eng": "Logistics responsible",
+    "email": "sara.carevic@best.hr",
+    "tel": "+385 98 196 2994",
+    "imgUrl": "./img/people/orgs/2023/src.jpg",
+    "kontakt": true
+  },
+  {
+    "ime": "Tea Madžarac",
+    "funkcija": "Akademik",
+    "funkcija2": null,
+    "funkcijaEng": "Responsible for lecturers",
+    "funkcija2Eng": null,
+    "email": "tea.madzarac@best-eu.org",
+    "tel": null,
+    "imgUrl": "./img/people/orgs/2023/tm.jpg",
+    "kontakt": false
+  },
+  {
+    "ime": "Antun Matijašec",
+    "funkcija": "Odgovoran za dizajn",
+    "funkcija2": null,
+    "funkcijaEng": "Design responsible",
+    "funkcija2Eng": null,
+    "email": "antun.matijasec@best-eu.org",
+    "tel": null,
+    "imgUrl": "./img/people/orgs/2023/am.jpg",
+    "kontakt": false
+  },
+  {
+    "ime": "Laura Zebec",
+    "funkcija": "Odgovorna za odnose s javnošću",
+    "funkcija2": null,
+    "funkcijaEng": "Public relations responsible",
+    "funkcija2Eng": null,
+    "email": "laura.zebec@best.hr",
+    "tel": null,
+    "imgUrl": "./img/people/orgs/2023/lz.jpeg",
+    "kontakt": false
+  }
+]

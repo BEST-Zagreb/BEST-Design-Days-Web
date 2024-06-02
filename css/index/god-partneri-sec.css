@@ -1,19 +1,22 @@
 /* ===== godisnji partneri section ===== */
 
-.godisnji-partneri-sec__slider {
+.godisnji-partneri-sec__slider-wrapper {
   margin: min(4vw, 2rem) auto;
 
   border-radius: min(2vw, 1rem);
 
-  display: flex;
-
-  width: 120rem;
-  max-width: 90vw;
+  max-width: 100%;
   overflow: hidden;
 
   position: relative;
 
   backdrop-filter: blur(2px);
+}
+
+.godisnji-partneri-sec__slider {
+  width: 90vw;
+
+  display: flex;
 }
 
 .godisnji-partneri-sec__slider::before,
@@ -56,10 +59,14 @@
   transition: margin-left 0;
 }
 
-.godisnji-partneri-sec__slide > a > img {
-  width: 30rem;
+.godisnji-partneri-sec__slide > a {
+  width: 100%;
+}
 
-  max-height: 10rem;
+.godisnji-partneri-sec__slide > a > img {
+  width: min(22.5vw, 100%);
+
+  max-height: min(6vw, 10rem);
   object-fit: contain;
 
   padding-inline: 5%;

@@ -1,127 +1,132 @@
-.swapAnim {
-    -webkit-animation: swapAnimation 4.4s forwards; 
-    animation: swapAnimation 4.4s forwards;
-    animation-iteration-count: infinite;
-    animation-delay: 2.2s;
+.organizatori {
+  font-size: min(3vw, 1rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+
+  margin-bottom: 2em;
+
+  opacity: 1;
+  /* duration added in js */
+  transition: opacity ease-in-out;
 }
-@keyframes swapAnimation {
-    45% {opacity: 1;}
-    50%{opacity: 0;}
-    55%{opacity: 0;}
-    65%{opacity: 1;}
+
+.org {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2em;
+
+  padding: 1em;
+
+  text-align: center;
 }
-@-webkit-keyframes swapAnimation {
-    45% {opacity: 1;}
-    50%{opacity: 0;}
-    55%{opacity: 0;}
-    65%{opacity: 1;}
+
+.org__img {
+  width: 95%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+
+  margin-bottom: 5%;
+
+  border-radius: 1em;
 }
-.organizatori{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3vw;
-    margin: min(2rem, 4vw) auto;
+
+.org__name {
+  color: var(--text-clr-dark);
+
+  font-size: 1.375em;
 }
-.side-org > p, .main-org > p{
-    padding-top: 5px;
-    width:80%;
-    text-align: center;
+
+.org__function,
+.org__function2 {
+  color: var(--text-clr);
+
+  font-size: 1em;
 }
-.side-org > h4, .main-org > h4{
-    text-align: center;
-    width: 90%;
+
+.main-org {
+  width: 25%;
+
+  background: linear-gradient(
+    var(--blue-clr-light),
+    var(--pink-clr-light),
+    rgba(245, 245, 245, 0.7)
+  );
 }
-.main-org > h4{
-    color: var(--pink-clr);
+
+.side-org {
+  width: 20%;
+
+  background: linear-gradient(
+    var(--pink-clr),
+    var(--blue-clr-light),
+    rgba(245, 245, 245, 0.5)
+  );
 }
-.side-org{
-    width: 25%;
-    margin: 50px 0 25px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgba(92,176,229,0.2) 0%, rgba(92,176,229,1) 100%);
-    border-radius: min(1rem, 2vw);
-    height: 54vh;
+
+.org-btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main-org{
-    width: 40%;
-    background: linear-gradient(rgba(92,176,229,0.2) 0%, rgba(92,176,229,1) 40%);
-    border-radius: min(1rem, 2vw);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 67vh;
+
+.org-btns-container > button {
+  width: 8%;
+  height: 1.5em;
+  margin-inline: 0.5%;
+
+  border-radius: 1em;
+
+  background-color: var(--pink-clr);
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out;
 }
-.side-img{
-    width: 200px;
-    height: 200px;
-    padding-top: 4vh;
+
+.org-btns-container > button[active] {
+  background-color: var(--blue-clr-light);
+  cursor: default;
 }
-.main-img{
-    width: 300px;
-    height: 300px;
-    padding: 5vh 0 2vh 0;
+
+.org-btns-container > button:not([active]):hover,
+.org-btns-container > button:not([active]):focus {
+  background-color: var(--pink-clr-light);
 }
-.org-btn-div{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+
+@media screen and (max-width: 600px) {
+  .main-org {
+    width: 60%;
+  }
+
+  .side-org {
+    display: none;
+  }
+
+  .org-btns-container > button {
+    width: 15%;
+    /* height: 2em; */
+  }
 }
-.org-button{
-    width: 7vw;
-    height: 2.5vh;
-    border-radius: min(1rem, 2vw);
-    border: none;
-}
-.org-button:hover{
-    opacity: 0.75;
-}
-@media screen and (max-width: 768px) {
-    .side-img{
-        width: 130px;
-        height: 130px;
-    }
-    .main-img{
-        width: 210px;
-        height: 210px;
-    }
-}
-@media screen and (max-width: 426px) {
-    .side-org{
-        height: 35vh;
-        margin: 30px 0 20px 0;
-    }
-    .main-org{
-        height: 45vh;
-    }
-    .side-img{
-        width: 70px;
-        height: 70px;
-        padding: 5px 5px 5px 5px;
-    }
-    .main-img{
-        width: 100px;
-        height: 100px;
-        padding: 5px 5px 5px 5px;
-    }
-    .org-button{
-        height: 1.5vh;
-    }
-}
-@media screen and (max-width: 376px) {
-    .side-org{
-        height: 30vh;
-    }
-    .main-org{
-        height: 40vh;
-    }
-    .side-img{
-        width: 60px;
-        height: 60px;
-    }
-    .org-button{
-        height: 1vh;
-    }
+
+@media screen and (min-width: 1600px) {
+  .org__name {
+    font-size: 1.75em;
+  }
+
+  .org__function,
+  .org__function2 {
+    font-size: 1.375em;
+  }
+
+  .org-btns-container > button {
+    /* width: 8em; */
+    height: 2em;
+  }
 }

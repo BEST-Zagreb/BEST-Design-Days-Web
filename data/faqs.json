@@ -4,12 +4,16 @@
     "answer": "Jednostavno! Sve što trebaš jest ispuniti formu za prijavu (gumb na vrhu stranice)."
   },
   {
+    "question": "Mogu li sudjelovati na BDD-u iako sam sudjelovao i prošle godine?",
+    "answer": "Naravno! Predavanja, kao i tema Case Study zadatka, su svake godine drugačija."
+  },
+  {
     "question": "Postoji li ograničenje na broj aktivnosti koje mogu prijaviti?",
     "answer": "Ne postoji! Prijavi sve aktivnosti na koje želiš i možeš doći."
   },
   {
     "question": "Prijavio/la sam pogrešnu aktivnosti, kako mogu promijeniti odabir?",
-    "answer": "Možeš poslati mail na bdd@best.hr ili ponovo ispuniti formu."
+    "answer": "Samo pošalji mail na designdays@best.hr ili ponovo ispuniti formu."
   },
   {
     "question": "Mogu li sudjelovati u aktivnosti ako se nisam prijavio/la na nju?",
@@ -17,7 +21,7 @@
   },
   {
     "question": "Što napraviti ako se ne mogu pojaviti na aktivnosti za koju sam se prijavio/la?",
-    "answer": "Obavezno se javi mailom na bdd@best.hr najkasnije 2 dana prije kako bi tvoje mjesto ustupili drugima."
+    "answer": "Obavezno se javi mailom na designdays@best.hr najkasnije 2 dana prije kako bi tvoje mjesto ustupili drugima."
   },
   {
     "question": "Na koliko aktivnosti moram sudjelovati da bih dobio certifikat o sudjelovanju?",
@@ -33,15 +37,19 @@
   },
   {
     "question": "Od koliko studenata se smije sastojati tim za Case Study?",
-    "answer": "Tim za Case Study se sastoji od jednog do pet studenata."
+    "answer": "Tim za Case Study se sastoji od jednog do četiri studenata."
   },
   {
     "question": "Koje su nagrade za Case Study?",
-    "answer": "Nagradni fond za Case Study iznosi 2000 kuna!"
+    "answer": "Osim mogućnosti povezivanja s vodećim poslodavcima na tržištu, timovi se bore za nagradni fond u iznosu od 300€!"
   },
   {
     "question": "Koliko traje prezentacija rješenja Case Study zadatka?",
-    "answer": "Prezentacija rješenja traje 15 minuta po timu, dok 7 od tih 15 minuta tim predstavlja svoje rješenje, a ostatak vremena žiri može postaviti pitanja timu vezano uz predstavljeno rješenje."
+    "answer": "Prezentacija rješenja traje 20 minuta po timu, dok 10 od tih 20 minuta tim predstavlja svoje rješenje, a ostatak vremena žiri može postaviti pitanja timu vezano uz predstavljeno rješenje."
+  },
+  {
+    "question": "Na kojem jeziku se prezentiraju rješenja Case study zadatka?",
+    "answer": "Rješenja trebaju biti prezentirana na engleskom jeziku."
   },
   {
     "question": "Mogu li se pridružiti BEST-u Zagreb nakon BEST Design Days-a u organizaciji ovakvih projekata?",
