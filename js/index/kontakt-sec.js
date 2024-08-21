@@ -4,7 +4,7 @@ initializeKontaktSection();
 
 async function fetchOrganizacijskiTimData() {
   try {
-    const response = await fetch("./data/2023/organizacijskiTim.json");
+    const response = await fetch("./data/2024/organizacijskiTim.json");
     const data = await response.json();
     return data;
   } catch (error) {
