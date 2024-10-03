@@ -67,7 +67,7 @@ function movePredavaciCarousel() {
 
 async function initializePredavaciSection() {
   try {
-    const response = await fetch("./data/2023/aktivnosti.json");
+    const response = await fetch("./data/2024/aktivnosti.json");
     const data = await response.json();
 
     data.forEach((aktivnost) => {

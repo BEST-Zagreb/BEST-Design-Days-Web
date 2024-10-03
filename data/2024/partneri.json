@@ -1,0 +1,47 @@
+{
+  "zlatni": [
+  ],
+  "srebrni": [
+    {
+      "naziv": "United POP",
+      "imgUrl": "./img/partners/project/2024/United-POP.png",
+      "linkUrl": "https://united-pop.hr/"
+    },
+    {
+      "naziv": "Macan",
+      "imgUrl": "./img/partners/project/2024/macan.png",
+      "linkUrl": "https://macan.hr/"
+    }
+  ],
+  "broncani": [
+    {
+      "naziv": "Stablo znanja",
+      "imgUrl": "./img/partners/project/2024/stablo_znanja.png",
+      "linkUrl": "https://stabloznanja.com/"
+    }
+  ],
+  "akademski": [
+    {
+      "naziv": "Aras Digital Products",
+      "imgUrl": "./img/partners/project/2024/Aras Digital Products.png",
+      "linkUrl": "https://arasdigital.co/"
+    },
+    {
+      "naziv": "Barrek group",
+      "imgUrl": "./img/partners/project/2024/Barrek group.png",
+      "linkUrl": "https://barrek.eu/",
+      "scale": 1.3
+    },
+    {
+      "naziv": "Bruketa&Žinić&Grey",
+      "imgUrl": "./img/partners/project/2024/BZG.png",
+      "linkUrl": "https://bruketa-zinic.com/hr/"
+    },
+    {
+      "naziv": "3D Tvornica",
+      "imgUrl": "./img/partners/project/2024/3dtvornica.jpg",
+      "linkUrl": "https://www.3dtvornica.hr/"
+    }
+  ],
+  "materijalni": []
+}

@@ -1,0 +1,145 @@
+[
+  {
+    "datum": "21.10.2024.",
+    "vrijeme": "16:00-18:00",
+    "tema": "Službeno otvaranje i predstavljanje",
+    "tvrtka": "",
+    "predavaci": [{ "ime": "", "imgUrl": "" }]
+  },
+  {
+    "datum": "21.10.2024.",
+    "vrijeme": "18:15-19:00",
+    "tema": "Živjeti fotografiju",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "Damir Hoyka",
+        "imgUrl": "./img/people/lecturers/2024/Damir Hoyka.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "21.10.2024.",
+    "vrijeme": "19:15-20:00",
+    "tema": "Kako napraviti foto esej",
+    "tvrtka": "GRF",
+    "predavaci": [
+      {
+        "ime": "Maja Strgar Kurečić",
+        "imgUrl": "./img/people/lecturers/2024/Maja Strgar Kurečić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "22.10.2024.",
+    "vrijeme": "17:00-18:00",
+    "tema": "Behind the Curtain: My (Sometimes Messy) Design Process",
+    "tvrtka": "Sawraft Studio",
+    "predavaci": [
+      {
+        "ime": "Lex Koen",
+        "imgUrl": "./img/people/lecturers/2024/Lex Koen.png"
+      }
+    ]
+  },
+  {
+    "datum": "22.10.2024.",
+    "vrijeme": "18:15-19:00",
+    "tema": "Optimizacija industrijskog dizajna za 3D print",
+    "tvrtka": "3D Tvornica",
+    "predavaci": [
+      {
+        "ime": "Valent Turković",
+        "imgUrl": "./img/people/lecturers/2024/Valent Turković.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "22.10.2024.",
+    "vrijeme": "19:10-20:00",
+    "tema": "Od Adobe Illustratora do vlastite modne kolekcije",
+    "tvrtka": "United POP",
+    "predavaci": [
+      {
+        "ime": "Anotnija Bucić",
+        "imgUrl": "./img/people/lecturers/2024/Antonija Bucić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "23.10.2024.",
+    "vrijeme": "17:00-18:00",
+    "tema": "Što smo to, dovraga, napravili?!",
+    "tvrtka": "Bruketa&Žinić&Grey",
+    "predavaci": [
+      {
+        "ime": "Davor Bruketa",
+        "imgUrl": "./img/people/lecturers/2024/Davor Bruketa.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "23.10.2024.",
+    "vrijeme": "18:15-19:00",
+    "tema": "3D modeliranje i primjena",
+    "tvrtka": "GRF",
+    "predavaci": [
+      {
+        "ime": "Lidija Mandić",
+        "imgUrl": "./img/people/lecturers/2024/Lidija Mandić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "23.10.2024.",
+    "vrijeme": "19:15-20:00",
+    "tema": "Važnost tipografije u dizajnu",
+    "tvrtka": "TVZ",
+    "predavaci": [
+      {
+        "ime": "Darija Ćutić",
+        "imgUrl": "./img/people/lecturers/2024/Darija Ćutić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "24.10.2024.",
+    "vrijeme": "17:00-18:00",
+    "tema": "Design Systems",
+    "tvrtka": "Aras Digital Products",
+    "predavaci": [
+      {
+        "ime": "Miheala Galaš",
+        "imgUrl": "./img/people/lecturers/2024/Mihaela Galaš.jpg"
+      },
+      {
+        "ime": "Filip Baotić",
+        "imgUrl": "./img/people/lecturers/2024/Filip Baotić.jpg"
+      }
+    ]
+  },
+    {
+    "datum": "4.11.2024.",
+    "vrijeme": "14:00-18:00",
+    "tema": "Case study - Ocjenjivanje",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "4.11.2024.",
+    "vrijeme": "19:00-20:00",
+    "tema": "Službeno zatvaranje",
+    "tvrtka": "",
+    "predavaci": [
+      {
+        "ime": "",
+        "imgUrl": ""
+      }
+    ]
+  }
+]

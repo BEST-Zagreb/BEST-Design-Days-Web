@@ -21,6 +21,9 @@ function addProjectPartners(data) {
         "title",
         partner.naziv + ""
       );
+      if (partner.scale) {
+        partnerElement.firstElementChild.style.transform = "scale(" + partner.scale + ")";
+      }
       partnerRow.append(partnerElement);
     });
     partnerImgsContainer.append(partnerRow);
@@ -29,7 +32,7 @@ function addProjectPartners(data) {
 
 async function initializeProjectPartners() {
   try {
-    const response = await fetch("./data/2023/partneri.json");
+    const response = await fetch("./data/2024/partneri.json");
     const data = await response.json();
 
     addProjectPartners(data);
