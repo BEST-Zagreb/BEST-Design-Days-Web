@@ -76,6 +76,10 @@
   height: min(20vh, 150px);
 }
 
+.partneri-sec__imgs-container > div:nth-of-type(5) > a > img {
+  height: min(16vh, 120px);
+}
+
 .partneri-sec__imgs-container > div > a > img:hover,
 .partneri-sec__imgs-container > div > a > img:focus {
   transform: translateY(-0.375rem);

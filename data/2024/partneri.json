@@ -24,7 +24,8 @@
     {
       "naziv": "Aras Digital Products",
       "imgUrl": "./img/partners/project/2024/Aras Digital Products.png",
-      "linkUrl": "https://arasdigital.co/"
+      "linkUrl": "https://arasdigital.co/",
+      "scale": 1.2
     },
     {
       "naziv": "Barrek group",
