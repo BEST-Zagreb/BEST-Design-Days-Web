@@ -39,9 +39,16 @@
     },
     {
       "naziv": "3D Tvornica",
-      "imgUrl": "./img/partners/project/2024/3dtvornica.jpg",
-      "linkUrl": "https://www.3dtvornica.hr/"
+      "imgUrl": "./img/partners/project/2024/3dtvornica_logo.png",
+      "linkUrl": "https://www.3dtvornica.hr/",
+      "scale": 1.2
     }
   ],
-  "materijalni": []
+  "materijalni": [
+    {
+      "naziv": "Muzej iluzija",
+      "imgUrl": "./img/partners/project/2023/muzej_iluzija_2.png",
+      "linkUrl": "https://muzejiluzija.com/"
+    }
+  ]
 }

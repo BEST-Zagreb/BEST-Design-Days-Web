@@ -118,6 +118,46 @@
       }
     ]
   },
+  {
+    "datum": "24.10.2024.",
+    "vrijeme": "18:15-19:00",
+    "tema": "Blender - tehnologija koja oblikuje sutrašnjicu",
+    "tvrtka": "FER",
+    "predavaci": [
+      {
+        "ime": "Ana Jović",
+        "imgUrl": "./img/people/lecturers/2024/Ana Jovic.jpg"
+      },
+      {
+        "ime": "Željka Mihajlović",
+        "imgUrl": "./img/people/lecturers/2024/Željka Mihajlović.jpeg"
+      }
+    ]
+  },
+  {
+    "datum": "24.10.2024.",
+    "vrijeme": "19:15-19:45",
+    "tema": "Digitalna propaganda: Potpomaže li vaš dizajn širenju dezinformacija?",
+    "tvrtka": "BARREK Grupa",
+    "predavaci": [
+      {
+        "ime": "Robert Barek",
+        "imgUrl": "./img/people/lecturers/2024/Robert Barek.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "25.10.2024.",
+    "vrijeme": "18:00-19:30",
+    "tema": "Dizajn u praksi - Kako izvući maksimum iz dizajna?",
+    "tvrtka": "Macan",
+    "predavaci": [
+      {
+        "ime": "Filip Macan",
+        "imgUrl": "./img/people/lecturers/2024/Filip Macan.jpg"
+      }
+    ]
+  },
     {
     "datum": "4.11.2024.",
     "vrijeme": "14:00-18:00",
