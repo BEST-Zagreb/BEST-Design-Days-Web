@@ -3,8 +3,10 @@ const rasporedTable = document.querySelector(".raspored-sec__table > tbody");
 initializeRasporedSection();
 
 function parseDateFormat(dateHrv) {
+  // Split the input date string "dd.mm.yyyy"
   const [dan, mjesec, godina] = dateHrv.split(".");
-  return `${godina}, ${mjesec}, ${dan}`;
+  // Create a Date object using year, month (zero-based), and day
+  return new Date(godina, mjesec - 1, dan); // mjesec - 1 because months are 0-indexed
 }
 
 function createRasporedTrElement(aktivnost) {
@@ -32,9 +34,11 @@ function createRasporedTrElement(aktivnost) {
     "Subota",
   ];
 
-  const datum = new Date(parseDateFormat(aktivnost.datum));
+  const datum = parseDateFormat(aktivnost.datum);
   const danUTjednu = daniUTjednu[datum.getDay()];
-  rasporedDatumElement.firstChild.innerText = `${danUTjednu} ${aktivnost.datum}`;
+  let rasporedDatumElementText = `${danUTjednu} ${aktivnost.datum}`;
+  if (aktivnost.lokacija) rasporedDatumElementText += `\n (${aktivnost.lokacija})`;
+  rasporedDatumElement.firstChild.innerText = rasporedDatumElementText;
   rasporedVrijemeElement.firstChild.innerText = aktivnost.vrijeme;
 
   let aktivnostNaziv = aktivnost.tema;
