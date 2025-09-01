@@ -65,7 +65,7 @@ function swapOrg() {
 
 // Fetch data and start loop
 async function initializeOrgTim() {
-  const response = await fetch("data/2024/organizacijskiTim.json");
+  const response = await fetch("data/2025/organizacijskiTim.json");
   orgData = await response.json();
 
   // Add the correct number of buttons

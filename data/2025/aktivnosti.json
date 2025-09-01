@@ -1,0 +1,200 @@
+[
+  {
+    "datum": "21.10.2024.",
+    "vrijeme": "16:00-18:00",
+    "tema": "Službeno otvaranje i predstavljanje",
+    "tvrtka": "",
+    "lokacija": "Stablo znanja",
+    "predavaci": [{ "ime": "", "imgUrl": "" }]
+  },
+  {
+    "datum": "21.10.2024.",
+    "vrijeme": "18:15-19:00",
+    "tema": "Živjeti fotografiju",
+    "tvrtka": "",
+    "lokacija": "Stablo znanja",
+    "predavaci": [
+      {
+        "ime": "Damir Hoyka",
+        "imgUrl": "./img/people/lecturers/2024/Damir Hoyka.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "21.10.2024.",
+    "vrijeme": "19:15-20:00",
+    "tema": "Kako napraviti foto esej",
+    "tvrtka": "GRF",
+    "lokacija": "Stablo znanja",
+    "predavaci": [
+      {
+        "ime": "Maja Strgar Kurečić",
+        "imgUrl": "./img/people/lecturers/2024/Maja Strgar Kurečić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "22.10.2024.",
+    "vrijeme": "17:00-18:00",
+    "tema": "Behind the Curtain: My (Sometimes Messy) Design Process",
+    "tvrtka": "Sawraft Studio",
+    "lokacija": "FER predavaona D2",
+    "predavaci": [
+      {
+        "ime": "Lex Koen",
+        "imgUrl": "./img/people/lecturers/2024/Lex Koen.png"
+      }
+    ]
+  },
+  {
+    "datum": "22.10.2024.",
+    "vrijeme": "18:15-19:00",
+    "tema": "Optimizacija industrijskog dizajna za 3D print",
+    "tvrtka": "3D Tvornica",
+    "lokacija": "FER predavaona D2",
+    "predavaci": [
+      {
+        "ime": "Valent Turković",
+        "imgUrl": "./img/people/lecturers/2024/Valent Turković.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "22.10.2024.",
+    "vrijeme": "19:10-20:00",
+    "tema": "Od Adobe Illustratora do vlastite modne kolekcije",
+    "tvrtka": "United POP",
+    "lokacija": "FER predavaona D2",
+    "predavaci": [
+      {
+        "ime": "Antonija Bucić",
+        "imgUrl": "./img/people/lecturers/2024/Antonija Bucić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "23.10.2024.",
+    "vrijeme": "17:00-18:00",
+    "tema": "Što smo to, dovraga, napravili?!",
+    "tvrtka": "Bruketa&Žinić&Grey",
+    "lokacija": "FER predavaona B1",
+    "predavaci": [
+      {
+        "ime": "Davor Bruketa",
+        "imgUrl": "./img/people/lecturers/2024/Davor Bruketa.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "23.10.2024.",
+    "vrijeme": "19:15-20:00",
+    "tema": "Važnost tipografije u dizajnu",
+    "tvrtka": "TVZ",
+    "lokacija": "FER predavaona D2",
+    "predavaci": [
+      {
+        "ime": "Darija Ćutić",
+        "imgUrl": "./img/people/lecturers/2024/Darija Ćutić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "23.10.2024.",
+    "vrijeme": "20:15-21:00",
+    "tema": "3D modeliranje i primjena",
+    "tvrtka": "GRF",
+    "lokacija": "FER predavaona D2",
+    "predavaci": [
+      {
+        "ime": "Lidija Mandić",
+        "imgUrl": "./img/people/lecturers/2024/Lidija Mandić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "24.10.2024.",
+    "vrijeme": "17:00-18:00",
+    "tema": "Design Systems",
+    "tvrtka": "Aras Digital Products",
+    "lokacija": "FER predavaona D2",
+    "predavaci": [
+      {
+        "ime": "Mihaela Galaš",
+        "imgUrl": "./img/people/lecturers/2024/Mihaela Galaš.jpg"
+      },
+      {
+        "ime": "Filip Baotić",
+        "imgUrl": "./img/people/lecturers/2024/Filip Baotić.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "24.10.2024.",
+    "vrijeme": "18:15-19:00",
+    "tema": "Blender: tehnologija koja oblikuje sutrašnjicu",
+    "tvrtka": "FER",
+    "lokacija": "FER predavaona D2",
+    "predavaci": [
+      {
+        "ime": "Ana Jović",
+        "imgUrl": "./img/people/lecturers/2024/Ana Jovic.jpg"
+      },
+      {
+        "ime": "Željka Mihajlović",
+        "imgUrl": "./img/people/lecturers/2024/Željka Mihajlović.jpeg"
+      }
+    ]
+  },
+  {
+    "datum": "24.10.2024.",
+    "vrijeme": "19:15-19:45",
+    "tema": "Digitalna propaganda: Potpomaže li vaš dizajn širenju dezinformacija?",
+    "tvrtka": "BARREK Grupa",
+    "lokacija": "FER predavaona D2",
+    "predavaci": [
+      {
+        "ime": "Robert Barek",
+        "imgUrl": "./img/people/lecturers/2024/Robert Barek.jpg"
+      }
+    ]
+  },
+  {
+    "datum": "28.10.2024.",
+    "vrijeme": "18:00-19:30",
+    "tema": "Dizajn u praksi: Kako izvući maksimum iz dizajna?",
+    "tvrtka": "Macan",
+    "lokacija": "FER predavaona B5",
+    "predavaci": [
+      {
+        "ime": "Filip Macan",
+        "imgUrl": "./img/people/lecturers/2024/Filip Macan.jpg"
+      }
+    ]
+  },
+    {
+    "datum": "4.11.2024.",
+    "vrijeme": "15:00-18:00",
+    "tema": "Case study - Ocjenjivanje",
+    "tvrtka": "",
+    "lokacija": "BIRD inkubator",
+    "predavaci": [
+      {
+        "ime": "",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "4.11.2024.",
+    "vrijeme": "19:00-20:00",
+    "tema": "Službeno zatvaranje",
+    "tvrtka": "",
+    "lokacija": "BIRD inkubator",
+    "predavaci": [
+      {
+        "ime": "",
+        "imgUrl": ""
+      }
+    ]
+  }
+]

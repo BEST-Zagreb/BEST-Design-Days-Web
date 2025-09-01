@@ -1,12 +1,12 @@
 [
   {
-    "naziv": "Netgen",
-    "imgUrl": "./img/partners/annual/Netgen-logo.svg",
-    "linkUrl": "https://netgen.io/"
-  },
-  {
     "naziv": "Devot",
     "imgUrl": "./img/partners/annual/Devot-logo-rgb.svg",
     "linkUrl": "https://devot.team/"
+  },
+  {
+    "naziv": "Janaf",
+    "imgUrl": "./img/partners/annual/janaf.png",
+    "linkUrl": "https://janaf.hr/"
   }
 ]
