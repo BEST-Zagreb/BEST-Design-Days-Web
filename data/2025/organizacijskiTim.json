@@ -6,7 +6,7 @@
       "funkcijaEng": "Main organiser",
       "funkcija2Eng": null,
       "email": "sara.rivic.carevic@best-eu.org",
-      "tel": "+385 98 196 2994",
+      "tel": "+385 91 362 6791",
       "imgUrl": "./img/people/orgs/2025/saraMO.jpg",
       "kontakt": true
     },
@@ -17,7 +17,7 @@
       "funkcijaEng": "Corporate relations responsible",
       "funkcija2Eng": null,
       "email": "ivan.androsevic@best-eu.org",
-      "tel": "+385 92 191 8111",
+      "tel": "+385 98 202 821",
       "imgUrl": "./img/people/orgs/2025/ivanFR.jpg",
       "kontakt": true
     },
@@ -30,6 +30,17 @@
       "email": "lana.njezic@best-eu.org",
       "tel": "",
       "imgUrl": "./img/people/orgs/2025/lanaAK.jpg",
+      "kontakt": false
+    },
+    {
+      "ime": "Ilona Bošnjaković",
+      "funkcija": "Odgovorna za dizajn",
+      "funkcija2": null,
+      "funkcijaEng": "Design responsible",
+      "funkcija2Eng": null,
+      "email": "ilona.bosnjakovic@best-eu.org",
+      "tel": "",
+      "imgUrl": "./img/people/orgs/2025/ilonaDZ.jpg",
       "kontakt": false
     },
     {
@@ -52,6 +63,16 @@
       "email": "valerija.bockaj@best-eu.org",
       "tel": "",
       "imgUrl": "./img/people/orgs/2025/valerijaPAX.jpg",
+      "kontakt": false
+    }, {
+      "ime": "Ema Ružić",
+      "funkcija": "Odgovorna za logistiku",
+      "funkcija2": null,
+      "funkcijaEng": "Logistics responsible",
+      "funkcija2Eng": null,
+      "email": "ema.ruzic@best-eu.org",
+      "tel": "",
+      "imgUrl": "./img/people/orgs/2025/emaLOG.jpeg",
       "kontakt": false
     }
   ]
