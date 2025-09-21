@@ -3,53 +3,27 @@
   ],
   "srebrni": [
     {
-      "naziv": "United POP",
-      "imgUrl": "./img/partners/project/2024/United-POP.png",
-      "linkUrl": "https://united-pop.hr/"
-    },
-    {
       "naziv": "Macan",
-      "imgUrl": "./img/partners/project/2024/macan.png",
+      "imgUrl": "./img/partners/project/2025/Macan.png",
       "linkUrl": "https://macan.hr/"
     }
   ],
   "broncani": [
     {
-      "naziv": "Stablo znanja",
-      "imgUrl": "./img/partners/project/2024/stablo_znanja.png",
-      "linkUrl": "https://stabloznanja.com/"
+      "naziv": "VR Kino KEK",
+      "imgUrl": "./img/partners/project/2025/VR KINO KEK.png",
+      "linkUrl": "https://vrkino.kek.hr/",
+      "scale": 1.2
+    },
+    {
+      "naziv": "Sveučilišna tiskara",
+      "imgUrl": "./img/partners/project/2025/SVEUCILISNA TISKARA LOGO.png",
+      "linkUrl": "https://www.sveucilisnatiskara.hr/",
+      "scale": 1
     }
   ],
   "akademski": [
-    {
-      "naziv": "Aras Digital Products",
-      "imgUrl": "./img/partners/project/2024/Aras Digital Products.png",
-      "linkUrl": "https://arasdigital.co/",
-      "scale": 1.2
-    },
-    {
-      "naziv": "Barrek group",
-      "imgUrl": "./img/partners/project/2024/Barrek group.png",
-      "linkUrl": "https://barrek.eu/",
-      "scale": 1.3
-    },
-    {
-      "naziv": "Bruketa&Žinić&Grey",
-      "imgUrl": "./img/partners/project/2024/BZG.png",
-      "linkUrl": "https://bruketa-zinic.com/hr/"
-    },
-    {
-      "naziv": "3D Tvornica",
-      "imgUrl": "./img/partners/project/2024/3dtvornica_logo.png",
-      "linkUrl": "https://www.3dtvornica.hr/",
-      "scale": 1.2
-    }
   ],
   "materijalni": [
-    {
-      "naziv": "Muzej iluzija",
-      "imgUrl": "./img/partners/project/2023/muzej_iluzija_2.png",
-      "linkUrl": "https://muzejiluzija.com/"
-    }
   ]
 }

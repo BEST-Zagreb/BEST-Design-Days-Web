@@ -73,7 +73,7 @@ function createRasporedTrElement(aktivnost) {
 
 async function initializeRasporedSection() {
   try {
-    const response = await fetch("./data/2024/aktivnosti.json");
+    const response = await fetch("./data/2025/aktivnosti.json");
     const data = await response.json();
 
     data.forEach((aktivnost) => {

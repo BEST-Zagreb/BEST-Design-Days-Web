@@ -32,7 +32,7 @@ function addProjectPartners(data) {
 
 async function initializeProjectPartners() {
   try {
-    const response = await fetch("./data/2024/partneri.json");
+    const response = await fetch("./data/2025/partneri.json");
     const data = await response.json();
 
     addProjectPartners(data);

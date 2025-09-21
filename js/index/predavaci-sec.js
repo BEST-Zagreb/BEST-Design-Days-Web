@@ -67,12 +67,15 @@ function movePredavaciCarousel() {
 
 async function initializePredavaciSection() {
   try {
-    const response = await fetch("./data/2024/aktivnosti.json");
+    const response = await fetch("./data/2025/aktivnosti.json");
     const data = await response.json();
 
     data.forEach((aktivnost) => {
       if (aktivnost.predavaci[0].ime) {
         aktivnost.predavaci.forEach((predavac) => {
+          // sljedecu liniju maknuti ako za predavace bez slike
+          // se zeli prikazati samo icon avatar
+          //if (!predavac.imgUrl) return null;
           const predavacCardElement = createPredavacCardElement(
             aktivnost,
             predavac

@@ -11,10 +11,13 @@
   position: relative;
 
   backdrop-filter: blur(2px);
+
+  display: flex;
+  justify-content: center;
 }
 
 .godisnji-partneri-sec__slider {
-  width: 90vw;
+  /*width: 90vw;*/
 
   display: flex;
 }
