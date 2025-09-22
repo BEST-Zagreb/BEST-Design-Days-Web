@@ -62,13 +62,13 @@
   {
     "datum": "15.10.2025.",
     "vrijeme": "19:00 – 20:00",
-    "tema": "Iznenađenje",
+    "tema": "Iznenađenje!",
     "tvrtka": "",
     "lokacija": "",
     "predavaci": [
       {
         "ime": "Marko Baus",
-        "imgUrl": ""
+        "imgUrl": "./img/people/lecturers/2025/baus.jpg"
       }
     ]
   },
@@ -114,7 +114,7 @@
   {
     "datum": "17.10.2025.",
     "vrijeme": "18:00 – 19:45",
-    "tema": "Iznenađenje",
+    "tema": "Iznenađenje!",
     "tvrtka": "",
     "lokacija": "",
     "predavaci": [
