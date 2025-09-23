@@ -55,14 +55,14 @@
     "predavaci": [
       {
         "ime": "Filip Macan",
-        "imgUrl": ""
+        "imgUrl": "./img/people/lecturers/2025/Macan.jpg"
       }
     ]
   },
   {
     "datum": "15.10.2025.",
     "vrijeme": "19:00 – 20:00",
-    "tema": "Iznenađenje!",
+    "tema": "I vs. AI. Kako gledati na umjetnu inteligenciju?",
     "tvrtka": "",
     "lokacija": "",
     "predavaci": [
