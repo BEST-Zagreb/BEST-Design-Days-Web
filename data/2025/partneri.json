@@ -3,6 +3,12 @@
   ],
   "srebrni": [
     {
+      "naziv": "Pine",
+      "imgUrl": "./img/partners/project/2025/Pine_logo.png",
+      "linkUrl": "https://pinestudio.com/",
+      "scale": 0.7
+    },
+    {
       "naziv": "Macan",
       "imgUrl": "./img/partners/project/2025/Macan.png",
       "linkUrl": "https://macan.hr/"
@@ -23,6 +29,12 @@
     }
   ],
   "akademski": [
+    {
+      "naziv": "Fakultet strojarstva i brodogradje",
+      "imgUrl": "./img/partners/project/2025/FSB_logo.jpg",
+      "linkUrl": "https://www.fsb.unizg.hr/index.php",
+      "scale": 1
+    }
   ],
   "materijalni": [
   ]
