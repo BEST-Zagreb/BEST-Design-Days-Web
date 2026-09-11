@@ -1,0 +1,10 @@
+{
+  // Static site on Cloudflare Workers static assets, deployed by Workers Builds on every push to the default branch.
+  "name": "best-design-days-web",
+  "compatibility_date": "2026-09-11",
+  "assets": {
+    "directory": "./",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
