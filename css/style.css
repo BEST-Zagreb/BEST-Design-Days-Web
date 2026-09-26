@@ -830,16 +830,24 @@ figure {
 @media (max-width: 860px) {
   .info {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 1.5rem;
+    row-gap: 0.4rem;
   }
 
   .info__card + .info__card::before {
     display: none;
   }
 
+  .info__card {
+    padding-block: 1.6rem;
+  }
+
+  /* kad se kartice slože jedna ispod druge, ikona ide centrirano iznad svog naslova */
   .info__icon {
+    position: static;
+    display: block;
     width: 3.2rem;
     height: 3.2rem;
+    margin: 0 auto 0.6rem;
     font-size: 3.2rem;
   }
 }
