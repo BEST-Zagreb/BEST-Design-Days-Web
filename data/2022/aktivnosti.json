@@ -14,11 +14,11 @@
     "predavaci": [
       {
         "ime": "Tajana Barac",
-        "imgUrl": "./img/people/lecturers/Tajana_Barac.webp"
+        "imgUrl": "./img/people/lecturers/2022/Tajana_Barac.webp"
       },
       {
         "ime": "Marina Mijatović",
-        "imgUrl": "./img/people/lecturers/Marina_Mijatovic.webp"
+        "imgUrl": "./img/people/lecturers/2022/Marina_Mijatovic.webp"
       }
     ]
   },
@@ -30,7 +30,7 @@
     "predavaci": [
       {
         "ime": "Igor Gotal-Lukša",
-        "imgUrl": "./img/people/lecturers/Igor_Gotal_Luksa.webp"
+        "imgUrl": "./img/people/lecturers/2022/Igor_Gotal_Luksa.webp"
       }
     ]
   },
@@ -42,7 +42,7 @@
     "predavaci": [
       {
         "ime": "Jesenka Pibernik",
-        "imgUrl": "./img/people/lecturers/Jasenka_Pibernik.webp"
+        "imgUrl": "./img/people/lecturers/2022/Jasenka_Pibernik.webp"
       }
     ]
   },
@@ -54,7 +54,7 @@
     "predavaci": [
       {
         "ime": "Ljubiša Kukulj",
-        "imgUrl": "./img/people/lecturers/Ljubisa_Kukulj.webp"
+        "imgUrl": "./img/people/lecturers/2022/Ljubisa_Kukulj.webp"
       }
     ]
   },
@@ -73,7 +73,7 @@
     "predavaci": [
       {
         "ime": "Tomislav Stipančić",
-        "imgUrl": "./img/people/lecturers/Tomislav_Stipancic.webp"
+        "imgUrl": "./img/people/lecturers/2022/Tomislav_Stipancic.webp"
       }
     ]
   },
@@ -85,7 +85,7 @@
     "predavaci": [
       {
         "ime": "Ivana Ivanušec",
-        "imgUrl": "./img/people/lecturers/Ivana_Ivanusec.webp"
+        "imgUrl": "./img/people/lecturers/2022/Ivana_Ivanusec.webp"
       }
     ]
   },
@@ -97,7 +97,7 @@
     "predavaci": [
       {
         "ime": "Filip Peraić",
-        "imgUrl": "./img/people/lecturers/filip_peraic.webp"
+        "imgUrl": "./img/people/lecturers/2022/Filip_Peraic.webp"
       }
     ]
   },
@@ -109,7 +109,7 @@
     "predavaci": [
       {
         "ime": "Davor Bruketa",
-        "imgUrl": "./img/people/lecturers/Davor_Bruketa.webp"
+        "imgUrl": "./img/people/lecturers/2022/Davor_Bruketa.webp"
       }
     ]
   },
@@ -119,7 +119,7 @@
     "tema": "Primjena digitalnih tehnologija",
     "tvrtka": "",
     "predavaci": [
-      { "ime": "Macan", "imgUrl": "./img/people/lecturers/Filip_Macan.webp" }
+      { "ime": "Macan", "imgUrl": "./img/people/lecturers/2022/Filip_Macan.webp" }
     ]
   },
   {

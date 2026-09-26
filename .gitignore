@@ -1,1 +1,7 @@
 .wrangler/
+
+# izvorni materijali (preveliki za repo)
+*.zip
+
+# PDF pregled stranice za komentiranje teksta
+BDD_2026_web_pregled.pdf

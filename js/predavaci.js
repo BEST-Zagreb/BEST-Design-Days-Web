@@ -1,31 +1,38 @@
-const getData = async function () {
-	let response = await fetch("data/predavaci.json");
-	let data = await response.json();
-	addPredavaci(data);
+// Predavači: izvlače se iz data/<godina>/aktivnosti.json (isti predavač se prikaže samo jednom)
+
+function createPredavacCard(predavac, aktivnost) {
+  const { el } = BDD;
+  return el("li", { class: "person" }, [
+    el("img", {
+      class: "person__photo",
+      src: predavac.imgUrl || "./img/placeholder.svg",
+      alt: `Predavač ${predavac.ime}`,
+      loading: "lazy",
+    }),
+    el("h3", { class: "person__name", text: predavac.ime }),
+    el("p", { class: "person__meta", text: aktivnost.tema || aktivnost.tvrtka }),
+  ]);
 }
 
-const addPredavaci = async function (data) {
-	let predavaci = data.predavaci;
-	let gallery = document.querySelector('.gallery');
-	let predavaciTemp = document.querySelector('#predavaci-template');
-    
+async function initPredavaci() {
+  const lista = document.querySelector("#predavaci-lista");
 
-	for (let index = 0; index < predavaci.length; index++) {
-		let predavac = predavaciTemp.content.cloneNode(true);
-		
-        let predavacImage = predavac.querySelector('.predavaci-img');
-		predavacImage.src = predavaci[index].imageUrl;
+  try {
+    const aktivnosti = await BDD.loadJSON(await BDD.dataPath("aktivnosti.json"));
+    const vidjeni = new Set();
 
-        let predavacName = predavac.querySelector('#predavaci-name');
-		predavacName.textContent = predavaci[index].name;
+    aktivnosti.forEach((aktivnost) => {
+      aktivnost.predavaci.forEach((predavac) => {
+        if (!predavac.ime || vidjeni.has(predavac.ime)) return;
+        vidjeni.add(predavac.ime);
+        lista.append(createPredavacCard(predavac, aktivnost));
+      });
+    });
 
-        let predavacTema = predavac.querySelector('#predavaci-tema');
-		predavacTema.textContent = predavaci[index].tema;
+    BDD.initCarousel(lista.closest(".carousel"));
+  } catch (error) {
+    console.error(error);
+  }
+}
 
-        let predavacTermin = predavac.querySelector('#predavaci-termin');
-		predavacTermin.textContent = predavaci[index].termin;
-
-        gallery.appendChild(predavac);
-	}
-};
-getData();
+initPredavaci();

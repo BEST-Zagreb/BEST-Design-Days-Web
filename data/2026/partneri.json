@@ -1,0 +1,21 @@
+{
+  "_napomena": "Razine se prikazuju redom kojim su ovdje napisane; viša razina = veća kartica.",
+
+  "studijski": [
+    { "naziv": "Regular Company", "imgUrl": "./img/partners/2026/regular-company.svg", "linkUrl": "https://regular.company/" }
+  ],
+
+  "akademski": [
+    { "naziv": "404 agency", "imgUrl": "./img/partners/2026/404.svg", "linkUrl": "https://www.404.agency/" }
+  ],
+
+  "materijalni": [
+    { "naziv": "Sveučilišna tiskara", "imgUrl": "./img/partners/2026/sveucilisna-tiskara.png", "linkUrl": "https://www.sveucilisnatiskara.hr/" }
+  ],
+
+  "pokrovitelji": [
+    { "naziv": "Fakultet strojarstva i brodogradnje", "imgUrl": "./img/partners/2026/FSB_logo.jpg", "linkUrl": "https://www.fsb.unizg.hr/", "omjer": "12 / 5", "bg": "#f7f7f7" },
+    { "naziv": "Tehničko veleučilište u Zagrebu", "imgUrl": "./img/partners/2026/tvz.png", "linkUrl": "https://www.tvz.hr/" },
+    { "naziv": "Grafički fakultet", "imgUrl": "./img/partners/2026/grf.svg", "linkUrl": "https://www.grf.unizg.hr/", "scale": 1.1 }
+  ]
+}

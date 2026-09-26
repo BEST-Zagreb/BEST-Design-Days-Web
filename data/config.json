@@ -1,0 +1,27 @@
+{
+  "godina": 2026,
+  "podnaslov": "5 dana dizajna, znanja i profesionalnog razvoja",
+  "tema": "Visual identity",
+  "email": "designdays@best.hr",
+
+  "instagram": {
+    "handle": "@bdd_zg",
+    "url": "https://www.instagram.com/bdd_zg/"
+  },
+
+  "prijava": {
+    "otvorena": true,
+    "otvara": "28.9.2026.",
+    "zatvara": "16.10.2026.",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLScEjMXT_9ZsZ8v60SRgXSuTJ79qoLbVCnBfDGfJmbKduQuRGw/viewform",
+    "tekstOtvoreno": "Prijavi se",
+    "tekstZatvoreno": "Prijave zatvorene"
+  },
+
+  "info": [
+    { "ikona": "pin", "naslov": "Gdje?", "tekst": "Fakultet strojarstva i brodogradnje\njužna zgrada, dvorana S-26", "link": "https://maps.app.goo.gl/RLyFY1LQASToBUYv8" },
+    { "ikona": "kalendar", "naslov": "Kada?", "tekst": "19. - 23. listopada", "link": "#raspored" },
+    { "ikona": "upitnik", "naslov": "Kako?", "tekst": "Prijave od 28. rujna do 16. listopada\nputem web stranice projekta", "link": "" },
+    { "ikona": "zarulja", "naslov": "Case study", "tekst": "otkrivanje zadatka: 19. listopada\nprezentacija rješenja: 7. studenoga", "link": "" }
+  ]
+}

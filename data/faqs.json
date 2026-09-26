@@ -4,52 +4,56 @@
     "answer": "Jednostavno! Sve što trebaš jest ispuniti formu za prijavu (gumb na vrhu stranice)."
   },
   {
-    "question": "Mogu li sudjelovati na BDD-u iako sam sudjelovao i prošle godine?",
-    "answer": "Naravno! Predavanja, kao i tema Case Study zadatka, su svake godine drugačija."
+    "question": "Mogu li sudjelovati na BDD-u iako sam sudjelovao/la i prošle godine?",
+    "answer": "Naravno! Predavanja, kao i tema Case Study zadatka, svake su godine drugačija."
   },
   {
     "question": "Postoji li ograničenje na broj aktivnosti koje mogu prijaviti?",
     "answer": "Ne postoji! Prijavi sve aktivnosti na koje želiš i možeš doći."
   },
   {
-    "question": "Prijavio/la sam pogrešnu aktivnosti, kako mogu promijeniti odabir?",
-    "answer": "Samo pošalji mail na designdays@best.hr ili ponovo ispuniti formu."
+    "question": "Prijavio/la sam pogrešnu aktivnost, kako mogu promijeniti odabir?",
+    "answer": "Samo pošalji mail na designdays@best.hr ili ponovo ispuni formu."
   },
   {
     "question": "Mogu li sudjelovati u aktivnosti ako se nisam prijavio/la na nju?",
-    "answer": "Ne, na aktivnosti mogu sudjelovati samo oni studenti koji su se na nju prijavili!"
+    "answer": "Ne, na aktivnostima mogu sudjelovati samo oni studenti koji su se na njih prijavili!"
   },
   {
     "question": "Što napraviti ako se ne mogu pojaviti na aktivnosti za koju sam se prijavio/la?",
-    "answer": "Obavezno se javi mailom na designdays@best.hr najkasnije 2 dana prije kako bi tvoje mjesto ustupili drugima."
+    "answer": "Obavezno se javi mailom na designdays@best.hr najkasnije 2 dana prije kako bismo tvoje mjesto ustupili drugima."
   },
   {
-    "question": "Na koliko aktivnosti moram sudjelovati da bih dobio certifikat o sudjelovanju?",
+    "question": "Na koliko aktivnosti moram sudjelovati da bih dobio/la certifikat o sudjelovanju?",
     "answer": "Barem na 50% svih aktivnosti."
   },
   {
     "question": "Treba li mi računalo na aktivnostima?",
-    "answer": "U pravilu ne. Ako će ti zatrebati, biti ćeš na vrijeme obaviješten/a."
+    "answer": "U pravilu ne. Ako će ti zatrebati, bit ćeš na vrijeme obaviješten/a."
   },
   {
     "question": "Kako se biraju sudionici za aktivnosti?",
-    "answer": "Za Case Study natjecatelji se biraju prema odgovorima na motivacijska pitanja u formi, dok se sudionici predavanja i radionica biraju principom 'first come, first serve'. Stoga požuri s prijavom!"
+    "answer": "Uvjet za sudjelovanje na predavanjima i radionicama je prijava putem forme, a kod predavanja s ograničenim brojem sudionika prednost imaju sudionici koji se prijave prvi. Stoga požuri s prijavom! Uvjet za sudjelovanje na Case Study zadatku je prisutstvo na 50% predavanja. Natjecatelji se dodatno biraju prema odgovorima na motivacijska pitanja u formi za prijavu."
   },
   {
     "question": "Od koliko studenata se smije sastojati tim za Case Study?",
-    "answer": "Tim za Case Study se sastoji od jednog do četiri studenata."
+    "answer": "Tim za Case Study sastoji se od jednog do četiri studenta."
+  },
+  {
+    "question": "Što ako nemam tim za sudjelovanje na case study zadatku?",
+    "answer": "Ako nisi pronašao svoj tim s kojim možeš sudjelovati na case studyju, a ne želiš sudjelovati samostalno, mi ćemo ti pronaći tim."
   },
   {
     "question": "Koje su nagrade za Case Study?",
-    "answer": "Osim mogućnosti povezivanja s vodećim poslodavcima na tržištu, timovi se bore za nagradni fond u iznosu od 300€!"
+    "answer": "Osim mogućnosti povezivanja s vodećim poslodavcima na tržištu, timovi se bore za vrijedne nagrade!"
   },
   {
     "question": "Koliko traje prezentacija rješenja Case Study zadatka?",
-    "answer": "Prezentacija rješenja traje 20 minuta po timu, dok 10 od tih 20 minuta tim predstavlja svoje rješenje, a ostatak vremena žiri može postaviti pitanja timu vezano uz predstavljeno rješenje."
+    "answer": "Prezentacija rješenja traje 20 minuta po timu: 10 minuta tim predstavlja svoje rješenje, a ostatak vremena žiri može postaviti pitanja vezana uz predstavljeno rješenje."
   },
   {
-    "question": "Na kojem jeziku se prezentiraju rješenja Case study zadatka?",
-    "answer": "Rješenja trebaju biti prezentirana na engleskom jeziku."
+    "question": "Na kojem jeziku se prezentiraju rješenja Case Study zadatka?",
+    "answer": "Rješenja se prezentiraju na hrvatskom jeziku. Ukoliko sudionik nije u mogućnosti rješenje predstaviti na hrvatskom jeziku, u dogovoru s organizatorima rješenje predstavlja na engleskom jeziku."
   },
   {
     "question": "Mogu li se pridružiti BEST-u Zagreb nakon BEST Design Days-a u organizaciji ovakvih projekata?",
