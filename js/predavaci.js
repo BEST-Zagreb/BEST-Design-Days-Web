@@ -11,6 +11,7 @@ function createPredavacCard(predavac, aktivnost) {
     }),
     el("h3", { class: "person__name", text: predavac.ime }),
     el("p", { class: "person__meta", text: aktivnost.tema || aktivnost.tvrtka }),
+    aktivnost.tema && aktivnost.tvrtka ? el("p", { class: "person__firma", text: aktivnost.tvrtka }) : null,
   ]);
 }
 

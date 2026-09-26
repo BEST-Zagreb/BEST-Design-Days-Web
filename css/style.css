@@ -25,7 +25,7 @@
   --green: #88a930;
   --blue: #2a87b6;
   --navy: #173e73;
-  --ring: #4cc38a;
+  --ring: #af98ce; /* lavanda iz lotosa (VI) */
   --logo-color: #fff;
   --maxw: 1200px;
 }
@@ -305,7 +305,7 @@ figure {
   left: 0;
   z-index: 1;
   width: clamp(220px, 30vw, 440px);
-  opacity: 0.55;
+  opacity: 0.8;
   transform: translate(-30%, -15%);
   transition: filter 0.8s;
   will-change: transform;
@@ -404,9 +404,10 @@ figure {
   z-index: 2;
   padding: 0.28rem 0.85rem;
   border-radius: 8px;
-  background: #9cc23a; /* zelena, da se razlikuje od ljubičastog gumba za prijavu */
+  /* boje s Instagrama BDD-a; svijetla da se razlikuje od ljubičastog gumba za prijavu */
+  background: #f1f3f2;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-  color: #20013c;
+  color: #280b4d;
   font-size: clamp(0.7rem, 1.1vw, 0.88rem);
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1019,14 +1020,14 @@ figure {
   top: 8%;
   left: 2%;
   width: 62%;
-  background: rgba(150, 56, 58, 0.78);
+  background: rgba(95, 47, 156, 0.8); /* boje lotosa */
 }
 
 .why__circles span:nth-child(2) {
   top: 22%;
   left: 42%;
   width: 56%;
-  background: rgba(160, 145, 60, 0.7);
+  background: rgba(140, 104, 194, 0.62);
   animation-delay: -5s;
 }
 
@@ -1034,7 +1035,7 @@ figure {
   top: 0;
   left: 58%;
   width: 34%;
-  background: rgba(110, 140, 60, 0.7);
+  background: rgba(188, 166, 219, 0.5);
   animation-delay: -10s;
 }
 
@@ -1445,6 +1446,27 @@ figure {
     width: 30px;
     font-size: 2.2rem;
   }
+
+  /* na mobitelu se vidi jedna osoba, a sljedeća blijedi s desnog ruba (znak da ima još) */
+  .carousel__track > li {
+    flex-basis: 76%;
+    scroll-snap-align: start;
+  }
+
+  .carousel__track {
+    --fade-r: 0%;
+    mask-image: linear-gradient(to right, #000 calc(100% - var(--fade-r)), transparent);
+  }
+
+  .carousel--ima-desno .carousel__track {
+    --fade-r: 28%;
+  }
+
+  /* prazan prostor iza zadnje kartice: i ona stane uz lijevi rub, pa prethodna ne viri slijeva */
+  .carousel__track::after {
+    content: "";
+    flex: 0 0 calc(24% - var(--gap));
+  }
 }
 
 .person__photo {
@@ -1458,7 +1480,7 @@ figure {
 }
 
 .person:hover .person__photo {
-  border-color: var(--accent);
+  border-color: #f1f3f2; /* svijetla iz VI, jasno se razlikuje od lavande */
   transform: scale(1.04) rotate(-2deg);
 }
 
@@ -1489,6 +1511,14 @@ figure {
   color: var(--accent);
   font-size: 0.9rem;
   transition: color 0.4s;
+}
+
+.person__firma {
+  margin-top: 0.35rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .org .person__photo {
@@ -1782,6 +1812,18 @@ a.partner:hover {
   gap: 0.8rem;
   max-width: 900px;
   margin: 2.5rem auto 0;
+}
+
+.faq__more {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.faq__more a {
+  color: var(--accent);
+  font-weight: 700;
+  text-underline-offset: 4px;
 }
 
 .faq__item {

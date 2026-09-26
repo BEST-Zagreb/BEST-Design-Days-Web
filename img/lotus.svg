@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-98.75 -100.00 197.49 195.05">
+  <!-- boje s Instagrama BDD-a (#f1f3f2, #a28bc1, #280b4d) i međutonovi -->
+  <g fill-opacity="0.8">
+    <circle cx="0.00" cy="-50.00" r="50" fill="#f1f3f2" />
+    <circle cx="39.09" cy="-31.17" r="50" fill="#d6cae6" />
+    <circle cx="48.75" cy="11.13" r="50" fill="#af98ce" />
+    <circle cx="21.69" cy="45.05" r="50" fill="#917ab4" />
+    <circle cx="-21.69" cy="45.05" r="50" fill="#7456a5" />
+    <circle cx="-48.75" cy="11.13" r="50" fill="#5a388e" />
+    <circle cx="-39.09" cy="-31.17" r="50" fill="#441d74" />
+  </g>
+</svg>

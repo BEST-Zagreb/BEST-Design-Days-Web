@@ -1,6 +1,6 @@
 [
-  { "ime": "Lana Nježić", "funkcija": "Glavna organizatorica", "email": "lana.njezic@best.hr", "tel": "+385 99 651 1597", "imgUrl": "./img/people/orgs/2026/lana.jpg" },
-  { "ime": "Tomislav Pranjić", "funkcija": "Odgovoran za odnose s tvrtkama", "email": "tomislav.pranjic@best.hr", "tel": "+385 91 601 4163", "imgUrl": "./img/people/orgs/2026/tomica.jpg" },
+  { "ime": "Lana Nježić", "funkcija": "Glavna organizatorica", "email": "lana.njezic@best.hr", "tel": "", "imgUrl": "./img/people/orgs/2026/lana.jpg" },
+  { "ime": "Tomislav Pranjić", "funkcija": "Odgovoran za odnose s tvrtkama", "email": "tomislav.pranjic@best.hr", "tel": "", "imgUrl": "./img/people/orgs/2026/tomica.jpg" },
   { "ime": "Tamara Gašparić", "funkcija": "Odgovorna za predavače", "email": "tamara.gasparic@best.hr", "tel": "", "imgUrl": "./img/people/orgs/2026/tamara.jpg" },
   { "ime": "Vanja Šimaga", "funkcija": "Odgovorna za sudionike", "email": "vanja.simaga@best.hr", "tel": "", "imgUrl": "./img/people/orgs/2026/vanja.jpg" },
   { "ime": "Vanda Žauhar-Henezi", "funkcija": "Odgovorna za odnose s javnošću", "email": "vanda.zauhar-henezi@best.hr", "tel": "", "imgUrl": "./img/people/orgs/2026/vanda.jpg" },

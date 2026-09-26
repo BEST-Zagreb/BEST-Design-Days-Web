@@ -2,7 +2,8 @@
 // + kantica boje koja mijenja boju okvira
 
 const DANI_U_TJEDNU = ["ned", "pon", "uto", "sri", "čet", "pet", "sub"];
-const BOJE_DANA = ["var(--purple)", "var(--red)", "var(--orange)", "var(--yellow)", "var(--green)", "var(--blue)"];
+// dani iz palete lotosa (VI): od najtamnije ljubičaste prema svjetlijoj
+const BOJE_DANA = ["#280b4d", "#3a1766", "#4d2780", "#5f3794", "#7456a5", "#8468b0"];
 const BOJE_OKVIRA = ["#c663e1", "#c62537", "#c7813b", "#c8b23d", "#88a930", "#2a87b6"];
 
 // tko drži aktivnost: "Ime & Ime (Tvrtka)"

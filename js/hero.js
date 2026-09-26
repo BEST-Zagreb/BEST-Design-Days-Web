@@ -193,7 +193,6 @@ const lotusToggle = panel.querySelector("[data-lotus-toggle]");
 
 let position = null;
 const velocity = { x: 60, y: 45 }; // px u sekundi
-let hue = 0;
 let lastTime = 0;
 let running = false;
 let heroVisible = true;
@@ -216,20 +215,13 @@ function step(time) {
   position.x += velocity.x * dt;
   position.y += velocity.y * dt;
 
-  let bounced = false;
   if (position.x < minX || position.x > maxX) {
     velocity.x *= -1;
     position.x = clamp(position.x, minX, maxX);
-    bounced = true;
   }
   if (position.y < minY || position.y > maxY) {
     velocity.y *= -1;
     position.y = clamp(position.y, minY, maxY);
-    bounced = true;
-  }
-  if (bounced) {
-    hue = (hue + 60) % 360;
-    lotus.style.filter = `hue-rotate(${hue}deg)`;
   }
 
   lotus.style.transform = `translate(${position.x}px, ${position.y}px) rotate(${(time / 100) % 360}deg)`;

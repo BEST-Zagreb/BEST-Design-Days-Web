@@ -56,8 +56,8 @@
     <main>
       <!-- ===== HERO ===== -->
       <section class="hero" id="pocetak">
-        <img class="lotus lotus--bounce" src="img/lotus.png" alt="" aria-hidden="true" />
-        <img class="lotus lotus--right" src="img/lotus.png" alt="" aria-hidden="true" />
+        <img class="lotus lotus--bounce" src="img/lotus.svg" alt="" aria-hidden="true" />
+        <img class="lotus lotus--right" src="img/lotus.svg" alt="" aria-hidden="true" />
 
         <div class="hero__stage">
           <div class="editor editor--cropping">
@@ -241,7 +241,7 @@
       <!-- ===== PREDAVAČI (iz aktivnosti.json) ===== -->
       <section class="section" id="predavaci">
         <h2 class="section-title">Predavači</h2>
-        <div class="carousel">
+        <div class="carousel" data-auto="2000" data-auto-mobitel="1000">
           <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Prethodni">
             <i class="icon" style="mask-image: url(img/icons/chevron-left.svg)"></i>
           </button>
@@ -280,7 +280,7 @@
       <!-- ===== ORGANIZATORI (data/<godina>/organizacijskiTim.json) ===== -->
       <section class="section" id="organizatori">
         <h2 class="section-title">Organizatori</h2>
-        <div class="carousel carousel--3" data-auto="5000">
+        <div class="carousel carousel--3" data-auto="2000" data-auto-mobitel="1000">
           <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Prethodni">
             <i class="icon" style="mask-image: url(img/icons/chevron-left.svg)"></i>
           </button>
@@ -327,6 +327,7 @@
             <p>Instant-odgovori na tvoje dileme</p>
           </div>
           <div class="faq__list" id="faq-lista"></div>
+          <p class="faq__more">Imaš još pitanja? Javi nam se na <a data-email href="mailto:designdays@best.hr">designdays@best.hr</a></p>
         </div>
       </section>
       <!-- ===== O UDRUZI ===== -->
@@ -373,7 +374,7 @@
     </main>
 
     <footer class="footer">
-      <img class="lotus lotus--footer" src="img/lotus.png" alt="" aria-hidden="true" loading="lazy" />
+      <img class="lotus lotus--footer" src="img/lotus.svg" alt="" aria-hidden="true" loading="lazy" />
       <div class="footer__inner">
         <a class="footer__logo" href="https://www.best.hr" target="_blank" rel="noopener" aria-label="BEST Zagreb (best.hr)">
           <img src="img/logos/best-shuriken.png" alt="BEST Zagreb logo" loading="lazy" />

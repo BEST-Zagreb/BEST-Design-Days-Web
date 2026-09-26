@@ -44,6 +44,8 @@ BDD.initCarousel = (root) => {
   const update = () => {
     prev.disabled = track.scrollLeft <= 2;
     next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+    // desni rub trake blijedi dok desno ima još kartica
+    root.classList.toggle("carousel--ima-desno", !next.disabled);
 
     // strelice poravnamo na sredinu fotografije, a ne cijele kartice
     const photo = track.querySelector(".person__photo");
@@ -56,13 +58,15 @@ BDD.initCarousel = (root) => {
   window.addEventListener("resize", update);
   update();
 
-  // data-auto="5000" => karusel se sam pomiče svakih 5 s dok je u vidokrugu
-  const razmak = Number(root.dataset.auto || 0);
-  if (!razmak || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  // data-auto="2000" => karusel se sam pomiče svake 2 s dok je u vidokrugu;
+  // data-auto-mobitel="1000" => na mobitelu (jedna osoba na ekranu) brže
+  if (!root.dataset.auto || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const mobitel = matchMedia("(max-width: 520px)");
+  const razmak = () => Number((mobitel.matches && root.dataset.autoMobitel) || root.dataset.auto);
 
   let timer = null;
   let uVidokrugu = false;
-  let pauza = false;
+  let zaustavljen = false;
 
   const korak = () => {
     const kartica = track.querySelector("li");
@@ -73,8 +77,8 @@ BDD.initCarousel = (root) => {
   };
 
   const osvjezi = () => {
-    const treba = uVidokrugu && !pauza && !document.hidden;
-    if (treba && !timer) timer = setInterval(korak, razmak);
+    const treba = uVidokrugu && !zaustavljen && !document.hidden;
+    if (treba && !timer) timer = setInterval(korak, razmak());
     if (!treba && timer) {
       clearInterval(timer);
       timer = null;
@@ -89,20 +93,23 @@ BDD.initCarousel = (root) => {
     { threshold: 0.35 }
   ).observe(root);
 
-  // pauza dok korisnik gleda/koristi karusel
-  ["pointerenter", "focusin", "pointerdown"].forEach((dogadaj) =>
-    root.addEventListener(dogadaj, () => {
-      pauza = true;
-      osvjezi();
-    })
-  );
-  ["pointerleave", "focusout"].forEach((dogadaj) =>
-    root.addEventListener(dogadaj, () => {
-      pauza = false;
-      osvjezi();
-    })
-  );
+  // klik/dodir (ili tipkovnica) na karusel zaustavlja automatsko pomicanje; sam hover ne.
+  // klik bilo gdje izvan karusela ga ponovno pokreće
+  document.addEventListener("pointerdown", (e) => {
+    zaustavljen = root.contains(e.target);
+    osvjezi();
+  });
+  root.addEventListener("keydown", () => {
+    zaustavljen = true;
+    osvjezi();
+  });
   document.addEventListener("visibilitychange", osvjezi);
+  // promjena širine ekrana: ponovno pokreni s novim razmakom
+  mobitel.addEventListener("change", () => {
+    clearInterval(timer);
+    timer = null;
+    osvjezi();
+  });
 };
 
 // ===== Navigacija =====
@@ -121,7 +128,7 @@ document.addEventListener("scroll", () => nav.classList.toggle("nav--scrolled", 
 // ===== Config: godina, podnaslov, gumb za prijavu, info kartice =====
 const INFO_IKONE = {
   pin: ["map-pin", "var(--red)"],
-  kalendar: ["calendar-days", "var(--orange)"],
+  kalendar: ["calendar-days", "#ff8a1f"], // svjetlija narančasta, --orange se gubi na svijetloj traci
   zarulja: ["lightbulb", "var(--yellow)"],
 };
 
