@@ -9,10 +9,6 @@
     { "naziv": "404 agency", "imgUrl": "./img/partners/2026/404.svg", "linkUrl": "https://www.404.agency/" }
   ],
 
-  "materijalni": [
-    { "naziv": "Sveučilišna tiskara", "imgUrl": "./img/partners/2026/sveucilisna-tiskara.png", "linkUrl": "https://www.sveucilisnatiskara.hr/" }
-  ],
-
   "pokrovitelji": [
     { "naziv": "Fakultet strojarstva i brodogradnje", "imgUrl": "./img/partners/2026/FSB_logo.jpg", "linkUrl": "https://www.fsb.unizg.hr/", "omjer": "12 / 5", "bg": "#f7f7f7" },
     { "naziv": "Tehničko veleučilište u Zagrebu", "imgUrl": "./img/partners/2026/tvz.png", "linkUrl": "https://www.tvz.hr/" },
