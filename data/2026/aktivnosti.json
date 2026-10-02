@@ -1,6 +1,19 @@
 [
   {
     "datum": "19.10.2026.",
+    "vrijeme": "17:00 - 17:45",
+    "tema": "Službeno otvaranje",
+    "tvrtka": "",
+    "lokacija": "",
+    "predavaci": [
+      {
+        "ime": "",
+        "imgUrl": ""
+      }
+    ]
+  },
+  {
+    "datum": "19.10.2026.",
     "vrijeme": "18:00 - 18:45",
     "tema": "Identitetska pitanja: Od ideje do prepoznatljivog brendinga",
     "tvrtka": "404 agency",
