@@ -119,22 +119,6 @@
   {
     "datum": "22.10.2026.",
     "vrijeme": "18:00 - 18:45",
-    "tema": "Moć tipografije u vizualnoj komunikaciji",
-    "tvrtka": "",
-    "lokacija": "",
-    "opis": "Predavanje istražuje kako tipografija utječe na način na koji doživljavamo, razumijemo i pamtimo vizualne poruke. Kroz zanimljive primjere iz dizajna, oglašavanja i svakodnevnog okruženja pokazat će se kako izbor pisma, veličina, hijerarhija i kompozicija mogu promijeniti značenje iste poruke. Sudionici će otkriti najčešće tipografske pogreške te naučiti prepoznati odluke koje dizajn čine jasnijim, uvjerljivijim i učinkovitijim.",
-    "predavaci": [
-      {
-        "ime": "Darija Ćutić",
-        "imgUrl": "./img/people/lecturers/2026/darija-cutic.jpg"
-      }
-    ],
-    "format": "Predavanje",
-    "trajanje": "45 min"
-  },
-  {
-    "datum": "22.10.2026.",
-    "vrijeme": "19:00 - 19:45",
     "tema": "Ctrl+Z na budućnost – igra kao prostor mogućih stvarnosti",
     "tvrtka": "",
     "lokacija": "",
@@ -143,6 +127,22 @@
       {
         "ime": "Vesna Uglješić",
         "imgUrl": "./img/people/lecturers/2026/vesna-ugljesic.jpg"
+      }
+    ],
+    "format": "Predavanje",
+    "trajanje": "45 min"
+  },
+  {
+    "datum": "22.10.2026.",
+    "vrijeme": "19:00 - 19:45",
+    "tema": "Moć tipografije u vizualnoj komunikaciji",
+    "tvrtka": "",
+    "lokacija": "",
+    "opis": "Predavanje istražuje kako tipografija utječe na način na koji doživljavamo, razumijemo i pamtimo vizualne poruke. Kroz zanimljive primjere iz dizajna, oglašavanja i svakodnevnog okruženja pokazat će se kako izbor pisma, veličina, hijerarhija i kompozicija mogu promijeniti značenje iste poruke. Sudionici će otkriti najčešće tipografske pogreške te naučiti prepoznati odluke koje dizajn čine jasnijim, uvjerljivijim i učinkovitijim.",
+    "predavaci": [
+      {
+        "ime": "Darija Ćutić",
+        "imgUrl": "./img/people/lecturers/2026/darija-cutic.jpg"
       }
     ],
     "format": "Predavanje",
